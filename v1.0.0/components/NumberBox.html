@@ -16,7 +16,7 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1503475387473"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1503475387474"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
 <body role="flatdoc" class="no-literate big-h3">
   <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1.0.0/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -54,7 +54,7 @@
               <a ng-href=./v1.0.0/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/map-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Map Components" href=./v1.0.0/map-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Map Components</span>
            </a>
@@ -71,7 +71,7 @@
               <a ng-href=./v1.0.0/map-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/map-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/search-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Search Components" href=./v1.0.0/search-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Search Components</span>
            </a>
@@ -98,7 +98,7 @@
               <a ng-href=./v1.0.0/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Base Components" href=./v1.0.0/components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Base Components</span>
            </a>
@@ -111,6 +111,10 @@
               <a ng-href=./v1.0.0/components/SingleDropdownList.html title="Single Dropdown List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/SingleDropdownList.html>Single Dropdown List</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
               <a ng-href=./v1.0.0/components/MultiDropdownList.html title="Multi Dropdown List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/MultiDropdownList.html>Multi Dropdown List</a>
+            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+              <a ng-href=./v1.0.0/components/SingleDataList.html title="Single Data List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/SingleDataList.html>Single Data List</a>
+            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+              <a ng-href=./v1.0.0/components/MultiDataList.html title="Multi Data List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/MultiDataList.html>Multi Data List</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
               <a ng-href=./v1.0.0/components/SingleRange.html title="Single Range" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/SingleRange.html>Single Range</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -143,7 +147,7 @@
               <a ng-href=./v1.0.0/components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/advanced/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Advanced Topics" href=./v1.0.0/advanced/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Advanced Topics</span>
            </a>
@@ -164,7 +168,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li" style="display: block;">
+      <ul class="nav navbar-nav category-li">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -247,6 +251,10 @@
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./v1.0.0/components/MultiDropdownList.html title="Multi Dropdown List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/MultiDropdownList.html>Multi Dropdown List</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                  <a ng-href=./v1.0.0/components/SingleDataList.html title="Single Data List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/SingleDataList.html>Single Data List</a>
+                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                  <a ng-href=./v1.0.0/components/MultiDataList.html title="Multi Data List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/MultiDataList.html>Multi Data List</a>
+                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./v1.0.0/components/SingleRange.html title="Single Range" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/SingleRange.html>Single Range</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./v1.0.0/components/MultiRange.html title="Multi Range" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/MultiRange.html>Multi Range</a>
@@ -305,7 +313,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px;"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -424,6 +432,10 @@
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./v1.0.0/components/MultiDropdownList.html title="Multi Dropdown List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/MultiDropdownList.html>Multi Dropdown List</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                      <a ng-href=./v1.0.0/components/SingleDataList.html title="Single Data List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/SingleDataList.html>Single Data List</a>
+                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                      <a ng-href=./v1.0.0/components/MultiDataList.html title="Multi Data List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/MultiDataList.html>Multi Data List</a>
+                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./v1.0.0/components/SingleRange.html title="Single Range" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/SingleRange.html>Single Range</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./v1.0.0/components/MultiRange.html title="Multi Range" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/MultiRange.html>Multi Range</a>
@@ -517,7 +529,7 @@
 <li><strong class="li-title">showFilter</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  show as filter when a value is selected in a global selected filters view. Defaults to <code style="white-space: pre;">true</code>.</li>
 <li><strong class="li-title">filterLabel</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  An optional label to display for the component in the global selected filters view. This is only applicable if <code style="white-space: pre;">showFilter</code> is enabled. Default value used here is <code style="white-space: pre;">componentId</code>.</li>
 <li><strong class="li-title">URLParams</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  enable creating a URL query string parameter based on the selected value of the number. This is useful for sharing URLs with the component state. Defaults to <code style="white-space: pre;">false</code>.</li>
-</ul><h3 id="-numberbox-syntax">Syntax</h3><p></p><p data-height="500" data-theme-id="light" data-slug-hash="dzKpPE" data-default-tab="js" data-user="divyanshu013" data-embed-version="2" data-pen-title="NumberBox docs example" class="codepen">See the Pen <a href="https://codepen.io/divyanshu013/pen/dzKpPE/">NumberBox docs example</a> by Divyanshu (<a href="https://codepen.io/divyanshu013">@divyanshu013</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><h3 id="-numberbox-styles">Styles</h3><p>All reactivebase components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="" alt="Annotated image"></p><h3 id="-numberbox-extending">Extending</h3><p><code style="white-space: pre;">NumberBox</code> component can be extended to</p><ol>
+</ul><h3 id="-numberbox-syntax">Syntax</h3><p></p><div class="cp_embed_wrapper"><iframe id="cp_embed_dzKpPE" src="//codepen.io/divyanshu013/embed/dzKpPE?height=500&amp;theme-id=light&amp;slug-hash=dzKpPE&amp;default-tab=js&amp;user=divyanshu013&amp;embed-version=2&amp;pen-title=NumberBox%20docs%20example" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="NumberBox docs example" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><h3 id="-numberbox-styles">Styles</h3><p>All reactivebase components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="" alt="Annotated image"></p><h3 id="-numberbox-extending">Extending</h3><p><code style="white-space: pre;">NumberBox</code> component can be extended to</p><ol>
 <li>customize the look and feel with <code style="white-space: pre;">componentStyle</code>,</li>
 <li>update the underlying DB query with <code style="white-space: pre;">customQuery</code>,</li>
 <li>connect with external interfaces using <code style="white-space: pre;">beforeValueChange</code> and <code style="white-space: pre;">onValueChange</code>.</li>
@@ -559,7 +571,7 @@
   <code style="white-space: pre;">Note:</code> customQuery is called on value changes in the <strong>NumberBox</strong> component as long as the component is a part of <code style="white-space: pre;">react</code> dependency of at least one other component.</li>
 <li><strong class="li-title">beforeValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s future <strong>value</strong> as a parameter and <strong>returns</strong> a promise. It is called everytime before a component’s value changes. The promise, if and when resolved, triggers the execution of the component’s query and if rejected, kills the query execution. This method can act as a gatekeeper for query execution, since it only executes the query after the provided promise has been resolved.</li>
 <li><strong class="li-title">onValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s current <strong>value</strong> as a parameter. It is called everytime the component’s value changes. This prop is handy in cases where you want to generate a side-effect on value selection. For example: You want to show a pop-up modal with the valid discount coupon code when a number is selected in a NumberBox.</li>
-</ul><h3 id="-numberbox-examples">Examples</h3><p></p><p data-height="500" data-theme-id="light" data-slug-hash="dzKpPE" data-default-tab="result" data-user="divyanshu013" data-embed-version="2" data-pen-title="NumberBox docs example" class="codepen">See the Pen <a href="https://codepen.io/divyanshu013/pen/dzKpPE/">NumberBox docs example</a> by Divyanshu (<a href="https://codepen.io/divyanshu013">@divyanshu013</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><ol>
+</ul><h3 id="-numberbox-examples">Examples</h3><p></p><div class="cp_embed_wrapper"><iframe id="cp_embed_dzKpPE" src="//codepen.io/divyanshu013/embed/dzKpPE?height=500&amp;theme-id=light&amp;slug-hash=dzKpPE&amp;default-tab=result&amp;user=divyanshu013&amp;embed-version=2&amp;pen-title=NumberBox%20docs%20example" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="NumberBox docs example" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><ol>
 <li><p><a href="../playground/?knob-title=Number%20of%20Guests&amp;knob-defaultSelected=2&amp;selectedKind=search%2FNumberBox&amp;selectedStory=With%20defaultSelected&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">A NumberBox component with defaults</a></p>
 </li>
 <li><p><a href="../playground/?knob-title=Number%20of%20Guests&amp;knob-defaultSelected=3&amp;knob-data=%7B&quot;start&quot;%3A1%2C&quot;end&quot;%3A16%2C&quot;label&quot;%3A&quot;Guests&quot;%7D&amp;knob-labelPosition=right&amp;knob-queryFormat=exact&amp;selectedKind=search%2FNumberBox&amp;selectedStory=Playground&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">Playground (with all knob actions)</a></p>
@@ -581,6 +593,10 @@
 				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/SingleDropdownList.html ng-bind="file.label" href=./v1.0.0/components/SingleDropdownList.html>Single Dropdown List</a>
 			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
 				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/MultiDropdownList.html ng-bind="file.label" href=./v1.0.0/components/MultiDropdownList.html>Multi Dropdown List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/SingleDataList.html ng-bind="file.label" href=./v1.0.0/components/SingleDataList.html>Single Data List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/MultiDataList.html ng-bind="file.label" href=./v1.0.0/components/MultiDataList.html>Multi Data List</a>
 			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
 				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/SingleRange.html ng-bind="file.label" href=./v1.0.0/components/SingleRange.html>Single Range</a>
 			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
