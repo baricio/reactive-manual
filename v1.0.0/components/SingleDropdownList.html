@@ -16,7 +16,7 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1503659880930"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1503659880931"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1503876003844"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1503876003845"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
 <body role="flatdoc" class="no-literate big-h3">
   <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
           <a ng-href=./v1.0.0/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1.0.0/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -54,7 +54,7 @@
               <a ng-href=./v1.0.0/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
           <a ng-href=./v1.0.0/map-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Map Components" href=./v1.0.0/map-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Map Components</span>
            </a>
@@ -71,14 +71,12 @@
               <a ng-href=./v1.0.0/map-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/map-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
           <a ng-href=./v1.0.0/search-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Search Components" href=./v1.0.0/search-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Search Components</span>
            </a>
           <ul class="dropdown-menu">
             <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v1.0.0/search-components/ToggleList.html title="Toggle List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ToggleList.html>Toggle List</a>
-            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
               <a ng-href=./v1.0.0/search-components/NestedList.html title="Nested List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/NestedList.html>Nested List</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
               <a ng-href=./v1.0.0/search-components/MultiLevelMenu.html title="MultiLevel Menu" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/MultiLevelMenu.html>MultiLevel Menu</a>
@@ -98,7 +96,7 @@
               <a ng-href=./v1.0.0/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
           <a ng-href=./v1.0.0/components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Base Components" href=./v1.0.0/components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Base Components</span>
            </a>
@@ -147,7 +145,7 @@
               <a ng-href=./v1.0.0/components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
           <a ng-href=./v1.0.0/advanced/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Advanced Topics" href=./v1.0.0/advanced/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Advanced Topics</span>
            </a>
@@ -168,7 +166,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li">
+      <ul class="nav navbar-nav category-li" style="display: block;">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -216,8 +214,6 @@
                   <a ng-href=./v1.0.0/search-components/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="Search Components" href=./v1.0.0/search-components/index.html>Search Components</a>
                 </li>
                 <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v1.0.0/search-components/ToggleList.html title="Toggle List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ToggleList.html>Toggle List</a>
-                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./v1.0.0/search-components/NestedList.html title="Nested List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/NestedList.html>Nested List</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./v1.0.0/search-components/MultiLevelMenu.html title="MultiLevel Menu" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/MultiLevelMenu.html>MultiLevel Menu</a>
@@ -313,7 +309,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px;"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -397,8 +393,6 @@
                       <a ng-href=./v1.0.0/search-components/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="Search Components" href=./v1.0.0/search-components/index.html>Search Components</a>
                     </li>
                     <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v1.0.0/search-components/ToggleList.html title="Toggle List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ToggleList.html>Toggle List</a>
-                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./v1.0.0/search-components/NestedList.html title="Nested List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/NestedList.html>Nested List</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./v1.0.0/search-components/MultiLevelMenu.html title="MultiLevel Menu" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/MultiLevelMenu.html>MultiLevel Menu</a>
@@ -500,7 +494,7 @@
 	<div class="menubar fixed">
 		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-singledropdownlist-item" class="level-2"><a id="-singledropdownlist-link" href="./v1.0.0/components/SingleDropdownList.html#-singledropdownlist" class="level-2" pref="#-singledropdownlist">SingleDropdownList</a><ul class="level-3" id="-singledropdownlist-list"><li id="-singledropdownlist-usage-item" class="level-3"><a id="-singledropdownlist-usage-link" href="./v1.0.0/components/SingleDropdownList.html#-singledropdownlist-usage" class="level-3" pref="#-singledropdownlist-usage">Usage</a></li><li id="-singledropdownlist-props-item" class="level-3"><a id="-singledropdownlist-props-link" href="./v1.0.0/components/SingleDropdownList.html#-singledropdownlist-props" class="level-3" pref="#-singledropdownlist-props">Props</a></li><li id="-singledropdownlist-syntax-item" class="level-3"><a id="-singledropdownlist-syntax-link" href="./v1.0.0/components/SingleDropdownList.html#-singledropdownlist-syntax" class="level-3" pref="#-singledropdownlist-syntax">Syntax</a></li><li id="-singledropdownlist-styles-item" class="level-3"><a id="-singledropdownlist-styles-link" href="./v1.0.0/components/SingleDropdownList.html#-singledropdownlist-styles" class="level-3" pref="#-singledropdownlist-styles">Styles</a></li><li id="-singledropdownlist-extending-item" class="level-3"><a id="-singledropdownlist-extending-link" href="./v1.0.0/components/SingleDropdownList.html#-singledropdownlist-extending" class="level-3" pref="#-singledropdownlist-extending">Extending</a></li><li id="-singledropdownlist-examples-item" class="level-3"><a id="-singledropdownlist-examples-link" href="./v1.0.0/components/SingleDropdownList.html#-singledropdownlist-examples" class="level-3" pref="#-singledropdownlist-examples">Examples</a></li></ul></li></ul></li></ul></li></ul></div>
 	</div>
-	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/209e2343bdfb5dbd8c4508db67f806962eb7d42d">Aug 25, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/divyanshu013" title="divyanshu013" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/6682655?v=4" alt="divyanshu013"></a><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1.0.0/components/SingleDropdownList.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h2 id="-singledropdownlist">SingleDropdownList</h2><p><img src="https://i.imgur.com/PGYPXf6.png" alt="Image to be displayed"></p><p>A <code style="white-space: pre;">SingleDropdownList</code> sensor component creates a dropdown list UI widget. It is used for filtering results based on the current selection from a list of items.</p><p><code style="white-space: pre;">Note:</code> This component is exactly like the <a href="/v1/component/SingleList.html">SingleList</a> component except the UI is based on a dropdown, ideal for showing additional UI filters while conserving screen space.</p><p>Example uses:</p><ul>
+	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/daa4e0f515408d1a9fe4e87aedc23a460d36f209">Aug 27, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a><a class="contributor" href="https://github.com/divyanshu013" title="divyanshu013" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/6682655?v=4" alt="divyanshu013"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1.0.0/components/SingleDropdownList.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h2 id="-singledropdownlist">SingleDropdownList</h2><p><img src="https://i.imgur.com/PGYPXf6.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">SingleDropdownList</code> creates a dropdown list based single select UI component. It is used for filtering results based on the current selection from a list of items.</p><p><code style="white-space: pre;">Note:</code> This component is exactly like the <a href="/v1.0.0/component/SingleList.html">SingleList</a> component except the UI is based on a dropdown, ideal for showing additional UI filters while conserving screen space.</p><p>Example uses:</p><ul>
 <li>select a category from a list of categories for filtering e-commerce search results.</li>
 <li>filtering restaurants by a cuisine choice.</li>
 </ul><h3 id="-singledropdownlist-usage">Usage</h3><h4 id="basic-usage">Basic Usage</h4><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">SingleDropdownList</span><span class="pln">
@@ -521,8 +515,8 @@
   filterLabel</span><span class="pun">=</span><span class="string"><span class="str">"City"</span></span><span class="pln">
   </span><span class="typ">URLParams</span><span class="pun">={</span><span class="kwd">false</span><span class="pun">}</span><span class="pln">
 </span><span class="pun">/&gt;</span></code></pre><h3 id="-singledropdownlist-props">Props</h3><ul>
-<li><strong class="li-title">componentId</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  unique id of the sensor, can be referenced when creating a combined query context in an actuator’s <code style="white-space: pre;">react</code> prop.  </li>
-<li><strong class="li-title">appbaseField</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  DB data field to be mapped with the component’s UI options.</li>
+<li><strong class="li-title">componentId</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  unique identifier of the component, can be referenced in other components’ <code style="white-space: pre;">react</code> prop.</li>
+<li><strong class="li-title">appbaseField</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  data field to be connected to the component’s UI view.</li>
 <li><strong class="li-title">title</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  title of the component to be shown in the UI.</li>
 <li><strong class="li-title">size</strong> <code class="code-with-title" style="white-space: pre;">Number</code> [optional]<br>  control how many items to display in the List. Defaults to 100.</li>
 <li><strong class="li-title">sortBy</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  property that decides on how to sort the list items, accepts one of <code style="white-space: pre;">count</code>, <code style="white-space: pre;">asc</code> or <code style="white-space: pre;">desc</code> as valid values. <code style="white-space: pre;">count</code> sorts the list based on the count occurences, with highest value at the top. <code style="white-space: pre;">asc</code> sorts the list in the ascending order of the list item (Alphabetical). <code style="white-space: pre;">desc</code> sorts the list in the descending order of the term. Defaulted to <code style="white-space: pre;">count</code>.</li>
