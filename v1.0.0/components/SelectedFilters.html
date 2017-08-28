@@ -498,147 +498,78 @@
 </nav>
 <div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
 	<div class="menubar fixed">
-		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-geodistanceslider-item" class="level-2"><a id="-geodistanceslider-link" href="./v1.0.0/map-components/GeoDistanceSlider.html#-geodistanceslider" class="level-2" pref="#-geodistanceslider">GeoDistanceSlider</a><ul class="level-3" id="-geodistanceslider-list"><li id="-geodistanceslider-usage-item" class="level-3"><a id="-geodistanceslider-usage-link" href="./v1.0.0/map-components/GeoDistanceSlider.html#-geodistanceslider-usage" class="level-3" pref="#-geodistanceslider-usage">Usage</a></li><li id="-geodistanceslider-props-item" class="level-3"><a id="-geodistanceslider-props-link" href="./v1.0.0/map-components/GeoDistanceSlider.html#-geodistanceslider-props" class="level-3" pref="#-geodistanceslider-props">Props</a></li><li id="-geodistanceslider-syntax-item" class="level-3"><a id="-geodistanceslider-syntax-link" href="./v1.0.0/map-components/GeoDistanceSlider.html#-geodistanceslider-syntax" class="level-3" pref="#-geodistanceslider-syntax">Syntax</a></li><li id="-geodistanceslider-styles-item" class="level-3"><a id="-geodistanceslider-styles-link" href="./v1.0.0/map-components/GeoDistanceSlider.html#-geodistanceslider-styles" class="level-3" pref="#-geodistanceslider-styles">Styles</a></li><li id="-geodistanceslider-extending-item" class="level-3"><a id="-geodistanceslider-extending-link" href="./v1.0.0/map-components/GeoDistanceSlider.html#-geodistanceslider-extending" class="level-3" pref="#-geodistanceslider-extending">Extending</a></li><li id="-geodistanceslider-examples-item" class="level-3"><a id="-geodistanceslider-examples-link" href="./v1.0.0/map-components/GeoDistanceSlider.html#-geodistanceslider-examples" class="level-3" pref="#-geodistanceslider-examples">Examples</a></li></ul></li></ul></li></ul></li></ul></div>
+		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-selectedfilters-item" class="level-2"><a id="-selectedfilters-link" href="./v1.0.0/components/SelectedFilters.html#-selectedfilters" class="level-2" pref="#-selectedfilters">SelectedFilters</a><ul class="level-3" id="-selectedfilters-list"><li id="-selectedfilters-usage-item" class="level-3"><a id="-selectedfilters-usage-link" href="./v1.0.0/components/SelectedFilters.html#-selectedfilters-usage" class="level-3" pref="#-selectedfilters-usage">Usage</a></li><li id="-selectedfilters-props-item" class="level-3"><a id="-selectedfilters-props-link" href="./v1.0.0/components/SelectedFilters.html#-selectedfilters-props" class="level-3" pref="#-selectedfilters-props">Props</a></li><li id="-selectedfilters-styles-item" class="level-3"><a id="-selectedfilters-styles-link" href="./v1.0.0/components/SelectedFilters.html#-selectedfilters-styles" class="level-3" pref="#-selectedfilters-styles">Styles</a></li><li id="-selectedfilters-extending-item" class="level-3"><a id="-selectedfilters-extending-link" href="./v1.0.0/components/SelectedFilters.html#-selectedfilters-extending" class="level-3" pref="#-selectedfilters-extending">Extending</a></li></ul></li></ul></li></ul></li></ul></div>
 	</div>
-	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/6e2c3c231aa247e26d0a261ac17e73cf74e9eb03">Aug 28, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a><a class="contributor" href="https://github.com/web-flow" title="web-flow" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/19864447?v=4" alt="web-flow"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1.0.0/map-components/GeoDistanceSlider.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h2 id="-geodistanceslider">GeoDistanceSlider</h2><p><img src="https://i.imgur.com/FU4s0PQ.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">GeoDistanceSlider</code> creates a location search based range slider UI component that is connected to a database field. It is used for distance based filtering.</p><p>Example uses:</p><ul>
-<li>finding restaurants in walking distance from your location.</li>
-<li>discovering things to do near a landmark.</li>
-</ul><h3 id="-geodistanceslider-usage">Usage</h3><h4 id="basic-usage">Basic Usage</h4><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">GeoDistanceSlider</span><span class="pln">
-  componentId</span><span class="pun">=</span><span class="string"><span class="str">"locationUI"</span></span><span class="pln">
-  appbaseField</span><span class="pun">=</span><span class="string"><span class="str">"location"</span></span><span class="pln">
-  title</span><span class="pun">=</span><span class="string"><span class="str">"Location Slider Selector"</span></span><span class="pln">
-  range</span><span class="pun">={</span><span class="pln">
-    </span><span class="pun">{</span><span class="pln">
-      </span><span class="string"><span class="str">"start"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">0</span></span><span class="pun">,</span><span class="pln">
-      </span><span class="string"><span class="str">"end"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">20</span></span><span class="pln">
-    </span><span class="pun">}</span><span class="pln">
-  </span><span class="pun">}</span><span class="pln">
-</span><span class="pun">/&gt;</span></code></pre><h4 id="usage-with-all-props">Usage With All Props</h4><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">GeoDistanceSlider</span><span class="pln">
-  componentId</span><span class="pun">=</span><span class="string"><span class="str">"GeoDistanceSensor"</span></span><span class="pln">
-  appbaseField</span><span class="pun">=</span><span class="string"><span class="str">"location"</span></span><span class="pln">
-  title</span><span class="pun">=</span><span class="string"><span class="str">"Geo Distance Slider"</span></span><span class="pln">
-  range</span><span class="pun">={</span><span class="pln">
-    </span><span class="pun">{</span><span class="pln">
-      </span><span class="string"><span class="str">"start"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">0</span></span><span class="pun">,</span><span class="pln">
-      </span><span class="string"><span class="str">"end"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">20</span></span><span class="pln">
-    </span><span class="pun">}</span><span class="pln">
-  </span><span class="pun">}</span><span class="pln">
-  rangeLabels</span><span class="pun">={</span><span class="pln">
-    </span><span class="pun">{</span><span class="pln">
-      </span><span class="string"><span class="str">"start"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"</span><span class="number"><span class="str">0</span></span><span class="str"> mi"</span></span><span class="pun">,</span><span class="pln">
-      </span><span class="string"><span class="str">"end"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"</span><span class="number"><span class="str">20</span></span><span class="str"> mi"</span></span><span class="pln">
-    </span><span class="pun">}</span><span class="pln">
-  </span><span class="pun">}</span><span class="pln">
-  stepValue</span><span class="pun">={</span><span class="number"><span class="lit">1</span></span><span class="pun">}</span><span class="pln">
-  defaultSelected</span><span class="pun">={{</span><span class="pln">
-    </span><span class="string"><span class="str">"location"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"SOMA, San Francisco, United States"</span></span><span class="pun">,</span><span class="pln">
-    </span><span class="string"><span class="str">"distance"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">12</span></span><span class="pln">
-  </span><span class="pun">}}</span><span class="pln">
-  placeholder</span><span class="pun">=</span><span class="string"><span class="str">"Select a distance range.."</span></span><span class="pln">
-  unit</span><span class="pun">=</span><span class="string"><span class="str">"mi"</span></span><span class="pln">
-  autoLocation</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
-  showFilter</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
-  filterLabel</span><span class="pun">=</span><span class="string"><span class="str">"Location"</span></span><span class="pln">
-  </span><span class="typ">URLParams</span><span class="pun">={</span><span class="kwd">false</span><span class="pun">}</span><span class="pln">
-</span><span class="pun">/&gt;</span></code></pre><h3 id="-geodistanceslider-props">Props</h3><ul>
-<li><strong class="li-title">componentId</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  unique identifier of the component, can be referenced in other components’ <code style="white-space: pre;">react</code> prop.</li>
-<li><strong class="li-title">appbaseField</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  data field to be connected to the component’s UI view.</li>
-<li><strong class="li-title">title</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  title of the component to be shown in the UI.</li>
-<li><strong class="li-title">range</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  an object with <code style="white-space: pre;">start</code> and <code style="white-space: pre;">end</code> keys and corresponding numeric values denoting the minimum and maximum possible slider values.</li>
-<li><strong class="li-title">rangeLabels</strong> <code class="code-with-title" style="white-space: pre;">Object</code> [optional]<br>  an object with <code style="white-space: pre;">start</code> and <code style="white-space: pre;">end</code> keys and corresponding <code style="white-space: pre;">String</code> labels to show labels near the ends of the <code style="white-space: pre;">GeoDistanceSlider</code> component.</li>
-<li><strong class="li-title">stepValue</strong> <code class="code-with-title" style="white-space: pre;">Number</code> [optional]<br>  step value specifies the slider stepper. Value should be an integer between 1 and floor(#total-range/2). Defaults to 1.</li>
-<li><strong class="li-title">defaultSelected</strong> <code class="code-with-title" style="white-space: pre;">Object</code> [optional]<br>  pre-select the search query with <code style="white-space: pre;">location</code> option and distance with <code style="white-space: pre;">distance</code> option.</li>
-<li><strong class="li-title">placeholder</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  set the placeholder to show in the location search box, useful when no option is <code style="white-space: pre;">defaultSelected</code>.</li>
-<li><strong class="li-title">unit</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  unit for distance measurement, uses <code style="white-space: pre;">mi</code> (for miles) by default. Distance units can be specified from the following:<br>  <img src="https://i.imgur.com/STbeagk.png" alt="screenshot"></li>
-<li><strong class="li-title">autoLocation</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  when enabled, preset the user’s current location in the location search box. Defaults to <code style="white-space: pre;">true</code>.</li>
-<li><strong class="li-title">showFilter</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  show as filter when a value is selected in a global selected filters view. Defaults to <code style="white-space: pre;">true</code>.</li>
-<li><strong class="li-title">filterLabel</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  An optional label to display for the component in the global selected filters view. This is only applicable if <code style="white-space: pre;">showFilter</code> is enabled. Default value used here is <code style="white-space: pre;">componentId</code>.</li>
-<li><strong class="li-title">URLParams</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  enable creating a URL query string parameter based on the selected value of the list. This is useful for sharing URLs with the component state. Defaults to <code style="white-space: pre;">false</code>.</li>
-</ul><h3 id="-geodistanceslider-syntax">Syntax</h3><p>TBD</p><h3 id="-geodistanceslider-styles">Styles</h3><p>All reactivebase and reactivemaps components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="https://i.imgur.com/0si7fn1.png" alt="Annotated image"></p><h3 id="-geodistanceslider-extending">Extending</h3><p><code style="white-space: pre;">GeoDistanceSlider</code> component can be extended to</p><ol>
-<li>customize the look and feel with <code style="white-space: pre;">componentStyle</code>,</li>
-<li>update the underlying DB query with <code style="white-space: pre;">customQuery</code>,</li>
-<li>connect with external interfaces using <code style="white-space: pre;">beforeValueChange</code> and <code style="white-space: pre;">onValueChange</code>.</li>
-</ol><pre><code class="prettyprint prettyprinted" style="white-space: pre;"><span class="tag">&lt;GeoDistanceSlider</span><span class="pln">
-  ...
+	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/ee7735773d5fa5ab145201e91020a24b7cae8345">Aug 27, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1.0.0/components/SelectedFilters.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h2 id="-selectedfilters">SelectedFilters</h2><p><img src="https://i.imgur.com/DyW5jJ2.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">SelectedFilters</code> creates a selectable filter UI view displaying the current selected values from other components. This component is useful for improving selection accessibility of other components.</p><p>Example uses:</p><ul>
+<li>displaying all the user selected facet filters together in the main view area for better accessibility.</li>
+<li>building mobile responsive views where it is not practical to show all the UI components in the main view.</li>
+</ul><h3 id="-selectedfilters-usage">Usage</h3><h4 id="basic-usage">Basic Usage</h4><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">SelectedFilters</span><span class="pln"> </span><span class="pun">/&gt;</span></code></pre><h3 id="-selectedfilters-props">Props</h3><p>The <code style="white-space: pre;">SelectedFilters</code> component itself doesn’t have any props.</p><p>Facet type components have a prop <code style="white-space: pre;">showFilter</code> (defaults to <code style="white-space: pre;">true</code>) which can be used to control whether the component’s selected state appears in the SelectedFilters component. There is also a <code style="white-space: pre;">filterLabel</code> prop which controls how that component is displayed.</p><p>As an example, check <a href="/v1.0.0/components/MultiList.html#-multilist-usage">MultiList usage</a> to see how <code style="white-space: pre;">showFilter</code> and <code style="white-space: pre;">filterLabel</code> can be used.</p><h3 id="-selectedfilters-styles">Styles</h3><p>All reactivebase components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="" alt="Annotated image"></p><h3 id="-selectedfilters-extending">Extending</h3><p><code style="white-space: pre;">SelectedFilters</code> component can be extended to customize the look and feel with <code style="white-space: pre;">componentStyle</code>.</p><pre><code class="prettyprint prettyprinted" style="white-space: pre;"><span class="tag">&lt;SelectedFilters</span><span class="pln">
   </span><span class="atn">componentStyle</span><span class="pun">=</span><span class="atv">{{"paddingBottom"</span><span class="pln">: </span><span class="atv">"10px"</span><span class="pln">}}
-  </span><span class="atn">customQuery</span><span class="pun">=</span><span class="atv">{</span><span class="pln">
-    </span><span class="atn">function</span><span class="pln">(</span><span class="atn">value</span><span class="pln">) {
-      </span><span class="atn">return</span><span class="pln"> {
-        </span><span class="atn">query</span><span class="pln">: {
-          </span><span class="pun">//</span><span class="pln"> </span><span class="atn">query</span><span class="pln"> </span><span class="atn">in</span><span class="pln"> </span><span class="atn">the</span><span class="pln"> </span><span class="atn">format</span><span class="pln"> </span><span class="atn">of</span><span class="pln"> </span><span class="atn">Elasticsearch</span><span class="pln"> </span><span class="atn">Query</span><span class="pln"> </span><span class="atn">DSL</span><span class="pln">
-          </span><span class="atn">geo_distance</span><span class="pln">: {
-            </span><span class="atn">distance</span><span class="pln">: (</span><span class="atn">value</span><span class="pln">.</span><span class="atn">end</span><span class="pln"> - </span><span class="atn">value</span><span class="pln">.</span><span class="atn">start</span><span class="pln">)
-                      + </span><span class="atn">value</span><span class="pln">.</span><span class="atn">unit</span><span class="pln">,
-            </span><span class="atn">location_appbaseField</span><span class="pln">: {
-              </span><span class="atn">lat</span><span class="pln">: </span><span class="atn">value</span><span class="pln">.</span><span class="atn">location</span><span class="pln">.</span><span class="atn">split</span><span class="pln">(</span><span class="atv">","</span><span class="pln">)[0]
-              </span><span class="atn">lon</span><span class="pln">: </span><span class="atn">value</span><span class="pln">.</span><span class="atn">location</span><span class="pln">.</span><span class="atn">split</span><span class="pln">(</span><span class="atv">","</span><span class="pln">)[1]
-            }
-          }
-        }
-      }
-    }
-  }
-  </span><span class="atn">beforeValueChange</span><span class="pun">=</span><span class="atv">{</span><span class="pln">
-    </span><span class="atn">function</span><span class="pln">(</span><span class="atn">value</span><span class="pln">) {
-      </span><span class="pun">//</span><span class="pln"> </span><span class="atn">called</span><span class="pln"> </span><span class="atn">before</span><span class="pln"> </span><span class="atn">the</span><span class="pln"> </span><span class="atn">value</span><span class="pln"> </span><span class="atn">is</span><span class="pln"> </span><span class="atn">set</span><span class="pln">
-      </span><span class="pun">//</span><span class="pln"> </span><span class="atn">returns</span><span class="pln"> </span><span class="atn">a</span><span class="pln"> </span><span class="atn">promise</span><span class="pln">
-      </span><span class="atn">return</span><span class="pln"> </span><span class="atn">new</span><span class="pln"> </span><span class="atn">Promise</span><span class="pln">((</span><span class="atn">resolve</span><span class="pln">, </span><span class="atn">reject</span><span class="pln">) </span><span class="tag">=&gt;</span><span class="pln"> {
-        // update state or component props
-        resolve()
-        // or reject()
-      })
-    }
-  }
-  onValueChange={
-    function(value) {
-      console.log("current value: ", value)
-      // set the state
-      // use the value with other js code
-    }
-  }
-/&gt;</span></code></pre><ul>
-<li><strong class="li-title">componentStyle</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  CSS styles to be applied to the <strong>GeoDistanceSlider</strong> component.</li>
-<li><strong class="li-title">customQuery</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  takes <strong>value</strong> as a parameter and <strong>returns</strong> the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.
-  <code style="white-space: pre;">Note:</code> customQuery is called on value changes in the <strong>GeoDistanceSlider</strong> component as long as the component is a part of <code style="white-space: pre;">react</code> dependency of at least one other component.</li>
-<li><strong class="li-title">beforeValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s future <strong>value</strong> as a parameter and <strong>returns</strong> a promise. It is called every time before a component’s value changes. The promise, if and when resolved, triggers the execution of the component’s query and if rejected, kills the query execution. This method can act as a gatekeeper for query execution, since it only executes the query after the provided promise has been resolved.</li>
-<li><strong class="li-title">onValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s current <strong>value</strong> as a parameter. It is called every time the component’s value changes. This prop is handy in cases where you want to generate a side-effect on value selection. For example:  You want to show a pop-up modal with the valid discount coupon code when a user searches within a specific location area.</li>
-</ul><h3 id="-geodistanceslider-examples">Examples</h3><ol>
-<li><p>GeoDistance slider with all the default props</p>
-</li>
-<li><p>GeoDistance slider with a title</p>
-</li>
-<li><p>GeoDistance slider with range labels</p>
-</li>
-<li><p>Playground (with all knob actions)</p>
-</li>
-</ol></div>
+</span><span class="tag">/&gt;</span></code></pre><ul>
+<li><strong class="li-title">componentStyle</strong> <code class="code-with-title" style="white-space: pre;">Object</code>
+  CSS styles to be applied to the <strong>TextField</strong> component.</li>
+</ul></div>
 	<!-- ngIf: !threeColumns && navigationSidebar --><div class="rightSidebar menubar ng-scope" data-ng-if="!threeColumns &amp;&amp; navigationSidebar">
-		<!-- ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><ul class="menu section ng-scope" ng-repeat="folder in map[currentVersion]" data-ng-if="folder.name === currentFolder">
+		<!-- ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><ul class="menu section ng-scope" ng-repeat="folder in map[currentVersion]" data-ng-if="folder.name === currentFolder">
 			<li>
 				<div class="other-pages">Other pages in</div>
 			</li>
 			<li>
-				<a class="level-1 ng-binding" ng-href=./v1.0.0/map-components/index.html ng-bind="folder.name" href=./v1.0.0/map-components/index.html>map-components</a>
+				<a class="level-1 ng-binding" ng-href=./v1.0.0/components/index.html ng-bind="folder.name" href=./v1.0.0/components/index.html>components</a>
 			</li>
 			<!-- ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
-				<a class="level-2 ng-binding active" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/map-components/GeoDistanceSlider.html ng-bind="file.label" href=./v1.0.0/map-components/GeoDistanceSlider.html>Geo Distance Slider</a>
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/SingleList.html ng-bind="file.label" href=./v1.0.0/components/SingleList.html>Single List</a>
 			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
-				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/map-components/GeoDistanceDropdown.html ng-bind="file.label" href=./v1.0.0/map-components/GeoDistanceDropdown.html>Geo Distance Dropdown</a>
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/MultiList.html ng-bind="file.label" href=./v1.0.0/components/MultiList.html>Multi List</a>
 			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
-				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/map-components/PlacesSearch.html ng-bind="file.label" href=./v1.0.0/map-components/PlacesSearch.html>Places Search</a>
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/SingleDropdownList.html ng-bind="file.label" href=./v1.0.0/components/SingleDropdownList.html>Single Dropdown List</a>
 			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
-				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/map-components/ReactiveMap.html ng-bind="file.label" href=./v1.0.0/map-components/ReactiveMap.html>Reactive Map</a>
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/MultiDropdownList.html ng-bind="file.label" href=./v1.0.0/components/MultiDropdownList.html>Multi Dropdown List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/SingleDataList.html ng-bind="file.label" href=./v1.0.0/components/SingleDataList.html>Single Data List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/MultiDataList.html ng-bind="file.label" href=./v1.0.0/components/MultiDataList.html>Multi Data List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/SingleRange.html ng-bind="file.label" href=./v1.0.0/components/SingleRange.html>Single Range</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/MultiRange.html ng-bind="file.label" href=./v1.0.0/components/MultiRange.html>Multi Range</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/SingleDropdownRange.html ng-bind="file.label" href=./v1.0.0/components/SingleDropdownRange.html>Single Dropdown Range</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/MultiDropdownRange.html ng-bind="file.label" href=./v1.0.0/components/MultiDropdownRange.html>Multi Dropdown Range</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/ToggleButton.html ng-bind="file.label" href=./v1.0.0/components/ToggleButton.html>Toggle Button</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/RangeSlider.html ng-bind="file.label" href=./v1.0.0/components/RangeSlider.html>Range Slider</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/NumberBox.html ng-bind="file.label" href=./v1.0.0/components/NumberBox.html>Number Box</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/TextField.html ng-bind="file.label" href=./v1.0.0/components/TextField.html>Text Field</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/DataSearch.html ng-bind="file.label" href=./v1.0.0/components/DataSearch.html>Data Search</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/DatePicker.html ng-bind="file.label" href=./v1.0.0/components/DatePicker.html>Date Picker</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/DateRange.html ng-bind="file.label" href=./v1.0.0/components/DateRange.html>Date Range</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding active" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/SelectedFilters.html ng-bind="file.label" href=./v1.0.0/components/SelectedFilters.html>Selected Filters</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/DataController.html ng-bind="file.label" href=./v1.0.0/components/DataController.html>Data Controller</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/ReactiveList.html ng-bind="file.label" href=./v1.0.0/components/ReactiveList.html>Reactive List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/components/ReactiveElement.html ng-bind="file.label" href=./v1.0.0/components/ReactiveElement.html>Reactive Element</a>
 			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files -->
-		</ul><!-- end ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] -->
+		</ul><!-- end ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] -->
 	</div><!-- end ngIf: !threeColumns && navigationSidebar -->
 	<div class="footer content">
 		<div class="row">
 			<div class="col-xs-12">
 				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
-					<a href=./v1.0.0/getting-started/ReactiveBase.html class="paginationLink pull-left">Previous</a>
+					<a href=./v1.0.0/components/DateRange.html class="paginationLink pull-left">Previous</a>
 				</span>
 				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
-					<a href=./v1.0.0/map-components/GeoDistanceDropdown.html class="paginationLink pull-right">Next</a>
+					<a href=./v1.0.0/components/DataController.html class="paginationLink pull-right">Next</a>
 				</span>
 			</div>
 		</div>

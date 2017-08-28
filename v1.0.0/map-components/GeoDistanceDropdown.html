@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1.0.0/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -54,7 +54,7 @@
               <a ng-href=./v1.0.0/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/map-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Map Components" href=./v1.0.0/map-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Map Components</span>
            </a>
@@ -71,7 +71,7 @@
               <a ng-href=./v1.0.0/map-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/map-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/search-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Search Components" href=./v1.0.0/search-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Search Components</span>
            </a>
@@ -96,7 +96,7 @@
               <a ng-href=./v1.0.0/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Base Components" href=./v1.0.0/components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Base Components</span>
            </a>
@@ -132,11 +132,13 @@
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
               <a ng-href=./v1.0.0/components/DataSearch.html title="Data Search" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DataSearch.html>Data Search</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v1.0.0/components/DataController.html title="Data Controller" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DataController.html>Data Controller</a>
-            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
               <a ng-href=./v1.0.0/components/DatePicker.html title="Date Picker" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DatePicker.html>Date Picker</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
               <a ng-href=./v1.0.0/components/DateRange.html title="Date Range" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DateRange.html>Date Range</a>
+            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+              <a ng-href=./v1.0.0/components/SelectedFilters.html title="Selected Filters" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/SelectedFilters.html>Selected Filters</a>
+            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+              <a ng-href=./v1.0.0/components/DataController.html title="Data Controller" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DataController.html>Data Controller</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
               <a ng-href=./v1.0.0/components/ReactiveList.html title="Reactive List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/ReactiveList.html>Reactive List</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -145,7 +147,7 @@
               <a ng-href=./v1.0.0/components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/advanced/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Advanced Topics" href=./v1.0.0/advanced/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Advanced Topics</span>
            </a>
@@ -166,7 +168,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li" style="display: block;">
+      <ul class="nav navbar-nav category-li">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -269,11 +271,13 @@
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./v1.0.0/components/DataSearch.html title="Data Search" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DataSearch.html>Data Search</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v1.0.0/components/DataController.html title="Data Controller" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DataController.html>Data Controller</a>
-                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./v1.0.0/components/DatePicker.html title="Date Picker" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DatePicker.html>Date Picker</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./v1.0.0/components/DateRange.html title="Date Range" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DateRange.html>Date Range</a>
+                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                  <a ng-href=./v1.0.0/components/SelectedFilters.html title="Selected Filters" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/SelectedFilters.html>Selected Filters</a>
+                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                  <a ng-href=./v1.0.0/components/DataController.html title="Data Controller" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DataController.html>Data Controller</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./v1.0.0/components/ReactiveList.html title="Reactive List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/ReactiveList.html>Reactive List</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -309,7 +313,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px;"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -448,11 +452,13 @@
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./v1.0.0/components/DataSearch.html title="Data Search" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DataSearch.html>Data Search</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v1.0.0/components/DataController.html title="Data Controller" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DataController.html>Data Controller</a>
-                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./v1.0.0/components/DatePicker.html title="Date Picker" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DatePicker.html>Date Picker</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./v1.0.0/components/DateRange.html title="Date Range" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DateRange.html>Date Range</a>
+                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                      <a ng-href=./v1.0.0/components/SelectedFilters.html title="Selected Filters" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/SelectedFilters.html>Selected Filters</a>
+                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                      <a ng-href=./v1.0.0/components/DataController.html title="Data Controller" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/DataController.html>Data Controller</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./v1.0.0/components/ReactiveList.html title="Reactive List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/ReactiveList.html>Reactive List</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
@@ -492,16 +498,26 @@
 </nav>
 <div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
 	<div class="menubar fixed">
-		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-geodistancedropdown-item" class="level-2"><a id="-geodistancedropdown-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown" class="level-2" pref="#-geodistancedropdown">GeoDistanceDropdown</a><ul class="level-3" id="-geodistancedropdown-list"><li id="-geodistancedropdown-usage-item" class="level-3"><a id="-geodistancedropdown-usage-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown-usage" class="level-3" pref="#-geodistancedropdown-usage">Usage</a></li><li id="-geodistancedropdown-props-item" class="level-3"><a id="-geodistancedropdown-props-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown-props" class="level-3" pref="#-geodistancedropdown-props">Props</a></li><li id="-geodistancedropdown-css-styles-item" class="level-3"><a id="-geodistancedropdown-css-styles-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown-css-styles" class="level-3" pref="#-geodistancedropdown-css-styles">CSS Styles</a></li><li id="-geodistancedropdown-examples-item" class="level-3"><a id="-geodistancedropdown-examples-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown-examples" class="level-3" pref="#-geodistancedropdown-examples">Examples</a></li></ul></li></ul></li></ul></li></ul></div>
+		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-geodistancedropdown-item" class="level-2"><a id="-geodistancedropdown-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown" class="level-2" pref="#-geodistancedropdown">GeoDistanceDropdown</a><ul class="level-3" id="-geodistancedropdown-list"><li id="-geodistancedropdown-usage-item" class="level-3"><a id="-geodistancedropdown-usage-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown-usage" class="level-3" pref="#-geodistancedropdown-usage">Usage</a></li><li id="-geodistancedropdown-props-item" class="level-3"><a id="-geodistancedropdown-props-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown-props" class="level-3" pref="#-geodistancedropdown-props">Props</a></li><li id="-geodistancedropdown-syntax-item" class="level-3"><a id="-geodistancedropdown-syntax-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown-syntax" class="level-3" pref="#-geodistancedropdown-syntax">Syntax</a></li><li id="-geodistancedropdown-styles-item" class="level-3"><a id="-geodistancedropdown-styles-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown-styles" class="level-3" pref="#-geodistancedropdown-styles">Styles</a></li><li id="-geodistancedropdown-extending-item" class="level-3"><a id="-geodistancedropdown-extending-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown-extending" class="level-3" pref="#-geodistancedropdown-extending">Extending</a></li><li id="-geodistancedropdown-examples-item" class="level-3"><a id="-geodistancedropdown-examples-link" href="./v1.0.0/map-components/GeoDistanceDropdown.html#-geodistancedropdown-examples" class="level-3" pref="#-geodistancedropdown-examples">Examples</a></li></ul></li></ul></li></ul></li></ul></div>
 	</div>
-	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/daa4e0f515408d1a9fe4e87aedc23a460d36f209">Aug 27, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a><a class="contributor" href="https://github.com/web-flow" title="web-flow" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/19864447?v=4" alt="web-flow"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1.0.0/map-components/GeoDistanceDropdown.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h2 id="-geodistancedropdown">GeoDistanceDropdown</h2><p><img src="https://i.imgur.com/SidQoYY.png" alt="Image to be displayed"></p><p>A <code style="white-space: pre;">GeoDistanceDropdown</code> sensor component creates a location search based proximity slider UI widget. It is used for distance based filtering.</p><p>Example uses:</p><ul>
+	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/6e2c3c231aa247e26d0a261ac17e73cf74e9eb03">Aug 28, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a><a class="contributor" href="https://github.com/web-flow" title="web-flow" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/19864447?v=4" alt="web-flow"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1.0.0/map-components/GeoDistanceDropdown.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h2 id="-geodistancedropdown">GeoDistanceDropdown</h2><p><img src="https://i.imgur.com/SidQoYY.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">GeoDistanceDropdown</code> creates a location search based dropdown UI component that is connected to a database field. It is used for distance based filtering.</p><p>Example uses:</p><ul>
 <li>finding restaurants in walking distance from your location.</li>
 <li>discovering things to do near a landmark.</li>
-</ul><h3 id="-geodistancedropdown-usage">Usage</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">GeoDistanceDropdown</span><span class="pln">
-  componentId</span><span class="pun">=</span><span class="string"><span class="str">"GeoDistanceDropdownSensor"</span></span><span class="pln">
+</ul><h3 id="-geodistancedropdown-usage">Usage</h3><h4 id="basic-usage">Basic Usage</h4><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">GeoDistanceDropdown</span><span class="pln">
+  componentId</span><span class="pun">=</span><span class="string"><span class="str">"LocationUI"</span></span><span class="pln">
   appbaseField</span><span class="pun">=</span><span class="string"><span class="str">"location"</span></span><span class="pln">
-  title</span><span class="pun">=</span><span class="string"><span class="str">"Geo Distance Dropdown"</span></span><span class="pln">
-  unit</span><span class="pun">=</span><span class="string"><span class="str">"mi"</span></span><span class="pln">
+  title</span><span class="pun">=</span><span class="string"><span class="str">"Location Dropdown Selector"</span></span><span class="pln">
+  data</span><span class="pun">={</span><span class="pln">
+    </span><span class="pun">[</span><span class="pln">
+      </span><span class="pun">{</span><span class="pln"> </span><span class="string"><span class="str">"start"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">0</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"end"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">20</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"label"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"&lt; </span><span class="number"><span class="str">20</span></span><span class="str"> miles"</span></span><span class="pln"> </span><span class="pun">},</span><span class="pln">
+      </span><span class="pun">{</span><span class="pln"> </span><span class="string"><span class="str">"start"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">0</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"end"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">50</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"label"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"&lt; </span><span class="number"><span class="str">50</span></span><span class="str"> miles"</span></span><span class="pln"> </span><span class="pun">},</span><span class="pln">
+      </span><span class="pun">{</span><span class="pln"> </span><span class="string"><span class="str">"start"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">0</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"end"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">100</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"label"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"&lt; </span><span class="number"><span class="str">100</span></span><span class="str"> miles"</span></span><span class="pln"> </span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">]</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><h4 id="usage-with-all-props">Usage With All Props</h4><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">GeoDistanceDropdown</span><span class="pln">
+  componentId</span><span class="pun">=</span><span class="string"><span class="str">"locationUI"</span></span><span class="pln">
+  appbaseField</span><span class="pun">=</span><span class="string"><span class="str">"location"</span></span><span class="pln">
+  title</span><span class="pun">=</span><span class="string"><span class="str">"Location Dropdown Selector"</span></span><span class="pln">
   data</span><span class="pun">={</span><span class="pln">
     </span><span class="pun">[</span><span class="pln">
       </span><span class="pun">{</span><span class="pln"> </span><span class="string"><span class="str">"start"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">0</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"end"</span></span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">20</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"label"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"&lt; </span><span class="number"><span class="str">20</span></span><span class="str"> miles"</span></span><span class="pln"> </span><span class="pun">},</span><span class="pln">
@@ -514,29 +530,72 @@
     label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"&lt; </span><span class="number"><span class="str">20</span></span><span class="str"> miles"</span></span><span class="pln">
   </span><span class="pun">}}</span><span class="pln">
   placeholder</span><span class="pun">=</span><span class="string"><span class="str">"Select a distance range.."</span></span><span class="pln">
+  unit</span><span class="pun">=</span><span class="string"><span class="str">"mi"</span></span><span class="pln">
+  autoLocation</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
+  showFilter</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
+  filterLabel</span><span class="pun">=</span><span class="string"><span class="str">"Location"</span></span><span class="pln">
+  </span><span class="typ">URLParams</span><span class="pun">={</span><span class="kwd">false</span><span class="pun">}</span><span class="pln">
 </span><span class="pun">/&gt;</span></code></pre><h3 id="-geodistancedropdown-props">Props</h3><ul>
 <li><strong class="li-title">componentId</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  unique identifier of the component, can be referenced in other components’ <code style="white-space: pre;">react</code> prop.</li>
-<li><strong class="li-title">appbaseField</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  DB data field to be mapped with the component’s UI view, used when a database query is made on this field.</li>
+<li><strong class="li-title">appbaseField</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  data field to be connected to the component’s UI view.</li>
 <li><strong class="li-title">title</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  title of the component to be shown in the UI.</li>
-<li><strong class="li-title">unit</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  unit for distance measurement, uses <code style="white-space: pre;">mi</code> (for miles) by default. Distance units can be specified from the following:<br>  <img src="https://i.imgur.com/STbeagk.png" alt="screenshot">.</li>
 <li><strong class="li-title">data</strong> <code class="code-with-title" style="white-space: pre;">Object Array</code><br>  collection of UI <code style="white-space: pre;">labels</code> with associated <code style="white-space: pre;">start</code> and <code style="white-space: pre;">end</code> range values.</li>
 <li><strong class="li-title">defaultSelected</strong> <code class="code-with-title" style="white-space: pre;">Object</code> [optional]<br>  pre-select values of the search query with <code style="white-space: pre;">label</code> and <code style="white-space: pre;">location</code> keys.</li>
-<li><strong class="li-title">placeholder</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  set the placeholder to show for the dropdown UI, useful when no option is <code style="white-space: pre;">defaultSelected</code>.</li>
-</ul><h3 id="-geodistancedropdown-css-styles">CSS Styles</h3><p>All reactivebase and reactivemaps components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="https://i.imgur.com/St1dgTz.png" alt="Annotated image"></p><pre><code class="lang-html prettyprint prettyprinted" style="white-space: pre;"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="string"><span class="atv">"rbc rbc-geodistanceslider rbc-title-active rbc-placeholder-active rbc-labels-inactive"</span></span><span class="tag">&gt;</span><span class="pln">
-    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="string"><span class="atv">"row"</span></span><span class="tag">&gt;</span><span class="pln">
-        </span><span class="tag">&lt;h</span><span class="number"><span class="tag">4</span></span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="string"><span class="atv">"rbc-title"</span></span><span class="tag">&gt;</span><span class="pln">Geo Distance Search</span><span class="tag">&lt;/h</span><span class="number"><span class="tag">4</span></span><span class="tag">&gt;</span><span class="pln">
-        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="string"><span class="atv">"rbc-search-container col s</span><span class="number"><span class="atv">12</span></span><span class="atv"> col-xs-</span><span class="number"><span class="atv">12</span></span><span class="atv">"</span></span><span class="tag">&gt;</span><span class="pln">
-            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="string"><span class="atv">"Select"</span></span><span class="tag">&gt;</span><span class="pln">
-              ...
-            </span><span class="tag">&lt;/div&gt;</span><span class="pln">
-        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
-    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
-    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="string"><span class="atv">"col s</span><span class="number"><span class="atv">12</span></span><span class="atv"> col-xs-</span><span class="number"><span class="atv">12</span></span><span class="atv">"</span></span><span class="tag">&gt;</span><span class="pln">
-      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="string"><span class="atv">"Select"</span></span><span class="tag">&gt;</span><span class="pln">
-        ...
-      </span><span class="tag">&lt;/div&gt;</span><span class="pln">
-    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
-</span><span class="tag">&lt;/div&gt;</span></code></pre><h3 id="-geodistancedropdown-examples">Examples</h3><ol>
+<li><strong class="li-title">placeholder</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  set the placeholder to show in the location search box, useful when no option is <code style="white-space: pre;">defaultSelected</code>.</li>
+<li><strong class="li-title">unit</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  unit for distance measurement, uses <code style="white-space: pre;">mi</code> (for miles) by default. Distance units can be specified from the following:<br>  <img src="https://i.imgur.com/STbeagk.png" alt="screenshot"></li>
+<li><strong class="li-title">autoLocation</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  when enabled, preset the user’s current location in the location search box. Defaults to <code style="white-space: pre;">true</code>.</li>
+<li><strong class="li-title">showFilter</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  show as filter when a value is selected in a global selected filters view. Defaults to <code style="white-space: pre;">true</code>.</li>
+<li><strong class="li-title">filterLabel</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  An optional label to display for the component in the global selected filters view. This is only applicable if <code style="white-space: pre;">showFilter</code> is enabled. Default value used here is <code style="white-space: pre;">componentId</code>.</li>
+<li><strong class="li-title">URLParams</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  enable creating a URL query string parameter based on the selected value of the list. This is useful for sharing URLs with the component state. Defaults to <code style="white-space: pre;">false</code>.</li>
+</ul><h3 id="-geodistancedropdown-syntax">Syntax</h3><p>TBD</p><h3 id="-geodistancedropdown-styles">Styles</h3><p>All reactivebase and reactivemaps components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="https://i.imgur.com/St1dgTz.png" alt="Annotated image"></p><h3 id="-geodistancedropdown-extending">Extending</h3><p><code style="white-space: pre;">GeoDistanceDropdown</code> component can be extended to</p><ol>
+<li>customize the look and feel with <code style="white-space: pre;">componentStyle</code>,</li>
+<li>update the underlying DB query with <code style="white-space: pre;">customQuery</code>,</li>
+<li>connect with external interfaces using <code style="white-space: pre;">beforeValueChange</code> and <code style="white-space: pre;">onValueChange</code>.</li>
+</ol><pre><code class="prettyprint prettyprinted" style="white-space: pre;"><span class="tag">&lt;GeoDistanceDropdown</span><span class="pln">
+  ...
+  </span><span class="atn">componentStyle</span><span class="pun">=</span><span class="atv">{{"paddingBottom"</span><span class="pln">: </span><span class="atv">"10px"</span><span class="pln">}}
+  </span><span class="atn">customQuery</span><span class="pun">=</span><span class="atv">{</span><span class="pln">
+    </span><span class="atn">function</span><span class="pln">(</span><span class="atn">value</span><span class="pln">) {
+      </span><span class="atn">return</span><span class="pln"> {
+        </span><span class="atn">query</span><span class="pln">: {
+          </span><span class="pun">//</span><span class="pln"> </span><span class="atn">query</span><span class="pln"> </span><span class="atn">in</span><span class="pln"> </span><span class="atn">the</span><span class="pln"> </span><span class="atn">format</span><span class="pln"> </span><span class="atn">of</span><span class="pln"> </span><span class="atn">Elasticsearch</span><span class="pln"> </span><span class="atn">Query</span><span class="pln"> </span><span class="atn">DSL</span><span class="pln">
+          </span><span class="atn">geo_distance</span><span class="pln">: {
+            </span><span class="atn">distance</span><span class="pln">: (</span><span class="atn">value</span><span class="pln">.</span><span class="atn">end</span><span class="pln"> - </span><span class="atn">value</span><span class="pln">.</span><span class="atn">start</span><span class="pln">)
+                      + </span><span class="atn">value</span><span class="pln">.</span><span class="atn">unit</span><span class="pln">,
+            </span><span class="atn">location_appbaseField</span><span class="pln">: {
+              </span><span class="atn">lat</span><span class="pln">: </span><span class="atn">value</span><span class="pln">.</span><span class="atn">location</span><span class="pln">.</span><span class="atn">split</span><span class="pln">(</span><span class="atv">","</span><span class="pln">)[0]
+              </span><span class="atn">lon</span><span class="pln">: </span><span class="atn">value</span><span class="pln">.</span><span class="atn">location</span><span class="pln">.</span><span class="atn">split</span><span class="pln">(</span><span class="atv">","</span><span class="pln">)[1]
+            }
+          }
+        }
+      }
+    }
+  }
+  </span><span class="atn">beforeValueChange</span><span class="pun">=</span><span class="atv">{</span><span class="pln">
+    </span><span class="atn">function</span><span class="pln">(</span><span class="atn">value</span><span class="pln">) {
+      </span><span class="pun">//</span><span class="pln"> </span><span class="atn">called</span><span class="pln"> </span><span class="atn">before</span><span class="pln"> </span><span class="atn">the</span><span class="pln"> </span><span class="atn">value</span><span class="pln"> </span><span class="atn">is</span><span class="pln"> </span><span class="atn">set</span><span class="pln">
+      </span><span class="pun">//</span><span class="pln"> </span><span class="atn">returns</span><span class="pln"> </span><span class="atn">a</span><span class="pln"> </span><span class="atn">promise</span><span class="pln">
+      </span><span class="atn">return</span><span class="pln"> </span><span class="atn">new</span><span class="pln"> </span><span class="atn">Promise</span><span class="pln">((</span><span class="atn">resolve</span><span class="pln">, </span><span class="atn">reject</span><span class="pln">) </span><span class="tag">=&gt;</span><span class="pln"> {
+        // update state or component props
+        resolve()
+        // or reject()
+      })
+    }
+  }
+  onValueChange={
+    function(value) {
+      console.log("current value: ", value)
+      // set the state
+      // use the value with other js code
+    }
+  }
+/&gt;</span></code></pre><ul>
+<li><strong class="li-title">componentStyle</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  CSS styles to be applied to the <strong>GeoDistanceDropdown</strong> component.</li>
+<li><strong class="li-title">customQuery</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  takes <strong>value</strong> as a parameter and <strong>returns</strong> the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.
+  <code style="white-space: pre;">Note:</code> customQuery is called on value changes in the <strong>GeoDistanceDropdown</strong> component as long as the component is a part of <code style="white-space: pre;">react</code> dependency of at least one other component.</li>
+<li><strong class="li-title">beforeValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s future <strong>value</strong> as a parameter and <strong>returns</strong> a promise. It is called every time before a component’s value changes. The promise, if and when resolved, triggers the execution of the component’s query and if rejected, kills the query execution. This method can act as a gatekeeper for query execution, since it only executes the query after the provided promise has been resolved.</li>
+<li><strong class="li-title">onValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s current <strong>value</strong> as a parameter. It is called every time the component’s value changes. This prop is handy in cases where you want to generate a side-effect on value selection. For example:  You want to show a pop-up modal with the valid discount coupon code when a user searches within a specific location area.</li>
+</ul><h3 id="-geodistancedropdown-examples">Examples</h3><ol>
 <li><p>GeoDistance dropdown with all the default props</p>
 </li>
 <li><p>GeoDistance dropdown with a title</p>
