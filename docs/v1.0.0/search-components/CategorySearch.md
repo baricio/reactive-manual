@@ -79,11 +79,11 @@ Example uses:
 - **filterLabel** `String` [optional]  
     An optional label to display for the component in the global selected filters view. This is only applicable if `showFilter` is enabled. Default value used here is `componentId`.
 - **URLParams** `Boolean` [optional]  
-    enable creating a URL query string parameter based on the selected value of the list. This is useful for sharing URLs with the component state. Defaults to `false`.
+    enable creating a URL query string parameter based on the current value of the search. This is useful for sharing URLs with the component state. Defaults to `false`.
 
 ### Syntax
 
-<p data-height="500" data-theme-id="light" data-slug-hash="dWoVOd" data-default-tab="js" data-user="sids-aquarius" data-embed-version="2" data-pen-title="ReactiveSearch Category Search" class="codepen">See <a href="http://codepen.io/sids-aquarius/pen/dWoVOd/">ReactiveSearch Category Search</a> on codepen.</p>
+<p data-height="500" data-theme-id="light" data-slug-hash="mMQaza" data-default-tab="js" data-user="divyanshu013" data-embed-version="2" data-pen-title="CategorySearch docs example" class="codepen">See the Pen <a href="https://codepen.io/divyanshu013/pen/mMQaza/">CategorySearch docs example</a> by Divyanshu (<a href="https://codepen.io/divyanshu013">@divyanshu013</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Styles
@@ -147,7 +147,7 @@ All reactivebase components are `rbc` namespaced.
 
 ### Examples
 
-<p data-height="500" data-theme-id="light" data-slug-hash="dWoVOd" data-default-tab="result" data-user="sids-aquarius" data-embed-version="2" data-pen-title="ReactiveSearch Category Search" class="codepen">See <a href="http://codepen.io/sids-aquarius/pen/dWoVOd/">ReactiveSearch Category Search</a> on codepen.</p>
+<p data-height="500" data-theme-id="light" data-slug-hash="mMQaza" data-default-tab="result" data-user="divyanshu013" data-embed-version="2" data-pen-title="CategorySearch docs example" class="codepen">See the Pen <a href="https://codepen.io/divyanshu013/pen/mMQaza/">CategorySearch docs example</a> by Divyanshu (<a href="https://codepen.io/divyanshu013">@divyanshu013</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 1. [CategorySearch with all the default props](../playground/?selectedKind=search%2FCategorySearch&selectedStory=Basic&full=0&down=1&left=1&panelRight=0&downPanel=storybooks%2Fstorybook-addon-knobs)
