@@ -16,7 +16,7 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1504101171844"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1504101171845"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1504274867291"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1504274867292"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
 <body role="flatdoc" class="no-literate big-h3">
   <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1.0.0/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -54,7 +54,7 @@
               <a ng-href=./v1.0.0/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/map-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Map Components" href=./v1.0.0/map-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Map Components</span>
            </a>
@@ -71,7 +71,7 @@
               <a ng-href=./v1.0.0/map-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/map-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/search-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Search Components" href=./v1.0.0/search-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Search Components</span>
            </a>
@@ -96,7 +96,7 @@
               <a ng-href=./v1.0.0/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Base Components" href=./v1.0.0/components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Base Components</span>
            </a>
@@ -147,7 +147,7 @@
               <a ng-href=./v1.0.0/components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/advanced/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Advanced Topics" href=./v1.0.0/advanced/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Advanced Topics</span>
            </a>
@@ -168,7 +168,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li" style="display: block;">
+      <ul class="nav navbar-nav category-li">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -313,7 +313,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px;"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -500,7 +500,7 @@
 	<div class="menubar fixed">
 		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="root-item" class="level-1"><ul class="level-2" id="root-list"><li id="-tagcloud-item" class="level-2"><a id="-tagcloud-link" href="./v1.0.0/search-components/TagCloud.html#-tagcloud" class="level-2" pref="#-tagcloud">TagCloud</a><ul class="level-3" id="-tagcloud-list"><li id="-tagcloud-usage-item" class="level-3"><a id="-tagcloud-usage-link" href="./v1.0.0/search-components/TagCloud.html#-tagcloud-usage" class="level-3" pref="#-tagcloud-usage">Usage</a></li><li id="-tagcloud-props-item" class="level-3"><a id="-tagcloud-props-link" href="./v1.0.0/search-components/TagCloud.html#-tagcloud-props" class="level-3" pref="#-tagcloud-props">Props</a></li><li id="-tagcloud-syntax-item" class="level-3"><a id="-tagcloud-syntax-link" href="./v1.0.0/search-components/TagCloud.html#-tagcloud-syntax" class="level-3" pref="#-tagcloud-syntax">Syntax</a></li><li id="-tagcloud-styles-item" class="level-3"><a id="-tagcloud-styles-link" href="./v1.0.0/search-components/TagCloud.html#-tagcloud-styles" class="level-3" pref="#-tagcloud-styles">Styles</a></li><li id="-tagcloud-extending-item" class="level-3"><a id="-tagcloud-extending-link" href="./v1.0.0/search-components/TagCloud.html#-tagcloud-extending" class="level-3" pref="#-tagcloud-extending">Extending</a></li><li id="-tagcloud-examples-item" class="level-3"><a id="-tagcloud-examples-link" href="./v1.0.0/search-components/TagCloud.html#-tagcloud-examples" class="level-3" pref="#-tagcloud-examples">Examples</a></li></ul></li></ul></li></ul></li></ul></div>
 	</div>
-	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/237342ef8a6634a66c77d23da86ba788f8f2e151">Aug 30, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/divyanshu013" title="divyanshu013" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/6682655?v=4" alt="divyanshu013"></a><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1.0.0/search-components/TagCloud.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h2 id="-tagcloud">TagCloud</h2><p><img src="https://i.imgur.com/cQgqeiv.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">TagCloud</code> creates a tag cloud UI component, also known as word cloud or weighted list in visual design. It is a visual representation of text data, typically used to depict tags on websites, or to visualize free form text.</p><p>Example uses:</p><ul>
+	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/9f5406040d111349589d05f9044cbb80786f7650">Sep 1, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/divyanshu013" title="divyanshu013" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/6682655?v=4" alt="divyanshu013"></a><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1.0.0/search-components/TagCloud.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h2 id="-tagcloud">TagCloud</h2><p><img src="https://i.imgur.com/cQgqeiv.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">TagCloud</code> creates a tag cloud UI component, also known as word cloud or weighted list in visual design. It is a visual representation of text data, typically used to depict tags on websites, or to visualize free form text.</p><p>Example uses:</p><ul>
 <li>news websites and blogs displaying related tags to a current post.</li>
 <li>show an e-commerce listings filter of user generated tags.</li>
 </ul><h3 id="-tagcloud-usage">Usage</h3><h4 id="basic-usage">Basic Usage</h4><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">TagCloud</span><span class="pln">
@@ -515,6 +515,9 @@
   multiSelect</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
   defaultSelected</span><span class="pun">={[</span><span class="string"><span class="str">"Auckland"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"Atlanta"</span></span><span class="pun">]}</span><span class="pln">
   initialLoader</span><span class="pun">=</span><span class="string"><span class="str">"Fetching cities.."</span></span><span class="pln">
+  react</span><span class="pun">={{</span><span class="pln">
+    and</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="string"><span class="str">"CategoryFilter"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"SearchFilter"</span></span><span class="pun">]</span><span class="pln">
+  </span><span class="pun">}}</span><span class="pln">
   showFilter</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
   filterLabel</span><span class="pun">=</span><span class="string"><span class="str">"Cities"</span></span><span class="pln">
   </span><span class="typ">URLParams</span><span class="pun">={</span><span class="kwd">false</span><span class="pun">}</span><span class="pln">
@@ -527,6 +530,7 @@
 <li><strong class="li-title">multiSelect</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  whether to support multiple tag selections. Defaults to <code style="white-space: pre;">false</code>.</li>
 <li><strong class="li-title">defaultSelected</strong> <code class="code-with-title" style="white-space: pre;">String or Array</code> [optional]<br>  pre-select tag(s) from the tag cloud. An Array is accepted when <em>multiSelect</em> mode is enabled.</li>
 <li><strong class="li-title">initialLoader</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  text or layout to be displayed while the data is being fetched, accepts <code style="white-space: pre;">String</code> or <code style="white-space: pre;">HTML</code> markup.</li>
+<li><strong class="li-title">react</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  a dependency object defining how this component should react based on the state changes in the specified components. You can read more about how to specify this prop over <a href="v1.0.0/advanced/React.html">here</a>.</li>
 <li><strong class="li-title">showFilter</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  show as filter when a value is selected in a global selected filters view. Defaults to <code style="white-space: pre;">true</code>.</li>
 <li><strong class="li-title">filterLabel</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  An optional label to display for the component in the global selected filters view. This is only applicable if <code style="white-space: pre;">showFilter</code> is enabled. Default value used here is <code style="white-space: pre;">componentId</code>.</li>
 <li><strong class="li-title">URLParams</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  enable creating a URL query string parameter based on the selected value of the tag(s). This is useful for sharing URLs with the component state. Defaults to <code style="white-space: pre;">false</code>.</li>
@@ -534,6 +538,7 @@
 <li>customize the look and feel with <code style="white-space: pre;">componentStyle</code>,</li>
 <li>update the underlying DB query with <code style="white-space: pre;">customQuery</code>,</li>
 <li>connect with external interfaces using <code style="white-space: pre;">beforeValueChange</code> and <code style="white-space: pre;">onValueChange</code>.</li>
+<li>filter data using a combined query context via the <code style="white-space: pre;">react</code> prop.</li>
 </ol><pre><code class="prettyprint prettyprinted" style="white-space: pre;"><span class="tag">&lt;TagCloud</span><span class="pln">
   ...
   </span><span class="atn">componentStyle</span><span class="pun">=</span><span class="atv">{{"paddingBottom"</span><span class="pln">: </span><span class="atv">"10px"</span><span class="pln">}}
@@ -566,6 +571,9 @@
       // use the value with other js code
     }
   }
+  react={{
+    "and": ["PriceFilter"]
+  }}
 /&gt;</span></code></pre><ul>
 <li><strong class="li-title">componentStyle</strong> <code class="code-with-title" style="white-space: pre;">Object</code>
   CSS styles to be applied to the <strong>TagCloud</strong> component.</li>
@@ -574,6 +582,21 @@
   <code style="white-space: pre;">Note:</code> customQuery is called on value changes in the <strong>TagCloud</strong> component as long as the component is a part of <code style="white-space: pre;">react</code> dependency of at least one other component.</li>
 <li><strong class="li-title">beforeValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s future <strong>value</strong> as a parameter and <strong>returns</strong> a promise. It is called everytime before a component’s value changes. The promise, if and when resolved, triggers the execution of the component’s query and if rejected, kills the query execution. This method can act as a gatekeeper for query execution, since it only executes the query after the provided promise has been resolved.</li>
 <li><strong class="li-title">onValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s current <strong>value</strong> as a parameter. It is called everytime the component’s value changes. This prop is handy in cases where you want to generate a side-effect on value selection. For example: You want to show a pop-up modal with the valid discount coupon code when a user picks a category in a TagCloud.</li>
+<li><strong class="li-title">react</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  specify dependent components to reactively update <strong>TagCloud’s</strong> data view.<ul>
+<li><strong class="li-title">key</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  one of <code style="white-space: pre;">and</code>, <code style="white-space: pre;">or</code>, <code style="white-space: pre;">not</code> defines the combining clause.<ul>
+<li><strong class="li-title">and</strong> clause implies that the results will be filtered by matches from <strong>all</strong> of the associated component states.</li>
+<li><strong class="li-title">or</strong> clause implies that the results will be filtered by matches from <strong>at least one</strong> of the associated component states.</li>
+<li><strong class="li-title">not</strong> clause implies that the results will be filtered by an <strong>inverse</strong> match of the associated component states.</li>
+</ul>
+</li>
+<li><strong class="li-title">value</strong> <code class="code-with-title" style="white-space: pre;">String or Array or Object</code>  <ul>
+<li><code style="white-space: pre;">String</code> is used for specifying a single component by its <code style="white-space: pre;">componentId</code>.</li>
+<li><code style="white-space: pre;">Array</code> is used for specifying multiple components by their <code style="white-space: pre;">componentId</code>.</li>
+<li><code style="white-space: pre;">Object</code> is used for nesting other key clauses.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul><h3 id="-tagcloud-examples">Examples</h3><p></p><p data-height="500" data-theme-id="light" data-slug-hash="QMJYGG" data-default-tab="result" data-user="divyanshu013" data-embed-version="2" data-pen-title="TagCloud docs example" class="codepen">See the Pen <a href="https://codepen.io/divyanshu013/pen/QMJYGG/">TagCloud docs example</a> by Divyanshu (<a href="https://codepen.io/divyanshu013">@divyanshu013</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><p>See more stories for TagCloud on playground.</p><ol>
 <li><p><a href="../playground/?knob-title=RatingsFilter&amp;knob-data=%5B%7B&quot;start&quot;%3A4%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;4%20stars%20and%20up&quot;%7D%2C%7B&quot;start&quot;%3A3%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;3%20stars%20and%20up&quot;%7D%2C%7B&quot;start&quot;%3A2%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;2%20stars%20and%20up&quot;%7D%2C%7B&quot;start&quot;%3A1%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;&gt;%201%20stars&quot;%7D%5D&amp;knob-filterLabel=Ratings%20filter&amp;knob-defaultSelected=%7B&quot;start&quot;%3A2%2C&quot;end&quot;%3A5%7D&amp;knob-blacklist%5B0%5D=golf&amp;knob-blacklist%5B1%5D=unknown&amp;knob-maxCategories=10&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;knob-stepValue=1&amp;filterBy=ReactiveSearch&amp;knob-showHistogram=true&amp;knob-maxItems=4&amp;knob-size=100&amp;knob-showCount=true&amp;knob-placeholder=Search%20Cars&amp;knob-showSearch=true&amp;selectedKind=search%2FTagCloud&amp;selectedStory=Basic&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">Tag Cloud with default props</a></p>
 </li>
