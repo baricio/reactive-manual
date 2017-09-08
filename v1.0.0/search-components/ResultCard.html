@@ -16,7 +16,7 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1504872186492"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1504872186493"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1504877721039"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1504877721040"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
 <body role="flatdoc" class="no-literate big-h3">
   <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
@@ -94,6 +94,8 @@
               <a ng-href=./v1.0.0/search-components/ResultCard.html title="Result Card" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ResultCard.html>Result Card</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
               <a ng-href=./v1.0.0/search-components/ResultList.html title="Result List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ResultList.html>Result List</a>
+            </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+              <a ng-href=./v1.0.0/search-components/ViewSwitcher.html title="View Switcher" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ViewSwitcher.html>View Switcher</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
               <a ng-href=./v1.0.0/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
@@ -235,6 +237,8 @@
                   <a ng-href=./v1.0.0/search-components/ResultCard.html title="Result Card" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ResultCard.html>Result Card</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                   <a ng-href=./v1.0.0/search-components/ResultList.html title="Result List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ResultList.html>Result List</a>
+                </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                  <a ng-href=./v1.0.0/search-components/ViewSwitcher.html title="View Switcher" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ViewSwitcher.html>View Switcher</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
                   <a ng-href=./v1.0.0/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/index.html>index</a>
                 </li><!-- end ngRepeat: file in folder.files -->
@@ -418,6 +422,8 @@
                       <a ng-href=./v1.0.0/search-components/ResultCard.html title="Result Card" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ResultCard.html>Result Card</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
                       <a ng-href=./v1.0.0/search-components/ResultList.html title="Result List" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ResultList.html>Result List</a>
+                    </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
+                      <a ng-href=./v1.0.0/search-components/ViewSwitcher.html title="View Switcher" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/ViewSwitcher.html>View Switcher</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
                       <a ng-href=./v1.0.0/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/index.html>index</a>
                     </li><!-- end ngRepeat: file in folder.files -->
@@ -669,6 +675,8 @@
 				<a class="level-2 ng-binding active" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/search-components/ResultCard.html ng-bind="file.label" href=./v1.0.0/search-components/ResultCard.html>Result Card</a>
 			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
 				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/search-components/ResultList.html ng-bind="file.label" href=./v1.0.0/search-components/ResultList.html>Result List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1.0.0/search-components/ViewSwitcher.html ng-bind="file.label" href=./v1.0.0/search-components/ViewSwitcher.html>View Switcher</a>
 			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files -->
 		</ul><!-- end ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] -->
 	</div><!-- end ngIf: !threeColumns && navigationSidebar -->

@@ -153,7 +153,7 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `ResultList` component can be extended to
-1. customize the look and feel with `style` prop,
+1. customize the look and feel with `componentStyle` prop,
 2. render individual result data items using `onData`,
 3. specify how results should be filtered using `react` prop.
 
@@ -161,7 +161,7 @@ All reactivebase components are `rbc` namespaced.
 <ResultList
   ...
   // specify any number of custom styles.
-  style={{"paddingBottom": "10px"}}
+  componentStyle={{"paddingBottom": "10px"}}
   // register a callback function with the `onData` prop.
   onData={
     function(res) {
@@ -180,7 +180,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **style** `Object` [optional]  
+- **componentStyle** `Object` [optional]  
     CSS Styles to be applied to the **ResultList** component.
 - **onData** `Function` [optional]  
     a callback function where user can define how to render the view based on the data changes. In `ResultList`'s case, the expected return format is an object with `image`, `image_size`, `title`, `url` and `desc` keys.
