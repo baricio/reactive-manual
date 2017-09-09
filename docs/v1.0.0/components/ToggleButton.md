@@ -33,13 +33,13 @@ Example uses:
 <ToggleButton
   componentId="MeetupTops"
   dataField="group_topics.topic_name.raw"
-  title="Meetups"
-  defaultSelected=["Social"]
   data={
     [{"label": "Social",   "value": "Social"},
-     {"label": "Travel",   "value": "Travel"},
-     {"label": "Outdoors", "value": "Outdoors"}]
+    {"label": "Travel",   "value": "Travel"},
+    {"label": "Outdoors", "value": "Outdoors"}]
   }
+  title="Meetups"
+  defaultSelected=["Social"]
   multiSelect={true}
   showFilter={true}
   filterLabel="City"
@@ -53,12 +53,12 @@ Example uses:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     data field to be connected to the component's UI view.
+- **data** `Object Array`  
+    collection of UI `labels` with associated `value` to be matched against the database field.
 - **title** `String or HTML` [optional]  
     title of the component to be shown in the UI.
 - **defaultSelected** `Array` [optional]  
     an array of default selected label(s) to pre-select one or more buttons.
-- **data** `Object Array`  
-    collection of UI `labels` with associated `value` to be matched against the database field.
 - **multiSelect** `Boolean` [optional]  
     whether multiple buttons can be selected, defaults to **true**. When set to **false**, only one button can be selected.
 - **showFilter** `Boolean` [optional]  
@@ -82,14 +82,14 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `ToggleButton` component can be extended to
-1. customize the look and feel with `style`,
+1. customize the look and feel with `componentStyle`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`.
 
 ```
 <ToggleButton
   ...
-  style={{"paddingBottom": "10px"}}
+  componentStyle={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
       return {
@@ -122,7 +122,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **style** `Object`
+- **componentStyle** `Object`
     CSS styles to be applied to the **ToggleButton** component.
 - **customQuery** `Function`
     takes **value** as a parameter and **returns** the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.
