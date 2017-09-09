@@ -64,7 +64,7 @@ While `RangeSlider` only requires the above props to be used, it comes with many
     DB data field to be mapped with the component's UI view. The selected range creates a database query on this field.
 - **title** `String or HTML` [optional]  
     title of the component to be shown in the UI.
-- **range** `Object` [optional]  
+- **range** `Object`  
     an object with `start` and `end` keys and corresponding numeric values denoting the minimum and maximum possible slider values.
 - **defaultSelected** `Object` [optional]  
     an object with `start` and `end` keys and corresponding numeric values denoting the pre-selected range values.
@@ -95,7 +95,7 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `RangeSlider` component can be extended to
-1. customize the look and feel with `componentStyle`,
+1. customize the look and feel with `style`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`,
 4. filter data using a combined query context via the `react` prop.
@@ -103,7 +103,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <RangeSlider
   ...
-  componentStyle={{"paddingBottom": "10px"}}
+  style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
       return {
@@ -139,7 +139,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **componentStyle** `Object`  
+- **style** `Object`  
     CSS styles to be applied to the **RangeSlider** component.
 - **customQuery** `Function`  
     takes **value** as a parameter and **returns** the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.

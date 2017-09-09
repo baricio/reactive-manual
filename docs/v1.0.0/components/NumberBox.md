@@ -28,9 +28,9 @@ Example uses:
 <NumberBox
   componentId="NumberBoxSensor"
   dataField="guests"
-  data={{ "label": "Guests", "start": 0, "end": 5 }}
   title="NumberBox component"
   defaultSelected={0}
+  data={{ "label": "Guests", "start": 0, "end": 5 }}
   labelPosition="left"
   queryFormat="gte"
   showFilter={true}
@@ -45,12 +45,12 @@ Example uses:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     DB data field to be mapped with the component's UI view. The selected box value creates a database query on this field.
-- **data** `Object`  
-    an object with `start` and `end` values and optionally an associated `label` to be displayed in the UI.
 - **title** `String or HTML` [optional]  
     title of the component to be shown in the UI.
 - **defaultSelected** `Number` [optional]  
     preset a valid value within the [start, end] range.
+- **data** `Object`  
+    an object with `start` and `end` values and optionally an associated `label` to be displayed in the UI.
 - **labelPosition** `String` [optional]  
     position where label is shown, one of "left", "top", "right", "bottom". Defaults to `left`.
 - **queryFormat** `String` [optional]  
@@ -82,14 +82,14 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `NumberBox` component can be extended to
-1. customize the look and feel with `componentStyle`,
+1. customize the look and feel with `style`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`.
 
 ```
 <NumberBox
   ...
-  componentStyle={{"paddingBottom": "10px"}}
+  style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
       return {
@@ -122,7 +122,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **componentStyle** `Object`  
+- **style** `Object`  
     CSS styles to be applied to the **NumberBox** component.
 - **customQuery** `Function`  
     takes **value** as a parameter and **returns** the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.

@@ -50,10 +50,10 @@ Example uses:
 
 - **componentId** `String`  
     unique identifier of the component, can be referenced in other components' `react` prop.
-- **dataField** `String or Array`  
-    database field(s) to be connected to the component's UI view. DataSearch accepts an Array in addition to String, useful for applying search across multiple fields.
 - **title** `String or HTML` [optional]  
     set the title of the component to be shown in the UI.
+- **dataField** `String or Array`  
+    database field(s) to be connected to the component's UI view. DataSearch accepts an Array in addition to String, useful for applying search across multiple fields.
 - **defaultSelected** `string` [optional]  
     preset the search query text in the search box.
 - **searchWeight** `Array` [optional]  
@@ -95,7 +95,7 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `DataSearch` component can be extended to
-1. customize the look and feel with `componentStyle`,
+1. customize the look and feel with `style`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`.
 4. specify how search suggestions should be filtered using `react` prop.
@@ -103,7 +103,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <DataSearch
   ...
-  componentStyle={{"paddingBottom": "10px"}}
+  style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
       return {
@@ -141,7 +141,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **componentStyle** `Object`  
+- **style** `Object`  
     CSS styles to be applied to the **DataSearch** component.
 - **customQuery** `Function`  
     takes **value** as a parameter and **returns** the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.

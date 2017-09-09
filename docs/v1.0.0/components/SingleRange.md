@@ -20,13 +20,13 @@ Example uses:
 <SingleRange
   componentId="PriceSensor"
   dataField="price"
+  title="Prices"
   data={
     [{"start": 0, "end": 10, "label": "Cheap"},
-    {"start": 11, "end": 20, "label": "Moderate"},
-    {"start": 21, "end": 50, "label": "Pricey"},
-    {"start": 51, "end": 1000, "label": "First Date"}]
+     {"start": 11, "end": 20, "label": "Moderate"},
+     {"start": 21, "end": 50, "label": "Pricey"},
+     {"start": 51, "end": 1000, "label": "First Date"}]
   }
-  title="Prices"
 />
 ```
 
@@ -36,15 +36,15 @@ Example uses:
 <SingleRange
   componentId="PriceSensor"
   dataField="price"
-  data={
-    [{"start": 0, "end": 10, "label": "Cheap"},
-    {"start": 11, "end": 20, "label": "Moderate"},
-    {"start": 21, "end": 50, "label": "Pricey"},
-    {"start": 51, "end": 1000, "label": "First Date"}]
-  }
   title="Prices"
   defaultSelected="Cheap"
   showRadio={true}
+  data={
+    [{"start": 0, "end": 10, "label": "Cheap"},
+     {"start": 11, "end": 20, "label": "Moderate"},
+     {"start": 21, "end": 50, "label": "Pricey"},
+     {"start": 51, "end": 1000, "label": "First Date"}]
+  }
   showFilter={true}
   filterLabel="Price"
   URLParams={false}
@@ -57,14 +57,14 @@ Example uses:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     data field to be connected to the component's UI view. The range items are filtered by a database query on this field.
-- **data** `Object Array`  
-    collection of UI `labels` with associated `start` and `end` range values.
 - **title** `String or HTML` [optional]  
     title of the component to be shown in the UI.
 - **defaultSelected** `String` [optional]  
     pre-select a label from the `data` array.
 - **showRadio** `Boolean` [optional]  
     show radio button icon for each range item. Defaults to `true`.
+- **data** `Object Array`  
+    collection of UI `labels` with associated `start` and `end` range values.
 - **showFilter** `Boolean` [optional]  
     show the selected item as a filter in the [selected filters view](/v1/component/MultiList.html). Defaults to `true`.
 - **filterLabel** `String` [optional]  
@@ -86,14 +86,14 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `SingleRange` component can be extended to
-1. customize the look and feel with `componentStyle`,
+1. customize the look and feel with `style`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`.
 
 ```
 <SingleRange
   ...
-  componentStyle={{"paddingBottom": "10px"}}
+  style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
       return {
@@ -126,7 +126,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **componentStyle** `Object`
+- **style** `Object`
     CSS styles to be applied to the **SingleRange** component.
 - **customQuery** `Function`
     takes **value** as a parameter and **returns** the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.
