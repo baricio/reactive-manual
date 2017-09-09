@@ -53,13 +53,11 @@ Example uses:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     data field to be connected to the component's UI view.
-- **className** `String` [optional]  
-    css class to be injected on the component container.
 - **title** `String or HTML` [optional]  
     title of the component to be shown in the UI.
 - **defaultSelected** `Array` [optional]  
     an array of default selected label(s) to pre-select one or more buttons.
-- **data** `Object Array`  
+- **data** `Object Array` [optional]
     collection of UI `labels` with associated `value` to be matched against the database field.
 - **multiSelect** `Boolean` [optional]  
     whether multiple buttons can be selected, defaults to **true**. When set to **false**, only one button can be selected.

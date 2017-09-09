@@ -45,13 +45,11 @@ Example uses:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     DB data field to be mapped with the component's UI view. The selected box value creates a database query on this field.
-- **className** `String` [optional]  
-    css class to be injected on the component container.
 - **title** `String or HTML` [optional]  
     title of the component to be shown in the UI.
 - **defaultSelected** `Number` [optional]  
     preset a valid value within the [start, end] range.
-- **data** `Object`  
+- **data** `Object` [optional]
     an object with `start` and `end` values and optionally an associated `label` to be displayed in the UI.
 - **labelPosition** `String` [optional]  
     position where label is shown, one of "left", "top", "right", "bottom". Defaults to `left`.
