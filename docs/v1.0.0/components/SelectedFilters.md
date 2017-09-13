@@ -39,15 +39,15 @@ All reactivebase components are `rbc` namespaced.
 
 ## Extending
 
-`SelectedFilters` component can be extended to customize the look and feel with `style`.
+`SelectedFilters` component can be extended to customize the look and feel with `componentStyle`.
 
 ```
 <SelectedFilters
-  style={{"paddingBottom": "10px"}}
+  componentStyle={{"paddingBottom": "10px"}}
 />
 ```
 
-- **style** `Object`
+- **componentStyle** `Object`
     CSS styles to be applied to the **TextField** component.
 
 ### Examples

@@ -52,6 +52,8 @@ Example uses:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     DB data field to be mapped with the component's UI view. The dropdown list items are filtered by a database query on this field.
+- **className** `String` [optional]  
+    css class to be injected on the component container.
 - **title** `String or HTML` [optional]  
     title of the component to be shown in the UI.
 - **size** `Number` [optional]  
@@ -94,7 +96,7 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `MultiDropdownList` component can be extended to
-1. customize the look and feel with `style`,
+1. customize the look and feel with `componentStyle`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`.
 4. specify how options should be filtered or updated using `react` prop.
@@ -102,7 +104,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <MultiDropdownList
   ...
-  style={{"paddingBottom": "10px"}}
+  componentStyle={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
       return {
@@ -140,7 +142,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **style** `Object`  
+- **componentStyle** `Object`  
     CSS styles to be applied to the **MultiDropdownList** component.
 - **customQuery** `Function`  
     takes **value** as a parameter and **returns** the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.

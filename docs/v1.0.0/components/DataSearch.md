@@ -50,6 +50,8 @@ Example uses:
 
 - **componentId** `String`  
     unique identifier of the component, can be referenced in other components' `react` prop.
+- **className** `String` [optional]  
+    css class to be injected on the component container.
 - **title** `String or HTML` [optional]  
     set the title of the component to be shown in the UI.
 - **dataField** `String or Array`  
@@ -95,7 +97,7 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `DataSearch` component can be extended to
-1. customize the look and feel with `style`,
+1. customize the look and feel with `componentStyle`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`.
 4. specify how search suggestions should be filtered using `react` prop.
@@ -103,7 +105,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <DataSearch
   ...
-  style={{"paddingBottom": "10px"}}
+  componentStyle={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
       return {
@@ -141,7 +143,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **style** `Object`  
+- **componentStyle** `Object`  
     CSS styles to be applied to the **DataSearch** component.
 - **customQuery** `Function`  
     takes **value** as a parameter and **returns** the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.

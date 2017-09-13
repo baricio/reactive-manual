@@ -54,6 +54,8 @@ Example uses:
     data fields to be mapped with the component's UI view. MultiLevelMenu component supports three (3) fields passed as an Array for Outer List > Category List > Items Sub List, in that order.
 - **data** `Object Array`  
     an object array of {label:label, value:value} key-value pairs representing the outer list, `label` is displayed in the UI and `value` is its corresponding field value in the database.
+- **className** `String` [optional]  
+    css class to be injected on the component container.
 - **maxCategories** `Number` [optional]  
     control how many items to display in the category list. Defaults to 10.
 - **maxItems** `Number` [optional]  
@@ -75,7 +77,7 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `MultiLevelMenu` component can be extended to
-1. customize the look and feel with `style`,
+1. customize the look and feel with `componentStyle`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`.
 4. specify how search suggestions should be filtered using `react` prop.
@@ -83,7 +85,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <MultiLevelMenu
   ...
-  style={{"paddingBottom": "10px"}}
+  componentStyle={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
       return {
@@ -121,7 +123,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **style** `Object`
+- **componentStyle** `Object`
     CSS styles to be applied to the **MultiLevelMenu** component.
 - **customQuery** `Function`
     takes **value** as a parameter and **returns** the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.

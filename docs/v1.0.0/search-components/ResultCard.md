@@ -83,6 +83,8 @@ Example uses:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     data field to be mapped with `ResultCard`'s UI view, used for providing a sorting context.
+- **className** `String` [optional]  
+    css class to be injected on the component container.
 - **title** `String or HTML` [optional]  
     title of the component, to be shown in the UI.
 - **stream** `Boolean` [optional]  
@@ -151,7 +153,7 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `ResultCard` component can be extended to
-1. customize the look and feel with `style` prop,
+1. customize the look and feel with `componentStyle` prop,
 2. render individual result data items using `onData`,
 3. specify how results should be filtered using `react` prop.
 
@@ -159,7 +161,7 @@ All reactivebase components are `rbc` namespaced.
 <ResultCard
   ...
   // specify any number of custom styles.
-  style={{"paddingBottom": "10px"}}
+  componentStyle={{"paddingBottom": "10px"}}
   // register a callback function with the `onData` prop.
   onData={
     function(res) {
@@ -178,7 +180,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **style** `Object` [optional]  
+- **componentStyle** `Object` [optional]  
     CSS Styles to be applied to the **ResultCard** component.
 - **onData** `Function` [optional]  
     a callback function where user can define how to render the view based on the data changes. In `ResultCard`'s case, the expected return format is an object with `image`, `title`, `url` and `desc` keys.

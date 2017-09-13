@@ -34,6 +34,8 @@ Example uses:
 
 - **data** `Array`  
     an array of objects each with a **label** and **value** to define different views.
+- **className** `String` [optional]  
+    css class to be injected on the component container.
 - **defaultSelected** `String` [optional]
     the default view for the ViewSwitcher, matches the **value** in an object in the `data` array.
 
@@ -52,17 +54,17 @@ TBD
 ## Extending
 
 `ViewSwitcher` component can be extended to
-1. customize the look and feel with `style` prop,
+1. customize the look and feel with `componentStyle` prop,
 
 ```js
 <ViewSwitcher
   ...
   // specify any number of custom styles.
-  style={{"paddingBottom": "10px"}}
+  componentStyle={{"paddingBottom": "10px"}}
 />
 ```
 
-- **style** `Object` [optional]  
+- **componentStyle** `Object` [optional]  
     CSS Styles to be applied to the **ResultCard** component.
 
 ## Examples
