@@ -74,14 +74,13 @@ All reactivebase and reactivemaps components are `rbc` namespaced.
 ## Extending
 
 `PlacesSearch` component can be extended to
-1. customize the look and feel with `className`, `style`,
+1. customize the look and feel with `style`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`.
 
 ```
 <PlacesSearch
   ...
-  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
@@ -120,8 +119,6 @@ All reactivebase and reactivemaps components are `rbc` namespaced.
 />
 ```
 
-- **className** `String`  
-    CSS class to be injected on the component container.
 - **style** `Object`  
     CSS styles to be applied to the **PlacesSearch** component.
 - **customQuery** `Function`  
