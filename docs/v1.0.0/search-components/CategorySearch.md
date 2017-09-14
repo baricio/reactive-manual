@@ -54,8 +54,6 @@ Example uses:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String or Array`  
     data field(s) on which the search query will be applied to. If you want to search across multiple fields, pass them as an `Array`.
-- **className** `String` [optional]  
-    css class to be injected on the component container.
 - **categoryField** `String` [optional]  
     data field which has the category values mapped.
 - **title** `String or HTML` [optional]  
@@ -101,7 +99,7 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `CategorySearch` component can be extended to
-1. customize the look and feel with `componentStyle`,
+1. customize the look and feel with `style`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`.
 4. specify how search suggestions should be filtered using `react` prop.
@@ -109,7 +107,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <CategorySearch
   ...
-  componentStyle={{"paddingBottom": "10px"}}
+  style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
       return {
@@ -147,7 +145,7 @@ All reactivebase components are `rbc` namespaced.
 />
 ```
 
-- **componentStyle** `Object`
+- **style** `Object`
     CSS styles to be applied to the **CategorySearch** component.
 - **customQuery** `Function`
     takes **value** as a parameter and **returns** the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.

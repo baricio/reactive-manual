@@ -62,12 +62,10 @@ Example uses:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     data field to be connected to the component's UI view.
-- **data** `Object Array`  
-    collection of UI `labels` with associated `start` and `end` range values.
-- **className** `String` [optional]  
-    css class to be injected on the component container.
 - **title** `String or HTML` [optional]  
     title of the component to be shown in the UI.
+- **data** `Object Array`  
+    collection of UI `labels` with associated `start` and `end` range values.
 - **defaultSelected** `Object` [optional]  
     pre-select values of the search query with `label` and `location` keys.
 - **placeholder** `String` [optional]  
@@ -99,14 +97,14 @@ All reactivebase and reactivemaps components are `rbc` namespaced.
 ## Extending
 
 `GeoDistanceDropdown` component can be extended to
-1. customize the look and feel with `componentStyle`,
+1. customize the look and feel with `style`,
 2. update the underlying DB query with `customQuery`,
 3. connect with external interfaces using `beforeValueChange` and `onValueChange`.
 
 ```
 <GeoDistanceDropdown
   ...
-  componentStyle={{"paddingBottom": "10px"}}
+  style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
       return {
@@ -145,7 +143,7 @@ All reactivebase and reactivemaps components are `rbc` namespaced.
 />
 ```
 
-- **componentStyle** `Object`  
+- **style** `Object`  
     CSS styles to be applied to the **GeoDistanceDropdown** component.
 - **customQuery** `Function`  
     takes **value** as a parameter and **returns** the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.
