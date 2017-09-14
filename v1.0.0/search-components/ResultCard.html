@@ -16,7 +16,7 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1505380055705"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1505380055706"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1505383461590"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1505383461591"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
 <body role="flatdoc" class="no-literate big-h3">
   <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
           <a ng-href=./v1.0.0/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1.0.0/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -54,7 +54,7 @@
               <a ng-href=./v1.0.0/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
           <a ng-href=./v1.0.0/map-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Map Components" href=./v1.0.0/map-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Map Components</span>
            </a>
@@ -71,7 +71,7 @@
               <a ng-href=./v1.0.0/map-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/map-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
           <a ng-href=./v1.0.0/search-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Search Components" href=./v1.0.0/search-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Search Components</span>
            </a>
@@ -100,7 +100,7 @@
               <a ng-href=./v1.0.0/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
           <a ng-href=./v1.0.0/components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Base Components" href=./v1.0.0/components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Base Components</span>
            </a>
@@ -151,7 +151,7 @@
               <a ng-href=./v1.0.0/components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
           <a ng-href=./v1.0.0/advanced/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Advanced Topics" href=./v1.0.0/advanced/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Advanced Topics</span>
            </a>
@@ -172,7 +172,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li">
+      <ul class="nav navbar-nav category-li" style="display: block;">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -321,7 +321,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px;"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -512,7 +512,7 @@
 	<div class="menubar fixed">
 		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="resultcard-item" class="level-1"><a id="resultcard-link" href="./v1.0.0/search-components/ResultCard.html#resultcard" class="level-1" pref="#resultcard">ResultCard</a><ul class="level-2" id="resultcard-list"><li id="resultcard-usage-item" class="level-2"><a id="resultcard-usage-link" href="./v1.0.0/search-components/ResultCard.html#resultcard-usage" class="level-2" pref="#resultcard-usage">Usage</a><ul class="level-3" id="resultcard-usage-list"><li id="resultcard-usage-basic-usage-item" class="level-3"><a id="resultcard-usage-basic-usage-link" href="./v1.0.0/search-components/ResultCard.html#resultcard-usage-basic-usage" class="level-3" pref="#resultcard-usage-basic-usage">Basic Usage</a></li><li id="resultcard-usage-pagination-usage-with-all-props-item" class="level-3"><a id="resultcard-usage-pagination-usage-with-all-props-link" href="./v1.0.0/search-components/ResultCard.html#resultcard-usage-pagination-usage-with-all-props" class="level-3" pref="#resultcard-usage-pagination-usage-with-all-props">Pagination Usage With All Props</a></li><li id="resultcard-usage-infinite-scroll-usage-with-all-props-item" class="level-3"><a id="resultcard-usage-infinite-scroll-usage-with-all-props-link" href="./v1.0.0/search-components/ResultCard.html#resultcard-usage-infinite-scroll-usage-with-all-props" class="level-3" pref="#resultcard-usage-infinite-scroll-usage-with-all-props">Infinite Scroll Usage With All Props</a></li></ul></li><li id="resultcard-props-item" class="level-2"><a id="resultcard-props-link" href="./v1.0.0/search-components/ResultCard.html#resultcard-props" class="level-2" pref="#resultcard-props">Props</a></li><li id="resultcard-syntax-item" class="level-2"><a id="resultcard-syntax-link" href="./v1.0.0/search-components/ResultCard.html#resultcard-syntax" class="level-2" pref="#resultcard-syntax">Syntax</a></li><li id="resultcard-styles-item" class="level-2"><a id="resultcard-styles-link" href="./v1.0.0/search-components/ResultCard.html#resultcard-styles" class="level-2" pref="#resultcard-styles">Styles</a></li><li id="resultcard-extending-item" class="level-2"><a id="resultcard-extending-link" href="./v1.0.0/search-components/ResultCard.html#resultcard-extending" class="level-2" pref="#resultcard-extending">Extending</a></li><li id="resultcard-examples-item" class="level-2"><a id="resultcard-examples-link" href="./v1.0.0/search-components/ResultCard.html#resultcard-examples" class="level-2" pref="#resultcard-examples">Examples</a></li></ul></li></ul></li></ul></div>
 	</div>
-	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/ee61d952b4f42c313fd153423200d36b0e86be94">Sep 7, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/divyanshu013" title="divyanshu013" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/6682655?v=4" alt="divyanshu013"></a><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1.0.0/search-components/ResultCard.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h1 id="resultcard">ResultCard</h1><p><img src="https://i.imgur.com/aeQs0nn.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">ResultCard</code> creates a result card UI component to display results in a card layout, suited for data that have an associated image.</p><p>Example uses:</p><ul>
+	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/97d8fa8651571b2ad7743ab068eef0e25fad464f">Sep 14, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/dhruvdutt" title="dhruvdutt" target="_blank"><img class="contributor_img img-rounded" src="https://avatars0.githubusercontent.com/u/5961873?v=4" alt="dhruvdutt"></a><a class="contributor" href="https://github.com/divyanshu013" title="divyanshu013" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/6682655?v=4" alt="divyanshu013"></a><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1.0.0/search-components/ResultCard.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h1 id="resultcard">ResultCard</h1><p><img src="https://i.imgur.com/aeQs0nn.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">ResultCard</code> creates a result card UI component to display results in a card layout, suited for data that have an associated image.</p><p>Example uses:</p><ul>
 <li>showing e-commerce search results in a card layout.</li>
 <li>showing filtered hotel booking results in a card layout.</li>
 </ul><p><code style="white-space: pre;">Note:</code> An alternative layout to ResultCard is a <a href="v1.0.0/search-components/ResultList.html"><strong>ResultList</strong></a>, which displays result data in a list format.</p><h2 id="resultcard-usage">Usage</h2><h3 id="resultcard-usage-basic-usage">Basic Usage</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">ResultCard</span><span class="pln">
@@ -597,13 +597,13 @@
   </span><span class="pun">}</span></code></pre>
   The return format for the callback function is an object with <code style="white-space: pre;">image</code>, <code style="white-space: pre;">title</code>, <code style="white-space: pre;">desc</code> and <code style="white-space: pre;">url</code> fields.</li>
 </ul><h2 id="resultcard-syntax">Syntax</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="NvoQBE" data-default-tab="js" data-user="sids-aquarius" data-embed-version="2" data-pen-title="ResultCard docs example" class="codepen">See the Pen <a href="https://codepen.io/sids-aquarius/pen/NvoQBE/">ResultCard docs example</a> by Siddharth Kothari (<a href="https://codepen.io/sids-aquarius">@sids-aquarius</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><h2 id="resultcard-styles">Styles</h2><p>All reactivebase components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="https://i.imgur.com/E8u43mG.png" alt="Annotated image"></p><h2 id="resultcard-extending">Extending</h2><p><code style="white-space: pre;">ResultCard</code> component can be extended to</p><ol>
-<li>customize the look and feel with <code style="white-space: pre;">componentStyle</code> prop,</li>
+<li>customize the look and feel with <code style="white-space: pre;">style</code> prop,</li>
 <li>render individual result data items using <code style="white-space: pre;">onData</code>,</li>
 <li>specify how results should be filtered using <code style="white-space: pre;">react</code> prop.</li>
 </ol><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">ResultCard</span><span class="pln">
   </span><span class="pun">...</span><span class="pln">
   </span><span class="comment"><span class="com">// specify any number of custom styles.</span></span><span class="pln">
-  componentStyle</span><span class="pun">={{</span><span class="string"><span class="str">"paddingBottom"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"</span><span class="number"><span class="str">10</span></span><span class="str">px"</span></span><span class="pun">}}</span><span class="pln">
+  style</span><span class="pun">={{</span><span class="string"><span class="str">"paddingBottom"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"</span><span class="number"><span class="str">10</span></span><span class="str">px"</span></span><span class="pun">}}</span><span class="pln">
   </span><span class="comment"><span class="com">// register a callback function with the `onData` prop.</span></span><span class="pln">
   onData</span><span class="pun">={</span><span class="pln">
     </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">res</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
@@ -620,7 +620,7 @@
     </span><span class="string"><span class="str">"or"</span></span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="string"><span class="str">"searchFilter"</span></span><span class="pun">]</span><span class="pln">
   </span><span class="pun">}</span><span class="pln">
 </span><span class="pun">/&gt;</span></code></pre><ul>
-<li><strong class="li-title">componentStyle</strong> <code class="code-with-title" style="white-space: pre;">Object</code> [optional]<br>  CSS Styles to be applied to the <strong>ResultCard</strong> component.</li>
+<li><strong class="li-title">style</strong> <code class="code-with-title" style="white-space: pre;">Object</code> [optional]<br>  CSS Styles to be applied to the <strong>ResultCard</strong> component.</li>
 <li><strong class="li-title">onData</strong> <code class="code-with-title" style="white-space: pre;">Function</code> [optional]<br>  a callback function where user can define how to render the view based on the data changes. In <code style="white-space: pre;">ResultCard</code>‘s case, the expected return format is an object with <code style="white-space: pre;">image</code>, <code style="white-space: pre;">title</code>, <code style="white-space: pre;">url</code> and <code style="white-space: pre;">desc</code> keys.</li>
 <li><strong class="li-title">react</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  specify dependent components to reactively update <strong>ResultCard’s</strong> data view.<ul>
 <li><strong class="li-title">key</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  one of <code style="white-space: pre;">and</code>, <code style="white-space: pre;">or</code>, <code style="white-space: pre;">not</code> defines the combining clause.<ul>
