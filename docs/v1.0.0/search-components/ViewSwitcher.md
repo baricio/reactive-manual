@@ -52,7 +52,7 @@ TBD
 ## Extending
 
 `ViewSwitcher` component can be extended to
-1. customize the look and feel with `style` prop,
+1. customize the look and feel with `className`, `style`,
 
 ```js
 <ViewSwitcher

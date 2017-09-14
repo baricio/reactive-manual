@@ -83,7 +83,7 @@ All reactivebase components are `rbc` namespaced.
 ## Extending
 
 `ReactiveElement` component can be extended to
-1. customize the look and feel with `style`,
+1. customize the look and feel with `className`, `style`,
 2. render individual result data items using `onData`,
 3. render the entire result data using  `onAllData`.
 
