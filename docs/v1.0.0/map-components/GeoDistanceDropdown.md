@@ -62,10 +62,10 @@ Example uses:
     unique identifier of the component, can be referenced in other components' `react` prop.
 - **dataField** `String`  
     data field to be connected to the component's UI view.
-- **title** `String or HTML` [optional]  
-    title of the component to be shown in the UI.
 - **data** `Object Array`  
     collection of UI `labels` with associated `start` and `end` range values.
+- **title** `String or HTML` [optional]  
+    title of the component to be shown in the UI.
 - **defaultSelected** `Object` [optional]  
     pre-select values of the search query with `label` and `location` keys.
 - **placeholder** `String` [optional]  
@@ -143,6 +143,8 @@ All reactivebase and reactivemaps components are `rbc` namespaced.
 />
 ```
 
+- **className** `String`  
+    css class to be injected on the component container.
 - **style** `Object`  
     CSS styles to be applied to the **GeoDistanceDropdown** component.
 - **customQuery** `Function`  
