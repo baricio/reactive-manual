@@ -81,6 +81,7 @@ All reactivebase and reactivemaps components are `rbc` namespaced.
 ```
 <PlacesSearch
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {

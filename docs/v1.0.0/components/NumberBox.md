@@ -89,6 +89,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <NumberBox
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {

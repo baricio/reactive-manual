@@ -96,6 +96,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <NestedList
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {

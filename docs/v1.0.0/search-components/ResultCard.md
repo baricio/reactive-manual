@@ -158,6 +158,7 @@ All reactivebase components are `rbc` namespaced.
 ```js
 <ResultCard
   ...
+  className="custom-class"
   // specify any number of custom styles.
   style={{"paddingBottom": "10px"}}
   // register a callback function with the `onData` prop.

@@ -112,6 +112,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <DatePicker
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {

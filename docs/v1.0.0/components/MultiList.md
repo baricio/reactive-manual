@@ -109,6 +109,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <MultiList
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {

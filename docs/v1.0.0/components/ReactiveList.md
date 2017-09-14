@@ -150,6 +150,7 @@ All reactivebase components are `rbc` namespaced.
 // Register a callback function with the `onData` prop.
 <ReactiveList
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   onData={
     function(res) {

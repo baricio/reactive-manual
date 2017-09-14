@@ -57,6 +57,7 @@ TBD
 ```js
 <ViewSwitcher
   ...
+  className="custom-class"
   // specify any number of custom styles.
   style={{"paddingBottom": "10px"}}
 />

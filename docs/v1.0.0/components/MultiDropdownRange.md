@@ -93,6 +93,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <MultiDropdownRange
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {

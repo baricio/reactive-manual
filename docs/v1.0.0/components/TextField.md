@@ -72,6 +72,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <TextField
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {

@@ -104,6 +104,7 @@ All reactivebase and reactivemaps components are `rbc` namespaced.
 ```
 <GeoDistanceDropdown
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {

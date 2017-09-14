@@ -103,6 +103,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <SingleList
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {

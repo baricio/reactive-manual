@@ -83,6 +83,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <MultiLevelMenu
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {

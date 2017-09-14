@@ -99,6 +99,7 @@ All reactivebase components are `rbc` namespaced.
 ```
 <DynamicRangeSlider
   ...
+  className="custom-class"
   style={{"paddingBottom": "10px"}}
   customQuery={
     function(value) {
