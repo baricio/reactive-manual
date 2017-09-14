@@ -52,17 +52,17 @@ TBD
 ## Extending
 
 `ViewSwitcher` component can be extended to
-1. customize the look and feel with `style` prop,
+1. customize the look and feel with `componentStyle` prop,
 
 ```js
 <ViewSwitcher
   ...
   // specify any number of custom styles.
-  style={{"paddingBottom": "10px"}}
+  componentStyle={{"paddingBottom": "10px"}}
 />
 ```
 
-- **style** `Object` [optional]  
+- **componentStyle** `Object` [optional]  
     CSS Styles to be applied to the **ResultCard** component.
 
 ## Examples
