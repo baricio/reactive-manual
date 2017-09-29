@@ -16,7 +16,7 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1506685319456"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1506685319457"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1506686613733"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
 <body role="flatdoc" class="no-literate big-h3">
   <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1.0.0/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -54,7 +54,7 @@
               <a ng-href=./v1.0.0/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/map-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Map Components" href=./v1.0.0/map-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Map Components</span>
            </a>
@@ -71,7 +71,7 @@
               <a ng-href=./v1.0.0/map-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/map-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/search-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Search Components" href=./v1.0.0/search-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Search Components</span>
            </a>
@@ -100,7 +100,7 @@
               <a ng-href=./v1.0.0/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Base Components" href=./v1.0.0/components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Base Components</span>
            </a>
@@ -151,7 +151,7 @@
               <a ng-href=./v1.0.0/components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1.0.0/components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1.0.0/advanced/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Advanced Topics" href=./v1.0.0/advanced/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Advanced Topics</span>
            </a>
@@ -172,7 +172,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li" style="display: block;">
+      <ul class="nav navbar-nav category-li">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -321,7 +321,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px;"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -538,7 +538,7 @@
 <li><strong class="li-title">showFilter</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  show as filter when a value is selected in a global selected filters view. Defaults to <code style="white-space: pre;">true</code>.</li>
 <li><strong class="li-title">filterLabel</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  An optional label to display for the component in the global selected filters view. This is only applicable if <code style="white-space: pre;">showFilter</code> is enabled. Default value used here is <code style="white-space: pre;">componentId</code>.</li>
 <li><strong class="li-title">URLParams</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  enable creating a URL query string parameter based on the selected place(s). This is useful for sharing URLs with the component state. Defaults to <code style="white-space: pre;">false</code>.</li>
-</ul><h2 id="placessearch-syntax">Syntax</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="prYzpy" data-default-tab="js" data-user="sids-aquarius" data-embed-version="2" data-pen-title="PlacesSearch docs example" class="codepen">See the Pen <a href="https://codepen.io/sids-aquarius/pen/prYzpy/">PlacesSearch docs example</a> by Siddharth Kothari (<a href="https://codepen.io/sids-aquarius">@sids-aquarius</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><h2 id="placessearch-styles">Styles</h2><p>All reactivebase and reactivemaps components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="https://i.imgur.com/lNFcxSA.png" alt="Annotated image"></p><h2 id="placessearch-extending">Extending</h2><p><code style="white-space: pre;">PlacesSearch</code> component can be extended to</p><ol>
+</ul><h2 id="placessearch-syntax">Syntax</h2><p></p><div class="cp_embed_wrapper"><iframe id="cp_embed_prYzpy" src="//codepen.io/sids-aquarius/embed/prYzpy?height=500&amp;theme-id=light&amp;slug-hash=prYzpy&amp;default-tab=js&amp;user=sids-aquarius&amp;embed-version=2&amp;pen-title=PlacesSearch%20docs%20example" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="PlacesSearch docs example" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><h2 id="placessearch-styles">Styles</h2><p>All reactivebase and reactivemaps components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="https://i.imgur.com/lNFcxSA.png" alt="Annotated image"></p><h2 id="placessearch-extending">Extending</h2><p><code style="white-space: pre;">PlacesSearch</code> component can be extended to</p><ol>
 <li>customize the look and feel with <code style="white-space: pre;">className</code>, <code style="white-space: pre;">style</code>,</li>
 <li>update the underlying DB query with <code style="white-space: pre;">customQuery</code>,</li>
 <li>connect with external interfaces using <code style="white-space: pre;">beforeValueChange</code>, <code style="white-space: pre;">onValueChange</code> and <code style="white-space: pre;">onQueryChange</code>.</li>
@@ -595,7 +595,7 @@
 <li><strong class="li-title">beforeValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s future <strong>value</strong> as a parameter and <strong>returns</strong> a promise. It is called every time before a component’s value changes. The promise, if and when resolved, triggers the execution of the component’s query and if rejected, kills the query execution. This method can act as a gatekeeper for query execution, since it only executes the query after the provided promise has been resolved.</li>
 <li><strong class="li-title">onValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s current <strong>value</strong> as a parameter. It is called every time the component’s value changes. This prop is handy in cases where you want to generate a side-effect on value selection. For example:  You want to show a pop-up modal with the valid discount coupon code when a user searches within a specific location area.</li>
 <li><strong class="li-title">onQueryChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s <strong>prevQuery</strong> and <strong>nextQuery</strong> as parameters. It is called everytime the component’s query changes. This prop is handy in cases where you want to generate a side-effect whenever the component’s query would change.</li>
-</ul><h2 id="placessearch-examples">Examples</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="prYzpy" data-default-tab="result" data-user="sids-aquarius" data-embed-version="2" data-pen-title="PlacesSearch docs example" class="codepen">See the Pen <a href="https://codepen.io/sids-aquarius/pen/prYzpy/">PlacesSearch docs example</a> by Siddharth Kothari (<a href="https://codepen.io/sids-aquarius">@sids-aquarius</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><ol>
+</ul><h2 id="placessearch-examples">Examples</h2><p></p><div class="cp_embed_wrapper"><iframe id="cp_embed_prYzpy" src="//codepen.io/sids-aquarius/embed/prYzpy?height=500&amp;theme-id=light&amp;slug-hash=prYzpy&amp;default-tab=result&amp;user=sids-aquarius&amp;embed-version=2&amp;pen-title=PlacesSearch%20docs%20example" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="PlacesSearch docs example" class="cp_embed_iframe " style="width: 100%; overflow: hidden;"></iframe></div><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><ol>
 <li><a href="../playground/?knob-title=Geo%20Distance%20Slider&amp;knob-URLParams%20%28not%20visible%20in%20storybook%29=true&amp;knob-filterLabel=GeoDistance%20filter&amp;knob-defaultSelected=%7B&quot;label&quot;%3A&quot;Less%20than%20100%20miles&quot;%2C&quot;location&quot;%3A&quot;London&quot;%7D&amp;knob-rangeLabels=%7B&quot;start&quot;%3A&quot;Start&quot;%2C&quot;end&quot;%3A&quot;End&quot;%7D&amp;knob-range=%7B&quot;start&quot;%3A0%2C&quot;end&quot;%3A50%7D&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=true&amp;knob-showFilter=true&amp;knob-placeholderDropdown=Select%20radius&amp;knob-stepValue=1&amp;knob-autoLocation=true&amp;knob-unit=mi&amp;knob-placeholder=Search%20Location&amp;selectedKind=map%2FPlacesSearch&amp;selectedStory=Basic%20-%20Direction%20Demo&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">Using PlacesSearch for navigating directions from Point A to Point B</a></li>
 </ol></div>
 	<!-- ngIf: !threeColumns && navigationSidebar --><div class="rightSidebar menubar ng-scope" data-ng-if="!threeColumns &amp;&amp; navigationSidebar">
