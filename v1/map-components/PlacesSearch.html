@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width">
-  <base href="">
+  <base href="../../">
   <title>Documentation</title>
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -16,9 +16,9 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
-<body role="flatdoc">
-  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: 'html/navbar.html' --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="'html/navbar.html'"><div class="container-fluid ng-scope">
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1507059010205"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1507059010206"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<body role="flatdoc" class="no-literate big-h3">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -54,7 +54,7 @@
               <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/map-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Map Components" href=./v1/map-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Map Components</span>
            </a>
@@ -71,7 +71,7 @@
               <a ng-href=./v1/map-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/map-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/search-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Search Components" href=./v1/search-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Search Components</span>
            </a>
@@ -100,7 +100,7 @@
               <a ng-href=./v1/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Base Components" href=./v1/components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Base Components</span>
            </a>
@@ -151,7 +151,7 @@
               <a ng-href=./v1/components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/advanced/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Advanced Topics" href=./v1/advanced/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Advanced Topics</span>
            </a>
@@ -172,7 +172,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li" style="display: block;">
+      <ul class="nav navbar-nav category-li">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -321,7 +321,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px;"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -508,39 +508,129 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<div class="container-fluid push ng-scope">
-  <div class="row docbase-main" style="min-height: 167px;">
-    <div class="col-xs-12 landing">
-      <h1>Reactive Manual</h1>
-    </div>
-    <div class="col-xs-12 list">
-      <div class="col-xs-12 list">
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/Installation.html">
-        	<span> <i class="fa fa-map-o"></i> Reactive Maps - Installation</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/RSInstallation.html">
-        	<span> <i class="fa fa-search"></i> Reactive Search - Installation</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/RSStart.html">
-        	<span> <i class="fa fa-code"></i> Reactive Search Quick Start</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/components/">
-        	<span> <i class="fa fa-puzzle-piece"></i> Components</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/Data.html">
-        	<span> <i class="fa fa-database"></i> Importing Data</span>
-        </a>
-      </div>
-    </div>
-  </div>
-   <div class="row powered-by">
-    <div class="col-xs-12">
-      <a href="https://github.com/appbaseio/Docbase">
-        <img src="./images/PoweredByDocbase.png" class="img-responsive pull-right" alt="Powered by docbase">
-       </a>
-    </div>
-  </div>
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
+	<div class="menubar fixed">
+		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="placessearch-item" class="level-1"><a id="placessearch-link" href="./v1/map-components/PlacesSearch.html#placessearch" class="level-1" pref="#placessearch">PlacesSearch</a><ul class="level-2" id="placessearch-list"><li id="placessearch-usage-item" class="level-2"><a id="placessearch-usage-link" href="./v1/map-components/PlacesSearch.html#placessearch-usage" class="level-2" pref="#placessearch-usage">Usage</a><ul class="level-3" id="placessearch-usage-list"><li id="placessearch-usage-basic-usage-item" class="level-3"><a id="placessearch-usage-basic-usage-link" href="./v1/map-components/PlacesSearch.html#placessearch-usage-basic-usage" class="level-3" pref="#placessearch-usage-basic-usage">Basic Usage</a></li><li id="placessearch-usage-usage-with-all-props-item" class="level-3"><a id="placessearch-usage-usage-with-all-props-link" href="./v1/map-components/PlacesSearch.html#placessearch-usage-usage-with-all-props" class="level-3" pref="#placessearch-usage-usage-with-all-props">Usage With All Props</a></li><li id="placessearch-usage-props-item" class="level-3"><a id="placessearch-usage-props-link" href="./v1/map-components/PlacesSearch.html#placessearch-usage-props" class="level-3" pref="#placessearch-usage-props">Props</a></li></ul></li><li id="placessearch-syntax-item" class="level-2"><a id="placessearch-syntax-link" href="./v1/map-components/PlacesSearch.html#placessearch-syntax" class="level-2" pref="#placessearch-syntax">Syntax</a></li><li id="placessearch-styles-item" class="level-2"><a id="placessearch-styles-link" href="./v1/map-components/PlacesSearch.html#placessearch-styles" class="level-2" pref="#placessearch-styles">Styles</a></li><li id="placessearch-extending-item" class="level-2"><a id="placessearch-extending-link" href="./v1/map-components/PlacesSearch.html#placessearch-extending" class="level-2" pref="#placessearch-extending">Extending</a></li><li id="placessearch-examples-item" class="level-2"><a id="placessearch-examples-link" href="./v1/map-components/PlacesSearch.html#placessearch-examples" class="level-2" pref="#placessearch-examples">Examples</a></li></ul></li></ul></li></ul></div>
+	</div>
+	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/1b92a3df847716c4f0781830259ca81bcf93bc8b">Oct 2, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a><a class="contributor" href="https://github.com/metagrover" title="metagrover" target="_blank"><img class="contributor_img img-rounded" src="https://avatars2.githubusercontent.com/u/9116042?v=4" alt="metagrover"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1/map-components/PlacesSearch.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h1 id="placessearch">PlacesSearch</h1><p><img src="https://i.imgur.com/XnuaS4T.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">PlacesSearch</code> creates a location search UI component that is connected to a geopoint type field. It queries for places within proximity of the user selected location landmark in the UI.</p><p>Example uses:</p><ul>
+<li>search for landmarks near you.</li>
+<li>search for cities, states, countries.</li>
+</ul><h2 id="placessearch-usage">Usage</h2><h3 id="placessearch-usage-basic-usage">Basic Usage</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">PlacesSearch</span><span class="pln">
+  componentId</span><span class="pun">=</span><span class="string"><span class="str">"PlacesUI"</span></span><span class="pln">
+  dataField</span><span class="pun">=</span><span class="string"><span class="str">"venue_names"</span></span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><h3 id="placessearch-usage-usage-with-all-props">Usage With All Props</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">PlacesSearch</span><span class="pln">
+  componentId</span><span class="pun">=</span><span class="string"><span class="str">"PlacesUI"</span></span><span class="pln">
+  dataField</span><span class="pun">=</span><span class="string"><span class="str">"venue_names"</span></span><span class="pln">
+  title</span><span class="pun">=</span><span class="string"><span class="str">"Venue Search"</span></span><span class="pln">
+  placeholder</span><span class="pun">=</span><span class="string"><span class="str">"Enter a venue name.."</span></span><span class="pln">
+  unit</span><span class="pun">=</span><span class="string"><span class="str">"mi"</span></span><span class="pln">
+  autoLocation</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
+  showFilter</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
+  filterLabel</span><span class="pun">=</span><span class="string"><span class="str">"Location"</span></span><span class="pln">
+  </span><span class="typ">URLParams</span><span class="pun">={</span><span class="kwd">false</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><h3 id="placessearch-usage-props">Props</h3><ul>
+<li><strong class="li-title">componentId</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  unique identifier of the component, can be referenced in other components’ <code style="white-space: pre;">react</code> prop.</li>
+<li><strong class="li-title">dataField</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  DB data field to be mapped with the component’s UI view, used when a database query is made on this field.</li>
+<li><strong class="li-title">title</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  title of the component to be shown in the UI.</li>
+<li><strong class="li-title">placeholder</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  set the placeholder text to be shown in the searchbox field. Defaults to “Search..”.</li>
+<li><strong class="li-title">unit</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  unit for distance measurement, uses <code style="white-space: pre;">mi</code> (for miles) by default. Distance units can be specified from the following:<br>  <img src="https://i.imgur.com/STbeagk.png" alt="screenshot"></li>
+<li><strong class="li-title">autoLocation</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  defaults to <code style="white-space: pre;">true</code>, fetches the user’s current location and prefills it in the searchbox.</li>
+<li><strong class="li-title">showFilter</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  show as filter when a value is selected in a global selected filters view. Defaults to <code style="white-space: pre;">true</code>.</li>
+<li><strong class="li-title">filterLabel</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  An optional label to display for the component in the global selected filters view. This is only applicable if <code style="white-space: pre;">showFilter</code> is enabled. Default value used here is <code style="white-space: pre;">componentId</code>.</li>
+<li><strong class="li-title">URLParams</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  enable creating a URL query string parameter based on the selected place(s). This is useful for sharing URLs with the component state. Defaults to <code style="white-space: pre;">false</code>.</li>
+</ul><h2 id="placessearch-syntax">Syntax</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="prYzpy" data-default-tab="js" data-user="sids-aquarius" data-embed-version="2" data-pen-title="PlacesSearch docs example" class="codepen">See the Pen <a href="https://codepen.io/sids-aquarius/pen/prYzpy/">PlacesSearch docs example</a> by Siddharth Kothari (<a href="https://codepen.io/sids-aquarius">@sids-aquarius</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><h2 id="placessearch-styles">Styles</h2><p>All reactivebase and reactivemaps components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="https://i.imgur.com/lNFcxSA.png" alt="Annotated image"></p><h2 id="placessearch-extending">Extending</h2><p><code style="white-space: pre;">PlacesSearch</code> component can be extended to</p><ol>
+<li>customize the look and feel with <code style="white-space: pre;">className</code>, <code style="white-space: pre;">style</code>,</li>
+<li>update the underlying DB query with <code style="white-space: pre;">customQuery</code>,</li>
+<li>connect with external interfaces using <code style="white-space: pre;">beforeValueChange</code>, <code style="white-space: pre;">onValueChange</code> and <code style="white-space: pre;">onQueryChange</code>.</li>
+</ol><pre><code class="prettyprint prettyprinted" style="white-space: pre;"><span class="tag">&lt;PlacesSearch</span><span class="pln">
+  ...
+  </span><span class="atn">className</span><span class="pun">=</span><span class="atv">"custom-class"</span><span class="pln">
+  </span><span class="atn">style</span><span class="pun">={{</span><span class="atv">"paddingBottom"</span><span class="pln">: </span><span class="atv">"10px"</span><span class="pln">}}
+  </span><span class="atn">customQuery</span><span class="pun">=</span><span class="atv">{</span><span class="pln">
+    </span><span class="atn">function</span><span class="pln">(</span><span class="atn">value</span><span class="pln">) {
+      </span><span class="atn">return</span><span class="pln"> {
+        </span><span class="atn">query</span><span class="pln">: {
+          </span><span class="pun">//</span><span class="pln"> </span><span class="atn">query</span><span class="pln"> </span><span class="atn">in</span><span class="pln"> </span><span class="atn">the</span><span class="pln"> </span><span class="atn">format</span><span class="pln"> </span><span class="atn">of</span><span class="pln"> </span><span class="atn">Elasticsearch</span><span class="pln"> </span><span class="atn">Query</span><span class="pln"> </span><span class="atn">DSL</span><span class="pln">
+          </span><span class="atn">geo_distance</span><span class="pln">: {
+            </span><span class="atn">distance</span><span class="pln">: </span><span class="atv">"20mi"</span><span class="pln">,
+            </span><span class="atn">location_dataField</span><span class="pln">: {
+              </span><span class="atn">lat</span><span class="pln">: </span><span class="atn">value</span><span class="pln">.</span><span class="atn">location</span><span class="pln">.</span><span class="atn">split</span><span class="pln">(</span><span class="atv">","</span><span class="pln">)[0]
+              </span><span class="atn">lon</span><span class="pln">: </span><span class="atn">value</span><span class="pln">.</span><span class="atn">location</span><span class="pln">.</span><span class="atn">split</span><span class="pln">(</span><span class="atv">","</span><span class="pln">)[1]
+            }
+          }
+        }
+      }
+    }
+  }
+  </span><span class="atn">beforeValueChange</span><span class="pun">=</span><span class="atv">{</span><span class="pln">
+    </span><span class="atn">function</span><span class="pln">(</span><span class="atn">value</span><span class="pln">) {
+      </span><span class="pun">//</span><span class="pln"> </span><span class="atn">called</span><span class="pln"> </span><span class="atn">before</span><span class="pln"> </span><span class="atn">the</span><span class="pln"> </span><span class="atn">value</span><span class="pln"> </span><span class="atn">is</span><span class="pln"> </span><span class="atn">set</span><span class="pln">
+      </span><span class="pun">//</span><span class="pln"> </span><span class="atn">returns</span><span class="pln"> </span><span class="atn">a</span><span class="pln"> </span><span class="atn">promise</span><span class="pln">
+      </span><span class="atn">return</span><span class="pln"> </span><span class="atn">new</span><span class="pln"> </span><span class="atn">Promise</span><span class="pln">((</span><span class="atn">resolve</span><span class="pln">, </span><span class="atn">reject</span><span class="pln">) </span><span class="tag">=&gt;</span><span class="pln"> {
+        // update state or component props
+        resolve()
+        // or reject()
+      })
+    }
+  }
+  onValueChange={
+    function(value) {
+      console.log("current value: ", value)
+      // set the state
+      // use the value with other js code
+    }
+  }
+  onQueryChange={
+    function(prevQuery, nextQuery) {
+      // use the query with other js code
+      console.log('prevQuery', prevQuery);
+      console.log('nextQuery', nextQuery);
+    }
+  }
+/&gt;</span></code></pre><ul>
+<li><strong class="li-title">className</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  CSS class to be injected on the component container.</li>
+<li><strong class="li-title">style</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  CSS styles to be applied to the <strong>PlacesSearch</strong> component.</li>
+<li><strong class="li-title">customQuery</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  takes <strong>value</strong> as a parameter and <strong>returns</strong> the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.
+  <code style="white-space: pre;">Note:</code> customQuery is called on value changes in the <strong>PlacesSearch</strong> component as long as the component is a part of <code style="white-space: pre;">react</code> dependency of at least one other component.</li>
+<li><strong class="li-title">beforeValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s future <strong>value</strong> as a parameter and <strong>returns</strong> a promise. It is called every time before a component’s value changes. The promise, if and when resolved, triggers the execution of the component’s query and if rejected, kills the query execution. This method can act as a gatekeeper for query execution, since it only executes the query after the provided promise has been resolved.</li>
+<li><strong class="li-title">onValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s current <strong>value</strong> as a parameter. It is called every time the component’s value changes. This prop is handy in cases where you want to generate a side-effect on value selection. For example:  You want to show a pop-up modal with the valid discount coupon code when a user searches within a specific location area.</li>
+<li><strong class="li-title">onQueryChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s <strong>prevQuery</strong> and <strong>nextQuery</strong> as parameters. It is called everytime the component’s query changes. This prop is handy in cases where you want to generate a side-effect whenever the component’s query would change.</li>
+</ul><h2 id="placessearch-examples">Examples</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="prYzpy" data-default-tab="result" data-user="sids-aquarius" data-embed-version="2" data-pen-title="PlacesSearch docs example" class="codepen">See the Pen <a href="https://codepen.io/sids-aquarius/pen/prYzpy/">PlacesSearch docs example</a> by Siddharth Kothari (<a href="https://codepen.io/sids-aquarius">@sids-aquarius</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><ol>
+<li><a href="../playground/?knob-title=Geo%20Distance%20Slider&amp;knob-URLParams%20%28not%20visible%20in%20storybook%29=true&amp;knob-filterLabel=GeoDistance%20filter&amp;knob-defaultSelected=%7B&quot;label&quot;%3A&quot;Less%20than%20100%20miles&quot;%2C&quot;location&quot;%3A&quot;London&quot;%7D&amp;knob-rangeLabels=%7B&quot;start&quot;%3A&quot;Start&quot;%2C&quot;end&quot;%3A&quot;End&quot;%7D&amp;knob-range=%7B&quot;start&quot;%3A0%2C&quot;end&quot;%3A50%7D&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=true&amp;knob-showFilter=true&amp;knob-placeholderDropdown=Select%20radius&amp;knob-stepValue=1&amp;knob-autoLocation=true&amp;knob-unit=mi&amp;knob-placeholder=Search%20Location&amp;selectedKind=map%2FPlacesSearch&amp;selectedStory=Basic%20-%20Direction%20Demo&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">Using PlacesSearch for navigating directions from Point A to Point B</a></li>
+</ol></div>
+	<!-- ngIf: !threeColumns && navigationSidebar --><div class="rightSidebar menubar ng-scope" data-ng-if="!threeColumns &amp;&amp; navigationSidebar">
+		<!-- ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><ul class="menu section ng-scope" ng-repeat="folder in map[currentVersion]" data-ng-if="folder.name === currentFolder">
+			<li>
+				<div class="other-pages">Other pages in</div>
+			</li>
+			<li>
+				<a class="level-1 ng-binding" ng-href=./v1/map-components/index.html ng-bind="folder.name" href=./v1/map-components/index.html>map-components</a>
+			</li>
+			<!-- ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/map-components/GeoDistanceSlider.html ng-bind="file.label" href=./v1/map-components/GeoDistanceSlider.html>Geo Distance Slider</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/map-components/GeoDistanceDropdown.html ng-bind="file.label" href=./v1/map-components/GeoDistanceDropdown.html>Geo Distance Dropdown</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding active" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/map-components/PlacesSearch.html ng-bind="file.label" href=./v1/map-components/PlacesSearch.html>Places Search</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/map-components/ReactiveMap.html ng-bind="file.label" href=./v1/map-components/ReactiveMap.html>Reactive Map</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files -->
+		</ul><!-- end ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] -->
+	</div><!-- end ngIf: !threeColumns && navigationSidebar -->
+	<div class="footer content">
+		<div class="row">
+			<div class="col-xs-12">
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./v1/map-components/GeoDistanceDropdown.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./v1/map-components/ReactiveMap.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
 </div>
+<!-- ngIf: index -->
 </div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>

@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width">
-  <base href="">
+  <base href="../../">
   <title>Documentation</title>
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -16,9 +16,9 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
-<body role="flatdoc">
-  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: 'html/navbar.html' --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="'html/navbar.html'"><div class="container-fluid ng-scope">
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1507059012152"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1507059012153"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<body role="flatdoc" class="no-literate big-h3">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -54,7 +54,7 @@
               <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/map-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Map Components" href=./v1/map-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Map Components</span>
            </a>
@@ -71,7 +71,7 @@
               <a ng-href=./v1/map-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/map-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/search-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Search Components" href=./v1/search-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Search Components</span>
            </a>
@@ -100,7 +100,7 @@
               <a ng-href=./v1/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Base Components" href=./v1/components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Base Components</span>
            </a>
@@ -151,7 +151,7 @@
               <a ng-href=./v1/components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/advanced/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Advanced Topics" href=./v1/advanced/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Advanced Topics</span>
            </a>
@@ -172,7 +172,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li" style="display: block;">
+      <ul class="nav navbar-nav category-li">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -321,7 +321,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px;"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -508,39 +508,174 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<div class="container-fluid push ng-scope">
-  <div class="row docbase-main" style="min-height: 167px;">
-    <div class="col-xs-12 landing">
-      <h1>Reactive Manual</h1>
-    </div>
-    <div class="col-xs-12 list">
-      <div class="col-xs-12 list">
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/Installation.html">
-        	<span> <i class="fa fa-map-o"></i> Reactive Maps - Installation</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/RSInstallation.html">
-        	<span> <i class="fa fa-search"></i> Reactive Search - Installation</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/RSStart.html">
-        	<span> <i class="fa fa-code"></i> Reactive Search Quick Start</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/components/">
-        	<span> <i class="fa fa-puzzle-piece"></i> Components</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/Data.html">
-        	<span> <i class="fa fa-database"></i> Importing Data</span>
-        </a>
-      </div>
-    </div>
-  </div>
-   <div class="row powered-by">
-    <div class="col-xs-12">
-      <a href="https://github.com/appbaseio/Docbase">
-        <img src="./images/PoweredByDocbase.png" class="img-responsive pull-right" alt="Powered by docbase">
-       </a>
-    </div>
-  </div>
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
+	<div class="menubar fixed">
+		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="multilevelmenu-item" class="level-1"><a id="multilevelmenu-link" href="./v1/search-components/MultiLevelMenu.html#multilevelmenu" class="level-1" pref="#multilevelmenu">MultiLevelMenu</a><ul class="level-2" id="multilevelmenu-list"><li id="multilevelmenu-usage-item" class="level-2"><a id="multilevelmenu-usage-link" href="./v1/search-components/MultiLevelMenu.html#multilevelmenu-usage" class="level-2" pref="#multilevelmenu-usage">Usage</a><ul class="level-3" id="multilevelmenu-usage-list"><li id="multilevelmenu-usage-basic-usage-item" class="level-3"><a id="multilevelmenu-usage-basic-usage-link" href="./v1/search-components/MultiLevelMenu.html#multilevelmenu-usage-basic-usage" class="level-3" pref="#multilevelmenu-usage-basic-usage">Basic Usage</a></li><li id="multilevelmenu-usage-usage-with-all-props-item" class="level-3"><a id="multilevelmenu-usage-usage-with-all-props-link" href="./v1/search-components/MultiLevelMenu.html#multilevelmenu-usage-usage-with-all-props" class="level-3" pref="#multilevelmenu-usage-usage-with-all-props">Usage With All Props</a></li></ul></li><li id="multilevelmenu-props-item" class="level-2"><a id="multilevelmenu-props-link" href="./v1/search-components/MultiLevelMenu.html#multilevelmenu-props" class="level-2" pref="#multilevelmenu-props">Props</a></li><li id="multilevelmenu-syntax-item" class="level-2"><a id="multilevelmenu-syntax-link" href="./v1/search-components/MultiLevelMenu.html#multilevelmenu-syntax" class="level-2" pref="#multilevelmenu-syntax">Syntax</a></li><li id="multilevelmenu-styles-item" class="level-2"><a id="multilevelmenu-styles-link" href="./v1/search-components/MultiLevelMenu.html#multilevelmenu-styles" class="level-2" pref="#multilevelmenu-styles">Styles</a></li><li id="multilevelmenu-extending-item" class="level-2"><a id="multilevelmenu-extending-link" href="./v1/search-components/MultiLevelMenu.html#multilevelmenu-extending" class="level-2" pref="#multilevelmenu-extending">Extending</a></li><li id="multilevelmenu-examples-item" class="level-2"><a id="multilevelmenu-examples-link" href="./v1/search-components/MultiLevelMenu.html#multilevelmenu-examples" class="level-2" pref="#multilevelmenu-examples">Examples</a></li></ul></li></ul></li></ul></div>
+	</div>
+	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/ce4e140c5533b263c97018883179a03cc4904b24">Oct 1, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1/search-components/MultiLevelMenu.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h1 id="multilevelmenu">MultiLevelMenu</h1><p><img src="https://i.imgur.com/pyJzImP.png" alt="Image to be displayed"></p><p>A <code style="white-space: pre;">MultiLevelMenu</code> component creates a multi-level menu UI sensor. It is useful for displaying prominent items by categories.</p><p>Example uses:</p><ul>
+<li>Show prominent items on an e-commerce app’s front page.</li>
+</ul><h2 id="multilevelmenu-usage">Usage</h2><h3 id="multilevelmenu-usage-basic-usage">Basic Usage</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">MultiLevelMenu</span><span class="pln">
+  componentId</span><span class="pun">=</span><span class="string"><span class="str">"CategorySensor"</span></span><span class="pln">
+  dataField</span><span class="pun">={[</span><span class="string"><span class="str">"brand.raw"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"vehicleType.raw"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"model.raw"</span></span><span class="pun">]}</span><span class="pln">
+  data</span><span class="pun">={[</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"Volkswagen"</span></span><span class="pun">,</span><span class="pln"> value</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"volkswagen"</span></span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"BMW"</span></span><span class="pun">,</span><span class="pln"> value</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"bmw"</span></span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"Audi"</span></span><span class="pun">,</span><span class="pln"> value</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"audi"</span></span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"Nissan"</span></span><span class="pun">,</span><span class="pln"> value</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"nissan"</span></span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"Fiat"</span></span><span class="pun">,</span><span class="pln"> value</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"fiat"</span></span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">]}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><h3 id="multilevelmenu-usage-usage-with-all-props">Usage With All Props</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">MultiLevelMenu</span><span class="pln">
+  componentId</span><span class="pun">=</span><span class="string"><span class="str">"CategorySensor"</span></span><span class="pln">
+  dataField</span><span class="pun">={[</span><span class="string"><span class="str">"brand.raw"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"vehicleType.raw"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"model.raw"</span></span><span class="pun">]}</span><span class="pln">
+  data</span><span class="pun">={[</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"Volkswagen"</span></span><span class="pun">,</span><span class="pln"> value</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"volkswagen"</span></span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"BMW"</span></span><span class="pun">,</span><span class="pln"> value</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"bmw"</span></span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"Audi"</span></span><span class="pun">,</span><span class="pln"> value</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"audi"</span></span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"Nissan"</span></span><span class="pun">,</span><span class="pln"> value</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"nissan"</span></span><span class="pun">},</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">label</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"Fiat"</span></span><span class="pun">,</span><span class="pln"> value</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"fiat"</span></span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">]}</span><span class="pln">
+  maxCategories</span><span class="pun">={</span><span class="number"><span class="lit">10</span></span><span class="pun">}</span><span class="pln">
+  maxItems</span><span class="pun">={</span><span class="number"><span class="lit">4</span></span><span class="pun">}</span><span class="pln">
+  blacklist</span><span class="pun">={[</span><span class="string"><span class="str">"other"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"misc"</span></span><span class="pun">]}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><h2 id="multilevelmenu-props">Props</h2><ul>
+<li><strong class="li-title">componentId</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  unique identifier of the component, can be referenced in other components’ <code style="white-space: pre;">react</code> prop.</li>
+<li><strong class="li-title">dataField</strong> <code class="code-with-title" style="white-space: pre;">Array</code><br>  data fields to be mapped with the component’s UI view. MultiLevelMenu component supports three (3) fields passed as an Array for Outer List &gt; Category List &gt; Items Sub List, in that order.</li>
+<li><strong class="li-title">data</strong> <code class="code-with-title" style="white-space: pre;">Object Array</code><br>  an object array of {label:label, value:value} key-value pairs representing the outer list, <code style="white-space: pre;">label</code> is displayed in the UI and <code style="white-space: pre;">value</code> is its corresponding field value in the database.</li>
+<li><strong class="li-title">maxCategories</strong> <code class="code-with-title" style="white-space: pre;">Number</code> [optional]<br>  control how many items to display in the category list. Defaults to 10.</li>
+<li><strong class="li-title">maxItems</strong> <code class="code-with-title" style="white-space: pre;">Number</code> [optional]<br>  control how many items to display in the items sub list. Defaults to 4.</li>
+<li><strong class="li-title">blacklist</strong> <code class="code-with-title" style="white-space: pre;">String Array</code><br>  hides all the matching values in category list and the items sub list.</li>
+</ul><h2 id="multilevelmenu-syntax">Syntax</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="jLdgzd" data-default-tab="js" data-user="sids-aquarius" data-embed-version="2" data-pen-title="MultiLevelMenu docs example" class="codepen">See the Pen <a href="https://codepen.io/sids-aquarius/pen/jLdgzd/">MultiLevelMenu docs example</a> by Siddharth Kothari (<a href="https://codepen.io/sids-aquarius">@sids-aquarius</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><h2 id="multilevelmenu-styles">Styles</h2><p>All reactivebase components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="https://i.imgur.com/GHJnKsB.png" alt="Annotated image"></p><h2 id="multilevelmenu-extending">Extending</h2><p><code style="white-space: pre;">MultiLevelMenu</code> component can be extended to</p><ol>
+<li>customize the look and feel with <code style="white-space: pre;">className</code>, <code style="white-space: pre;">style</code>,</li>
+<li>update the underlying DB query with <code style="white-space: pre;">customQuery</code>,</li>
+<li>connect with external interfaces using <code style="white-space: pre;">beforeValueChange</code>, <code style="white-space: pre;">onValueChange</code> and <code style="white-space: pre;">onQueryChange</code>,</li>
+<li>specify how search suggestions should be filtered using <code style="white-space: pre;">react</code> prop.</li>
+</ol><pre><code class="prettyprint prettyprinted" style="white-space: pre;"><span class="tag">&lt;MultiLevelMenu</span><span class="pln">
+  ...
+  </span><span class="atn">className</span><span class="pun">=</span><span class="atv">"custom-class"</span><span class="pln">
+  </span><span class="atn">style</span><span class="pun">={{</span><span class="atv">"paddingBottom"</span><span class="pln">: </span><span class="atv">"10px"</span><span class="pln">}}
+  </span><span class="atn">customQuery</span><span class="pun">=</span><span class="atv">{</span><span class="pln">
+    </span><span class="atn">function</span><span class="pln">(</span><span class="atn">value</span><span class="pln">) {
+      </span><span class="atn">return</span><span class="pln"> {
+        </span><span class="atn">query</span><span class="pln">: {
+          </span><span class="atn">match</span><span class="pln">: {
+            </span><span class="atn">data_field</span><span class="pln">: </span><span class="atv">"this is a test"</span><span class="pln">
+          }
+        }
+      }
+    }
+  }
+  </span><span class="atn">beforeValueChange</span><span class="pun">=</span><span class="atv">{</span><span class="pln">
+    </span><span class="atn">function</span><span class="pln">(</span><span class="atn">value</span><span class="pln">) {
+      </span><span class="pun">//</span><span class="pln"> </span><span class="atn">called</span><span class="pln"> </span><span class="atn">before</span><span class="pln"> </span><span class="atn">the</span><span class="pln"> </span><span class="atn">value</span><span class="pln"> </span><span class="atn">is</span><span class="pln"> </span><span class="atn">set</span><span class="pln">
+      </span><span class="pun">//</span><span class="pln"> </span><span class="atn">returns</span><span class="pln"> </span><span class="atn">a</span><span class="pln"> </span><span class="atn">promise</span><span class="pln">
+      </span><span class="atn">return</span><span class="pln"> </span><span class="atn">new</span><span class="pln"> </span><span class="atn">Promise</span><span class="pln">((</span><span class="atn">resolve</span><span class="pln">, </span><span class="atn">reject</span><span class="pln">) </span><span class="tag">=&gt;</span><span class="pln"> {
+        // update state or component props
+        resolve()
+        // or reject()
+      })
+    }
+  }
+  onValueChange={
+    function(value) {
+      console.log("current value: ", value)
+      // set the state
+      // use the value with other js code
+    }
+  }
+  onQueryChange={
+    function(prevQuery, nextQuery) {
+      // use the query with other js code
+      console.log('prevQuery', prevQuery);
+      console.log('nextQuery', nextQuery);
+    }
+  }
+  // specify how and which suggestions are filtered using `react` prop.
+  react={
+    "and": ["pricingFilter", "dateFilter"],
+    "or": ["searchFilter"]
+  }
+/&gt;</span></code></pre><ul>
+<li><strong class="li-title">className</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  CSS class to be injected on the component container.</li>
+<li><strong class="li-title">style</strong> <code class="code-with-title" style="white-space: pre;">Object</code>
+  CSS styles to be applied to the <strong>MultiLevelMenu</strong> component.</li>
+<li><strong class="li-title">customQuery</strong> <code class="code-with-title" style="white-space: pre;">Function</code>
+  takes <strong>value</strong> as a parameter and <strong>returns</strong> the data query to be applied to the component, as defined in Elasticsearch v2.4 Query DSL.
+  <code style="white-space: pre;">Note:</code> customQuery is called on value changes in the <strong>MultiLevelMenu</strong> component as long as the component is a part of <code style="white-space: pre;">react</code> dependency of at least one other component.</li>
+<li><strong class="li-title">beforeValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s future <strong>value</strong> as a parameter and <strong>returns</strong> a promise. It is called everytime before a component’s value changes. The promise, if and when resolved, triggers the execution of the component’s query and if rejected, kills the query execution. This method can act as a gatekeeper for query execution, since it only executes the query after the provided promise has been resolved.</li>
+<li><strong class="li-title">onValueChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s current <strong>value</strong> as a parameter. It is called everytime the component’s value changes. This prop is handy in cases where you want to generate a side-effect on value selection. For example: You want to show a pop-up modal with the valid discount coupon code when a user searches for a product in a MultiLevelMenu.</li>
+<li><strong class="li-title">onQueryChange</strong> <code class="code-with-title" style="white-space: pre;">Function</code><br>  is a callback function which accepts component’s <strong>prevQuery</strong> and <strong>nextQuery</strong> as parameters. It is called everytime the component’s query changes. This prop is handy in cases where you want to generate a side-effect whenever the component’s query would change.</li>
+<li><strong class="li-title">react</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  specify dependent components to reactively update <strong>MultiLevelMenu’s</strong> suggestions.<ul>
+<li><strong class="li-title">key</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  one of <code style="white-space: pre;">and</code>, <code style="white-space: pre;">or</code>, <code style="white-space: pre;">not</code> defines the combining clause.<ul>
+<li><strong class="li-title">and</strong> clause implies that the results will be filtered by matches from <strong>all</strong> of the associated component states.</li>
+<li><strong class="li-title">or</strong> clause implies that the results will be filtered by matches from <strong>at least one</strong> of the associated component states.</li>
+<li><strong class="li-title">not</strong> clause implies that the results will be filtered by an <strong>inverse</strong> match of the associated component states.</li>
+</ul>
+</li>
+<li><strong class="li-title">value</strong> <code class="code-with-title" style="white-space: pre;">String or Array or Object</code>  <ul>
+<li><code style="white-space: pre;">String</code> is used for specifying a single component by its <code style="white-space: pre;">componentId</code>.</li>
+<li><code style="white-space: pre;">Array</code> is used for specifying multiple components by their <code style="white-space: pre;">componentId</code>.</li>
+<li><code style="white-space: pre;">Object</code> is used for nesting other key clauses.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h2 id="multilevelmenu-examples">Examples</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="jLdgzd" data-default-tab="result" data-user="sids-aquarius" data-embed-version="2" data-pen-title="MultiLevelMenu docs example" class="codepen">See the Pen <a href="https://codepen.io/sids-aquarius/pen/jLdgzd/">MultiLevelMenu docs example</a> by Siddharth Kothari (<a href="https://codepen.io/sids-aquarius">@sids-aquarius</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><ol>
+<li><p><a href="../playground/?knob-title=NestedList%3A%20Car%20Filter&amp;knob-data=%5B%7B&quot;label&quot;%3A&quot;Volkswagen&quot;%2C&quot;value&quot;%3A&quot;volkswagen&quot;%7D%2C%7B&quot;label&quot;%3A&quot;BMW&quot;%2C&quot;value&quot;%3A&quot;bmw&quot;%7D%5D&amp;knob-filterLabel=Cars&amp;knob-defaultSelected%5B0%5D=bmw&amp;knob-defaultSelected%5B1%5D=x%20series&amp;knob-blacklist%5B0%5D=&amp;knob-maxCategories=10&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;filterBy=ReactiveSearch&amp;knob-maxItems=4&amp;knob-size=100&amp;knob-showCount=true&amp;knob-placeholder=Search%20Cars&amp;knob-showSearch=true&amp;selectedKind=search%2FMultiLevelMenu&amp;selectedStory=Basic&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">MultiLevelMenu with all the default props</a></p>
+</li>
+<li><p><a href="../playground/?knob-title=NestedList%3A%20Car%20Filter&amp;knob-data=%5B%7B&quot;label&quot;%3A&quot;Volkswagen&quot;%2C&quot;value&quot;%3A&quot;volkswagen&quot;%7D%2C%7B&quot;label&quot;%3A&quot;BMW&quot;%2C&quot;value&quot;%3A&quot;bmw&quot;%7D%5D&amp;knob-filterLabel=Cars&amp;knob-defaultSelected%5B0%5D=bmw&amp;knob-defaultSelected%5B1%5D=x%20series&amp;knob-blacklist%5B0%5D=golf&amp;knob-blacklist%5B1%5D=unknown&amp;knob-maxCategories=10&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;filterBy=ReactiveSearch&amp;knob-maxItems=4&amp;knob-size=100&amp;knob-showCount=true&amp;knob-placeholder=Search%20Cars&amp;knob-showSearch=true&amp;selectedKind=search%2FMultiLevelMenu&amp;selectedStory=With%20Blacklist&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">MultiLevelMenu with a blacklist</a></p>
+</li>
+<li><p><a href="../playground/?knob-title=NestedList%3A%20Car%20Filter&amp;knob-data=%5B%7B&quot;label&quot;%3A&quot;Volkswagen&quot;%2C&quot;value&quot;%3A&quot;volkswagen&quot;%7D%2C%7B&quot;label&quot;%3A&quot;BMW&quot;%2C&quot;value&quot;%3A&quot;bmw&quot;%7D%5D&amp;knob-filterLabel=Cars&amp;knob-defaultSelected%5B0%5D=bmw&amp;knob-defaultSelected%5B1%5D=x%20series&amp;knob-blacklist%5B0%5D=golf&amp;knob-blacklist%5B1%5D=unknown&amp;knob-maxCategories=6&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;filterBy=ReactiveSearch&amp;knob-maxItems=4&amp;knob-size=100&amp;knob-showCount=true&amp;knob-placeholder=Search%20Cars&amp;knob-showSearch=true&amp;selectedKind=search%2FMultiLevelMenu&amp;selectedStory=With%20maxCategories&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">MultiLevelMenu with maxCategories set</a></p>
+</li>
+<li><p><a href="../playground/?knob-title=NestedList%3A%20Car%20Filter&amp;knob-data=%5B%7B&quot;label&quot;%3A&quot;Volkswagen&quot;%2C&quot;value&quot;%3A&quot;volkswagen&quot;%7D%2C%7B&quot;label&quot;%3A&quot;BMW&quot;%2C&quot;value&quot;%3A&quot;bmw&quot;%7D%5D&amp;knob-filterLabel=Cars&amp;knob-defaultSelected%5B0%5D=bmw&amp;knob-defaultSelected%5B1%5D=x%20series&amp;knob-blacklist%5B0%5D=golf&amp;knob-blacklist%5B1%5D=unknown&amp;knob-maxCategories=6&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;filterBy=ReactiveSearch&amp;knob-maxItems=3&amp;knob-size=100&amp;knob-showCount=true&amp;knob-placeholder=Search%20Cars&amp;knob-showSearch=true&amp;selectedKind=search%2FMultiLevelMenu&amp;selectedStory=With%20maxItems&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">MultiLevelMenu with maxItems set</a></p>
+</li>
+<li><p><a href="../playground/?knob-title=NestedList%3A%20Car%20Filter&amp;knob-data=%5B%7B&quot;label&quot;%3A&quot;Volkswagen&quot;%2C&quot;value&quot;%3A&quot;volkswagen&quot;%7D%2C%7B&quot;label&quot;%3A&quot;BMW&quot;%2C&quot;value&quot;%3A&quot;bmw&quot;%7D%5D&amp;knob-filterLabel=Cars&amp;knob-defaultSelected%5B0%5D=bmw&amp;knob-defaultSelected%5B1%5D=x%20series&amp;knob-blacklist%5B0%5D=golf&amp;knob-blacklist%5B1%5D=unknown&amp;knob-maxCategories=10&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;filterBy=ReactiveSearch&amp;knob-maxItems=4&amp;knob-size=100&amp;knob-showCount=true&amp;knob-placeholder=Search%20Cars&amp;knob-showSearch=true&amp;selectedKind=search%2FMultiLevelMenu&amp;selectedStory=Playground&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">Playground (with all knob actions)</a></p>
+</li>
+</ol></div>
+	<!-- ngIf: !threeColumns && navigationSidebar --><div class="rightSidebar menubar ng-scope" data-ng-if="!threeColumns &amp;&amp; navigationSidebar">
+		<!-- ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><ul class="menu section ng-scope" ng-repeat="folder in map[currentVersion]" data-ng-if="folder.name === currentFolder">
+			<li>
+				<div class="other-pages">Other pages in</div>
+			</li>
+			<li>
+				<a class="level-1 ng-binding" ng-href=./v1/search-components/index.html ng-bind="folder.name" href=./v1/search-components/index.html>search-components</a>
+			</li>
+			<!-- ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/CategorySearch.html ng-bind="file.label" href=./v1/search-components/CategorySearch.html>Category Search</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding active" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/MultiLevelMenu.html ng-bind="file.label" href=./v1/search-components/MultiLevelMenu.html>MultiLevel Menu</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/DynamicRangeSlider.html ng-bind="file.label" href=./v1/search-components/DynamicRangeSlider.html>DynamicRange Slider</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/RatingsFilter.html ng-bind="file.label" href=./v1/search-components/RatingsFilter.html>Ratings Filter</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/TagCloud.html ng-bind="file.label" href=./v1/search-components/TagCloud.html>Tag Cloud</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/NestedList.html ng-bind="file.label" href=./v1/search-components/NestedList.html>Nested List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/NestedMultiList.html ng-bind="file.label" href=./v1/search-components/NestedMultiList.html>Nested Multi List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/ResultCard.html ng-bind="file.label" href=./v1/search-components/ResultCard.html>Result Card</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/ResultList.html ng-bind="file.label" href=./v1/search-components/ResultList.html>Result List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/ViewSwitcher.html ng-bind="file.label" href=./v1/search-components/ViewSwitcher.html>View Switcher</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files -->
+		</ul><!-- end ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] -->
+	</div><!-- end ngIf: !threeColumns && navigationSidebar -->
+	<div class="footer content">
+		<div class="row">
+			<div class="col-xs-12">
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./v1/search-components/CategorySearch.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./v1/search-components/DynamicRangeSlider.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
 </div>
+<!-- ngIf: index -->
 </div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>

@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width">
-  <base href="">
+  <base href="../../">
   <title>Documentation</title>
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -16,9 +16,9 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
-<body role="flatdoc">
-  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: 'html/navbar.html' --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="'html/navbar.html'"><div class="container-fluid ng-scope">
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1507059075911"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1507059075912"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<body role="flatdoc" class="no-literate big-h3">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -54,7 +54,7 @@
               <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/map-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Map Components" href=./v1/map-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Map Components</span>
            </a>
@@ -71,7 +71,7 @@
               <a ng-href=./v1/map-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/map-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/search-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Search Components" href=./v1/search-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Search Components</span>
            </a>
@@ -100,7 +100,7 @@
               <a ng-href=./v1/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Base Components" href=./v1/components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Base Components</span>
            </a>
@@ -151,7 +151,7 @@
               <a ng-href=./v1/components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/advanced/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Advanced Topics" href=./v1/advanced/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Advanced Topics</span>
            </a>
@@ -172,7 +172,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li" style="display: block;">
+      <ul class="nav navbar-nav category-li">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -321,7 +321,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px;"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><input class="search_field form-control dropdown-toggle appbase-search" type="text" placeholder="search"></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -508,39 +508,186 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<div class="container-fluid push ng-scope">
-  <div class="row docbase-main" style="min-height: 167px;">
-    <div class="col-xs-12 landing">
-      <h1>Reactive Manual</h1>
-    </div>
-    <div class="col-xs-12 list">
-      <div class="col-xs-12 list">
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/Installation.html">
-        	<span> <i class="fa fa-map-o"></i> Reactive Maps - Installation</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/RSInstallation.html">
-        	<span> <i class="fa fa-search"></i> Reactive Search - Installation</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/RSStart.html">
-        	<span> <i class="fa fa-code"></i> Reactive Search Quick Start</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/components/">
-        	<span> <i class="fa fa-puzzle-piece"></i> Components</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/Data.html">
-        	<span> <i class="fa fa-database"></i> Importing Data</span>
-        </a>
-      </div>
-    </div>
-  </div>
-   <div class="row powered-by">
-    <div class="col-xs-12">
-      <a href="https://github.com/appbaseio/Docbase">
-        <img src="./images/PoweredByDocbase.png" class="img-responsive pull-right" alt="Powered by docbase">
-       </a>
-    </div>
-  </div>
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
+	<div class="menubar fixed">
+		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="reactivelist-item" class="level-1"><a id="reactivelist-link" href="./v1/components/ReactiveList.html#reactivelist" class="level-1" pref="#reactivelist">ReactiveList</a><ul class="level-2" id="reactivelist-list"><li id="reactivelist-usage-item" class="level-2"><a id="reactivelist-usage-link" href="./v1/components/ReactiveList.html#reactivelist-usage" class="level-2" pref="#reactivelist-usage">Usage</a><ul class="level-3" id="reactivelist-usage-list"><li id="reactivelist-usage-basic-usage-item" class="level-3"><a id="reactivelist-usage-basic-usage-link" href="./v1/components/ReactiveList.html#reactivelist-usage-basic-usage" class="level-3" pref="#reactivelist-usage-basic-usage">Basic Usage</a></li><li id="reactivelist-usage-usage-with-all-props-item" class="level-3"><a id="reactivelist-usage-usage-with-all-props-link" href="./v1/components/ReactiveList.html#reactivelist-usage-usage-with-all-props" class="level-3" pref="#reactivelist-usage-usage-with-all-props">Usage With All Props</a></li></ul></li><li id="reactivelist-props-item" class="level-2"><a id="reactivelist-props-link" href="./v1/components/ReactiveList.html#reactivelist-props" class="level-2" pref="#reactivelist-props">Props</a></li><li id="reactivelist-syntax-item" class="level-2"><a id="reactivelist-syntax-link" href="./v1/components/ReactiveList.html#reactivelist-syntax" class="level-2" pref="#reactivelist-syntax">Syntax</a></li><li id="reactivelist-styles-item" class="level-2"><a id="reactivelist-styles-link" href="./v1/components/ReactiveList.html#reactivelist-styles" class="level-2" pref="#reactivelist-styles">Styles</a></li><li id="reactivelist-extending-item" class="level-2"><a id="reactivelist-extending-link" href="./v1/components/ReactiveList.html#reactivelist-extending" class="level-2" pref="#reactivelist-extending">Extending</a></li><li id="reactivelist-examples-item" class="level-2"><a id="reactivelist-examples-link" href="./v1/components/ReactiveList.html#reactivelist-examples" class="level-2" pref="#reactivelist-examples">Examples</a></li></ul></li></ul></li></ul></div>
+	</div>
+	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/ce4e140c5533b263c97018883179a03cc4904b24">Oct 1, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1/components/ReactiveList.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h1 id="reactivelist">ReactiveList</h1><p><img src="https://i.imgur.com/GcUFZjh.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">ReactiveList</code> creates a data-driven result list UI component. This list can reactively update itself based on changes in other components or changes in the database itself.</p><p>This component forms the base for building more specific result display components like <a href="v1/search-components/ResultCard.html"><code style="white-space: pre;">ResultCard</code></a> or <a href="v1/search-components/ResultList.html"><code style="white-space: pre;">ResultList</code></a>.</p><p>Example uses:</p><ul>
+<li>showing a feed of results based on the applied search criteria.</li>
+<li>streaming realtime feed updates based on applied criteria like in a newsfeed.</li>
+</ul><h2 id="reactivelist-usage">Usage</h2><h3 id="reactivelist-usage-basic-usage">Basic Usage</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">ReactiveList</span><span class="pln">
+  react</span><span class="pun">={{</span><span class="pln">
+    </span><span class="string"><span class="str">"and"</span></span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="string"><span class="str">"CitySensor"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"SearchSensor"</span></span><span class="pun">]</span><span class="pln">
+  </span><span class="pun">}}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><h3 id="reactivelist-usage-usage-with-all-props">Usage With All Props</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">ReactiveList</span><span class="pln">
+  componentId</span><span class="pun">=</span><span class="string"><span class="str">"SearchResult"</span></span><span class="pln">
+  dataField</span><span class="pun">=</span><span class="string"><span class="str">"ratings"</span></span><span class="pln">
+  title</span><span class="pun">=</span><span class="string"><span class="str">"ReactiveList"</span></span><span class="pln">
+  stream</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
+  pagination</span><span class="pun">={</span><span class="kwd">false</span><span class="pun">}</span><span class="pln">
+  paginationAt</span><span class="pun">=</span><span class="string"><span class="str">"bottom"</span></span><span class="pln">
+  pages</span><span class="pun">={</span><span class="number"><span class="lit">5</span></span><span class="pun">}</span><span class="pln">
+  sortBy</span><span class="pun">=</span><span class="string"><span class="str">"desc"</span></span><span class="pln">
+  from</span><span class="pun">={</span><span class="number"><span class="lit">0</span></span><span class="pun">}</span><span class="pln">
+  size</span><span class="pun">={</span><span class="number"><span class="lit">10</span></span><span class="pun">}</span><span class="pln">
+  initialLoader</span><span class="pun">=</span><span class="string"><span class="str">"Loading Results.."</span></span><span class="pln">
+  noResults</span><span class="pun">=</span><span class="string"><span class="str">"No Results Found!"</span></span><span class="pln">
+  showResultStats</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
+  onResultStats</span><span class="pun">={(</span><span class="pln">total</span><span class="pun">,</span><span class="pln"> took</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="string"><span class="str">"found "</span></span><span class="pln"> </span><span class="pun">+</span><span class="pln"> total </span><span class="pun">+</span><span class="pln"> </span><span class="string"><span class="str">" results in "</span></span><span class="pln"> </span><span class="pun">+</span><span class="pln"> took </span><span class="pun">+</span><span class="pln"> </span><span class="string"><span class="str">"ms."</span></span><span class="pln">
+  </span><span class="pun">}}</span><span class="pln">
+  react</span><span class="pun">={{</span><span class="pln">
+    and</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="string"><span class="str">"CitySensor"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"SearchSensor"</span></span><span class="pun">]</span><span class="pln">
+  </span><span class="pun">}}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><h2 id="reactivelist-props">Props</h2><ul>
+<li><strong class="li-title">componentId</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  unique identifier of the component, can be referenced in other components’ <code style="white-space: pre;">react</code> prop.</li>
+<li><strong class="li-title">dataField</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  data field to be connected to the component’s UI view. It is useful for providing a sorting context.</li>
+<li><strong class="li-title">title</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  title of the component, to be shown in the UI.</li>
+<li><strong class="li-title">stream</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  whether to stream new result updates in the UI. Defaults to <code style="white-space: pre;">false</code>.</li>
+<li><strong class="li-title">scrollOnTarget</strong> <code class="code-with-title" style="white-space: pre;">Object</code> [optional]
+  accepts an object to set the infinite loading reference to the passed object, for example setting it to <code style="white-space: pre;">window</code> will load new results when the <code style="white-space: pre;">window</code> is scrolled.</li>
+<li><strong class="li-title">pagination</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  pagination &lt;&gt; infinite scroll switcher. Defaults to <code style="white-space: pre;">false</code>, i.e. an infinite scroll based view. When set to <code style="white-space: pre;">true</code>, a pagination based list view with page numbers will appear.</li>
+<li><strong class="li-title">paginationAt</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  Determines the position where to show the pagination, only applicable when <strong>pagination</strong> prop is set to <code style="white-space: pre;">true</code>. Accepts one of <code style="white-space: pre;">top</code>, <code style="white-space: pre;">bottom</code> or <code style="white-space: pre;">both</code> as valid values. Defaults to <code style="white-space: pre;">bottom</code>.</li>
+<li><strong class="li-title">pages</strong> <code class="code-with-title" style="white-space: pre;">Number</code> [optional]<br>  number of user selectable pages to be displayed when pagination is enabled. Defaults to 5.</li>
+<li><strong class="li-title">sortBy</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  sort the results by either <code style="white-space: pre;">asc</code> or <code style="white-space: pre;">desc</code> order. It is an alternative to <code style="white-space: pre;">sortOptions</code>, both can’t be used together.</li>
+<li><strong class="li-title">sortOptions</strong> <code class="code-with-title" style="white-space: pre;">Object Array</code> [optional]<br>  an alternative to the <code style="white-space: pre;">sortBy</code> prop, <code style="white-space: pre;">sortOptions</code> creates a sorting view in the ReactiveList component’s UI. Each array element is an object that takes three keys:<ul>
+<li><code style="white-space: pre;">label</code> - label to be displayed in the UI.</li>
+<li><code style="white-space: pre;">dataField</code> - data field to use for applying the sorting criteria on.</li>
+<li><code style="white-space: pre;">sortBy</code> - specified as either <code style="white-space: pre;">asc</code> or <code style="white-space: pre;">desc</code>.</li>
+</ul>
+</li>
+<li><strong class="li-title">from</strong> <code class="code-with-title" style="white-space: pre;">Number</code> [optional]<br>  starting point from where to fetch the results. Useful in a pagination context. Defaults to 0.</li>
+<li><strong class="li-title">size</strong> <code class="code-with-title" style="white-space: pre;">Number</code> [optional]<br>  number of results to show per view. Defaults to 20.</li>
+<li><strong class="li-title">initialLoader</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  display to show the user while the data is loading, accepts <code style="white-space: pre;">String</code> or <code style="white-space: pre;">HTML</code> markup.</li>
+<li><strong class="li-title">noResults</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  display to show the user when no results are found, accepts <code style="white-space: pre;">String</code> or <code style="white-space: pre;">HTML</code> markup.</li>
+<li><strong class="li-title">showResultStats</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  whether to show result stats in the form of results found and time taken. Defaults to <code style="white-space: pre;">true</code>.</li>
+<li><strong class="li-title">onResultStats</strong> <code class="code-with-title" style="white-space: pre;">Function</code> [optional]<br>  show custom result stats using a function that takes two parameters for <code style="white-space: pre;">time_taken</code> and <code style="white-space: pre;">total_results</code> and returns a string.</li>
+<li><strong class="li-title">react</strong> <code class="code-with-title" style="white-space: pre;">Object</code> [optional]<br>  a dependency object defining how this component should react based on the state changes in the sensor components.</li>
+<li><strong class="li-title">onData</strong> <code class="code-with-title" style="white-space: pre;">Function</code> [optional]<br>  returns a list element object to be rendered based on the <code style="white-space: pre;">res</code> data object. This callback function prop is called for each data item rendered in the <strong>ReactiveList</strong> component’s view. For example,<pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pln">  onData</span><span class="pun">={</span><span class="pln">
+    </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">res</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">const</span><span class="pln"> marker </span><span class="pun">=</span><span class="pln"> res</span><span class="pun">.</span><span class="pln">_source</span><span class="pun">;</span><span class="pln">
+          </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">(</span><span class="pln">
+              </span><span class="pun">&lt;</span><span class="pln">a
+                  className</span><span class="pun">=</span><span class="string"><span class="str">"full_row single-record single_record_for_clone"</span></span><span class="pln">
+                  key</span><span class="pun">={</span><span class="pln">markerData</span><span class="pun">.</span><span class="pln">_id</span><span class="pun">}</span><span class="pln">
+              </span><span class="pun">&gt;</span><span class="pln">
+                  </span><span class="pun">&lt;</span><span class="pln">div className</span><span class="pun">=</span><span class="string"><span class="str">"text-container full_row"</span></span><span class="pln"> style</span><span class="pun">={{</span><span class="pln"> paddingLeft</span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"</span><span class="number"><span class="str">10</span></span><span class="str">px"</span></span><span class="pln"> </span><span class="pun">}}&gt;</span><span class="pln">
+                      </span><span class="pun">&lt;</span><span class="pln">div className</span><span class="pun">=</span><span class="string"><span class="str">"text-head text-overflow full_row"</span></span><span class="pun">&gt;</span><span class="pln">
+                          </span><span class="pun">&lt;</span><span class="pln">span className</span><span class="pun">=</span><span class="string"><span class="str">"text-head-info text-overflow"</span></span><span class="pun">&gt;</span><span class="pln">
+                              </span><span class="pun">{</span><span class="pln">marker</span><span class="pun">.</span><span class="pln">name </span><span class="pun">?</span><span class="pln"> marker</span><span class="pun">.</span><span class="pln">name </span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">""</span></span><span class="pun">}</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> </span><span class="pun">{</span><span class="pln">marker</span><span class="pun">.</span><span class="pln">brand </span><span class="pun">?</span><span class="pln"> marker</span><span class="pun">.</span><span class="pln">brand </span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">""</span></span><span class="pun">}</span><span class="pln">
+                          </span><span class="pun">&lt;/</span><span class="pln">span</span><span class="pun">&gt;</span><span class="pln">
+                          </span><span class="pun">&lt;</span><span class="pln">span className</span><span class="pun">=</span><span class="string"><span class="str">"text-head-city"</span></span><span class="pun">&gt;{</span><span class="pln">marker</span><span class="pun">.</span><span class="pln">brand </span><span class="pun">?</span><span class="pln"> marker</span><span class="pun">.</span><span class="pln">brand </span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">""</span></span><span class="pun">}&lt;/</span><span class="pln">span</span><span class="pun">&gt;</span><span class="pln">
+                      </span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+                      </span><span class="pun">&lt;</span><span class="pln">div className</span><span class="pun">=</span><span class="string"><span class="str">"text-description text-overflow full_row"</span></span><span class="pun">&gt;</span><span class="pln">
+                          </span><span class="pun">&lt;</span><span class="pln">ul className</span><span class="pun">=</span><span class="string"><span class="str">"highlight_tags"</span></span><span class="pun">&gt;</span><span class="pln">
+                              </span><span class="pun">{</span><span class="pln">marker</span><span class="pun">.</span><span class="pln">price </span><span class="pun">?</span><span class="pln"> </span><span class="pun">`</span><span class="typ">Priced</span><span class="pln"> at $$</span><span class="pun">{</span><span class="pln">marker</span><span class="pun">.</span><span class="pln">price</span><span class="pun">}`</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"Free Test Drive"</span></span><span class="pun">}</span><span class="pln">
+                          </span><span class="pun">&lt;/</span><span class="pln">ul</span><span class="pun">&gt;</span><span class="pln">
+                      </span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+                  </span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+              </span><span class="pun">&lt;/</span><span class="pln">a</span><span class="pun">&gt;</span><span class="pln">
+          </span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span></code></pre>
+</li>
+<li><strong class="li-title">onAllData</strong> <code class="code-with-title" style="white-space: pre;">Function</code> [optional]<br>  works like <strong>onData</strong> prop but all the data objects are passed to the callback function.</li>
+<li><strong class="li-title">pageURLParams</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  whether to display the page number in the URL. Defaults to <code style="white-space: pre;">false</code>. <strong>pageURLParams</strong> works only with <strong>pagination</strong> enabled. Useful for sharing the view of a particular page.</li>
+</ul><h2 id="reactivelist-syntax">Syntax</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="EmmKVZ" data-default-tab="js" data-user="sids-aquarius" data-embed-version="2" data-pen-title="ReactiveSearch ReactiveList" class="codepen">See <a href="http://codepen.io/sids-aquarius/pen/EmmKVZ/">ReactiveSearch ReactiveList</a> on codepen.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><h2 id="reactivelist-styles">Styles</h2><p>All reactivebase components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="https://i.imgur.com/KtDriR7.png" alt="Annotated image"></p><p><img src="https://i.imgur.com/TPP2Zuh.png" alt="Annotated Image"></p><h2 id="reactivelist-extending">Extending</h2><p><code style="white-space: pre;">ReactiveList</code> component can be extended to</p><ol>
+<li>customize the look and feel with <code style="white-space: pre;">className</code>, <code style="white-space: pre;">style</code>,</li>
+<li>render individual result data items using <code style="white-space: pre;">onData</code>,</li>
+<li>render the entire result data using  <code style="white-space: pre;">onAllData</code>.</li>
+</ol><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="comment"><span class="com">// Register a callback function with the `onData` prop.</span></span><span class="pln">
+</span><span class="pun">&lt;</span><span class="typ">ReactiveList</span><span class="pln">
+  </span><span class="pun">...</span><span class="pln">
+  className</span><span class="pun">=</span><span class="string"><span class="str">"custom-class"</span></span><span class="pln">
+  style</span><span class="pun">={{</span><span class="string"><span class="str">"paddingBottom"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"</span><span class="number"><span class="str">10</span></span><span class="str">px"</span></span><span class="pun">}}</span><span class="pln">
+  onData</span><span class="pun">={</span><span class="pln">
+    </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">res</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">return</span><span class="pun">(</span><span class="pln">
+        </span><span class="pun">&lt;</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+          </span><span class="pun">{</span><span class="pln"> res</span><span class="pun">.</span><span class="pln">_source </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+      </span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><ul>
+<li><strong class="li-title">className</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  CSS class to be injected on the component container.</li>
+<li><strong class="li-title">style</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  CSS Styles to be applied to the <strong>ReactiveList</strong> component.</li>
+<li><strong class="li-title">onData</strong> <code class="code-with-title" style="white-space: pre;">Function</code> [optional]<br>  a callback function where user can define how to render the view based on the data changes.</li>
+<li><strong class="li-title">onAllData</strong> <code class="code-with-title" style="white-space: pre;">Function</code> [optional]<br>  an alternative callback function to <code style="white-space: pre;">onData</code>, where user can define how to render the view based on all the data changes.</li>
+</ul><h2 id="reactivelist-examples">Examples</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="EmmKVZ" data-default-tab="result" data-user="sids-aquarius" data-embed-version="2" data-pen-title="ReactiveSearch ReactiveList" class="codepen">See <a href="http://codepen.io/sids-aquarius/pen/EmmKVZ/">ReactiveSearch ReactiveList</a> on codepen.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><ol>
+<li><a href="../playground/?knob-title=Topics&amp;knob-URLParams%20%28not%20visible%20in%20storybook%29=false&amp;knob-filterLabel=Custom%20Filter%20Name&amp;knob-defaultSelected%5B0%5D=Social&amp;knob-defaultSelected%5B1%5D=Travel&amp;knob-selectAllLabel=Select%20All&amp;knob-showRadio=true&amp;knob-queryFormat=or&amp;knob-numberOfMonths=2&amp;knob-style=%7B&quot;paddingBottom&quot;%3A&quot;10px&quot;%7D&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;knob-dataLabel=★%20%20A%20customizable%20UI%20widget%20★&amp;knob-allowAllDates=true&amp;knob-showCheckbox=true&amp;knob-size=100&amp;knob-extra=%7B&quot;withFullScreenPortal&quot;%3Atrue%2C&quot;showClearDate&quot;%3Atrue%7D&amp;knob-visible=true&amp;knob-showCount=true&amp;knob-placeholder=Search%20topics&amp;knob-showSearch=true&amp;selectedKind=search%2FReactiveList&amp;selectedStory=Basic&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">ReactiveList basic usage</a></li>
+<li><a href="../playground/?knob-title=People&amp;knob-URLParams%20%28not%20visible%20in%20storybook%29=false&amp;knob-filterLabel=Custom%20Filter%20Name&amp;knob-defaultSelected%5B0%5D=Social&amp;knob-defaultSelected%5B1%5D=Travel&amp;knob-selectAllLabel=Select%20All&amp;knob-showRadio=true&amp;knob-queryFormat=or&amp;knob-numberOfMonths=2&amp;knob-style=%7B&quot;paddingBottom&quot;%3A&quot;10px&quot;%7D&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;knob-dataLabel=★%20%20A%20customizable%20UI%20widget%20★&amp;knob-allowAllDates=true&amp;knob-stream=true&amp;knob-showCheckbox=true&amp;knob-size=100&amp;knob-extra=%7B&quot;withFullScreenPortal&quot;%3Atrue%2C&quot;showClearDate&quot;%3Atrue%7D&amp;knob-visible=true&amp;knob-showCount=true&amp;knob-placeholder=Search%20topics&amp;knob-showSearch=true&amp;selectedKind=search%2FReactiveList&amp;selectedStory=With%20Streaming%20Enabled&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">With streaming</a></li>
+<li><a href="../playground/?knob-title=People&amp;knob-paginationAt=bottom&amp;knob-URLParams%20%28not%20visible%20in%20storybook%29=false&amp;knob-filterLabel=Custom%20Filter%20Name&amp;knob-defaultSelected%5B0%5D=Social&amp;knob-defaultSelected%5B1%5D=Travel&amp;knob-selectAllLabel=Select%20All&amp;knob-showRadio=true&amp;knob-queryFormat=or&amp;knob-numberOfMonths=2&amp;knob-style=%7B&quot;paddingBottom&quot;%3A&quot;10px&quot;%7D&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;knob-pages=5&amp;knob-pagination=true&amp;knob-dataLabel=★%20%20A%20customizable%20UI%20widget%20★&amp;knob-allowAllDates=true&amp;knob-stream=true&amp;knob-showCheckbox=true&amp;knob-size=100&amp;knob-extra=%7B&quot;withFullScreenPortal&quot;%3Atrue%2C&quot;showClearDate&quot;%3Atrue%7D&amp;knob-visible=true&amp;knob-showCount=true&amp;knob-placeholder=Search%20topics&amp;knob-showSearch=true&amp;selectedKind=search%2FReactiveList&amp;selectedStory=With%20pagination&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">With pagination</a></li>
+<li><a href="../playground/?knob-title=People&amp;knob-paginationAt=bottom&amp;knob-URLParams%20%28not%20visible%20in%20storybook%29=false&amp;knob-filterLabel=Custom%20Filter%20Name&amp;knob-defaultSelected%5B0%5D=Social&amp;knob-defaultSelected%5B1%5D=Travel&amp;knob-selectAllLabel=Select%20All&amp;knob-showRadio=true&amp;knob-queryFormat=or&amp;knob-numberOfMonths=2&amp;knob-style=%7B&quot;paddingBottom&quot;%3A&quot;10px&quot;%7D&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;knob-pages=5&amp;knob-pagination=true&amp;knob-dataLabel=★%20%20A%20customizable%20UI%20widget%20★&amp;knob-allowAllDates=true&amp;knob-stream=true&amp;knob-showCheckbox=true&amp;knob-size=100&amp;knob-extra=%7B&quot;withFullScreenPortal&quot;%3Atrue%2C&quot;showClearDate&quot;%3Atrue%7D&amp;knob-visible=true&amp;knob-showCount=true&amp;knob-placeholder=Search%20topics&amp;knob-showSearch=true&amp;selectedKind=search%2FReactiveList&amp;selectedStory=With%20Sort%20Options&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">With sortOptions</a></li>
+<li><a href="../playground/?knob-initialLoader=Loading%20results..&amp;knob-title=ReactiveList%3A%20Results&amp;knob-from=0&amp;knob-paginationAt=bottom&amp;knob-URLParams%20%28not%20visible%20in%20storybook%29=false&amp;knob-filterLabel=Custom%20Filter%20Name&amp;knob-defaultSelected%5B0%5D=Social&amp;knob-defaultSelected%5B1%5D=Travel&amp;knob-selectAllLabel=Select%20All&amp;knob-showRadio=true&amp;knob-queryFormat=or&amp;knob-numberOfMonths=2&amp;knob-style=%7B&quot;paddingBottom&quot;%3A&quot;10px&quot;%7D&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=default&amp;knob-pages=5&amp;knob-showResultStats=true&amp;knob-pagination=true&amp;knob-dataLabel=★%20%20A%20customizable%20UI%20widget%20★&amp;knob-allowAllDates=true&amp;knob-stream=false&amp;knob-showCheckbox=true&amp;knob-size=5&amp;knob-extra=%7B&quot;withFullScreenPortal&quot;%3Atrue%2C&quot;showClearDate&quot;%3Atrue%7D&amp;knob-visible=true&amp;knob-showCount=true&amp;knob-placeholder=Select%20from%20list&amp;knob-showSearch=true&amp;knob-noResults=No%20results%20found%21&amp;selectedKind=search%2FReactiveList&amp;selectedStory=Playground&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">Playground (with all knob actions)</a></li>
+</ol></div>
+	<!-- ngIf: !threeColumns && navigationSidebar --><div class="rightSidebar menubar ng-scope" data-ng-if="!threeColumns &amp;&amp; navigationSidebar">
+		<!-- ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><ul class="menu section ng-scope" ng-repeat="folder in map[currentVersion]" data-ng-if="folder.name === currentFolder">
+			<li>
+				<div class="other-pages">Other pages in</div>
+			</li>
+			<li>
+				<a class="level-1 ng-binding" ng-href=./v1/components/index.html ng-bind="folder.name" href=./v1/components/index.html>components</a>
+			</li>
+			<!-- ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/TextField.html ng-bind="file.label" href=./v1/components/TextField.html>Text Field</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/ToggleButton.html ng-bind="file.label" href=./v1/components/ToggleButton.html>Toggle Button</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/SingleList.html ng-bind="file.label" href=./v1/components/SingleList.html>Single List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/MultiList.html ng-bind="file.label" href=./v1/components/MultiList.html>Multi List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/SingleRange.html ng-bind="file.label" href=./v1/components/SingleRange.html>Single Range</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/MultiRange.html ng-bind="file.label" href=./v1/components/MultiRange.html>Multi Range</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/RangeSlider.html ng-bind="file.label" href=./v1/components/RangeSlider.html>Range Slider</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/NumberBox.html ng-bind="file.label" href=./v1/components/NumberBox.html>Number Box</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/DataSearch.html ng-bind="file.label" href=./v1/components/DataSearch.html>Data Search</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/DatePicker.html ng-bind="file.label" href=./v1/components/DatePicker.html>Date Picker</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/DateRange.html ng-bind="file.label" href=./v1/components/DateRange.html>Date Range</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/DataController.html ng-bind="file.label" href=./v1/components/DataController.html>Data Controller</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding active" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/ReactiveList.html ng-bind="file.label" href=./v1/components/ReactiveList.html>Reactive List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/ReactiveElement.html ng-bind="file.label" href=./v1/components/ReactiveElement.html>Reactive Element</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/SingleDataList.html ng-bind="file.label" href=./v1/components/SingleDataList.html>Single Data List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/MultiDataList.html ng-bind="file.label" href=./v1/components/MultiDataList.html>Multi Data List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/SingleDropdownList.html ng-bind="file.label" href=./v1/components/SingleDropdownList.html>Single Dropdown List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/MultiDropdownList.html ng-bind="file.label" href=./v1/components/MultiDropdownList.html>Multi Dropdown List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/SingleDropdownRange.html ng-bind="file.label" href=./v1/components/SingleDropdownRange.html>Single Dropdown Range</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/MultiDropdownRange.html ng-bind="file.label" href=./v1/components/MultiDropdownRange.html>Multi Dropdown Range</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/components/SelectedFilters.html ng-bind="file.label" href=./v1/components/SelectedFilters.html>Selected Filters</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files -->
+		</ul><!-- end ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] -->
+	</div><!-- end ngIf: !threeColumns && navigationSidebar -->
+	<div class="footer content">
+		<div class="row">
+			<div class="col-xs-12">
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./v1/components/DataController.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./v1/components/ReactiveElement.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
 </div>
+<!-- ngIf: index -->
 </div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>

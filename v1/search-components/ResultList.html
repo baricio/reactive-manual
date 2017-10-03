@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width">
-  <base href="">
+  <base href="../../">
   <title>Documentation</title>
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -16,9 +16,9 @@
   <!-- Theme -->
   <link rel="stylesheet" type="text/css" href="./styles/theme.css">
   
-<script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
-<body role="flatdoc">
-  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: 'html/navbar.html' --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="'html/navbar.html'"><div class="container-fluid ng-scope">
+<script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1507059017487"></script><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js?_=1507059017488"></script><script type="text/javascript" async="" src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
+<body role="flatdoc" class="no-literate big-h3">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
-        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/getting-started/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Getting Started" href=./v1/getting-started/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Getting Started</span>
            </a>
@@ -54,7 +54,7 @@
               <a ng-href=./v1/getting-started/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/getting-started/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/map-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Map Components" href=./v1/map-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Map Components</span>
            </a>
@@ -71,7 +71,7 @@
               <a ng-href=./v1/map-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/map-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/search-components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Search Components" href=./v1/search-components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Search Components</span>
            </a>
@@ -100,7 +100,7 @@
               <a ng-href=./v1/search-components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/search-components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/components/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Base Components" href=./v1/components/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Base Components</span>
            </a>
@@ -151,7 +151,7 @@
               <a ng-href=./v1/components/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v1/components/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
-        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]" style="display: none;">
+        </li><!-- end ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
           <a ng-href=./v1/advanced/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="Advanced Topics" href=./v1/advanced/index.html>
             <span ng-bind="folder.label" class="link-restrict ng-binding">Advanced Topics</span>
            </a>
@@ -172,7 +172,7 @@
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
       </ul>
-      <ul class="nav navbar-nav category-li" style="display: block;">
+      <ul class="nav navbar-nav category-li">
         <li class="dropdown menu-large">
           <a class="dropdown-toggle pointer" data-toggle="dropdown">more <b class="caret"></b></a>
           <ul class="dropdown-menu megamenu row">
@@ -321,7 +321,7 @@
     <div class="pull-right" id="other-navs">
       <ul class="nav navbar-nav navbar-right">
          <li class="dropdown search-dropdown">
-          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}" style="right: 50px;"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
+          <div class="form-group search-form" data-ng-class="{'open-in':search.length &gt; 0}"><span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search_field form-control dropdown-toggle appbase-search tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="search_field form-control dropdown-toggle appbase-search tt-input" type="text" placeholder="search" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Helvetica Neue', 'Open Sans', sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-titles"></div></div></span></div>
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -508,39 +508,189 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<div class="container-fluid push ng-scope">
-  <div class="row docbase-main" style="min-height: 167px;">
-    <div class="col-xs-12 landing">
-      <h1>Reactive Manual</h1>
-    </div>
-    <div class="col-xs-12 list">
-      <div class="col-xs-12 list">
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/Installation.html">
-        	<span> <i class="fa fa-map-o"></i> Reactive Maps - Installation</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/RSInstallation.html">
-        	<span> <i class="fa fa-search"></i> Reactive Search - Installation</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/RSStart.html">
-        	<span> <i class="fa fa-code"></i> Reactive Search Quick Start</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/components/">
-        	<span> <i class="fa fa-puzzle-piece"></i> Components</span>
-        </a>
-        <a class="col-xs-12 col-md-4" href="v1/getting-started/Data.html">
-        	<span> <i class="fa fa-database"></i> Importing Data</span>
-        </a>
-      </div>
-    </div>
-  </div>
-   <div class="row powered-by">
-    <div class="col-xs-12">
-      <a href="https://github.com/appbaseio/Docbase">
-        <img src="./images/PoweredByDocbase.png" class="img-responsive pull-right" alt="Powered by docbase">
-       </a>
-    </div>
-  </div>
+<div role="flatdoc" class="content-root ng-scope" data-ng-show="!index">
+	<div class="menubar fixed">
+		<div class="menu section" role="flatdoc-menu"><ul><li id="root-item" class="level-0"><ul class="level-1" id="root-list"><li id="resultlist-item" class="level-1"><a id="resultlist-link" href="./v1/search-components/ResultList.html#resultlist" class="level-1" pref="#resultlist">ResultList</a><ul class="level-2" id="resultlist-list"><li id="resultlist-usage-item" class="level-2"><a id="resultlist-usage-link" href="./v1/search-components/ResultList.html#resultlist-usage" class="level-2" pref="#resultlist-usage">Usage</a><ul class="level-3" id="resultlist-usage-list"><li id="resultlist-usage-basic-usage-item" class="level-3"><a id="resultlist-usage-basic-usage-link" href="./v1/search-components/ResultList.html#resultlist-usage-basic-usage" class="level-3" pref="#resultlist-usage-basic-usage">Basic Usage</a></li><li id="resultlist-usage-pagination-usage-with-all-props-item" class="level-3"><a id="resultlist-usage-pagination-usage-with-all-props-link" href="./v1/search-components/ResultList.html#resultlist-usage-pagination-usage-with-all-props" class="level-3" pref="#resultlist-usage-pagination-usage-with-all-props">Pagination Usage With All Props</a></li><li id="resultlist-usage-infinite-scroll-usage-with-all-props-item" class="level-3"><a id="resultlist-usage-infinite-scroll-usage-with-all-props-link" href="./v1/search-components/ResultList.html#resultlist-usage-infinite-scroll-usage-with-all-props" class="level-3" pref="#resultlist-usage-infinite-scroll-usage-with-all-props">Infinite Scroll Usage With All Props</a></li></ul></li><li id="resultlist-props-item" class="level-2"><a id="resultlist-props-link" href="./v1/search-components/ResultList.html#resultlist-props" class="level-2" pref="#resultlist-props">Props</a></li><li id="resultlist-syntax-item" class="level-2"><a id="resultlist-syntax-link" href="./v1/search-components/ResultList.html#resultlist-syntax" class="level-2" pref="#resultlist-syntax">Syntax</a></li><li id="resultlist-styles-item" class="level-2"><a id="resultlist-styles-link" href="./v1/search-components/ResultList.html#resultlist-styles" class="level-2" pref="#resultlist-styles">Styles</a></li><li id="resultlist-extending-item" class="level-2"><a id="resultlist-extending-link" href="./v1/search-components/ResultList.html#resultlist-extending" class="level-2" pref="#resultlist-extending">Extending</a></li><li id="resultlist-examples-item" class="level-2"><a id="resultlist-examples-link" href="./v1/search-components/ResultList.html#resultlist-examples" class="level-2" pref="#resultlist-examples">Examples</a></li></ul></li></ul></li></ul></div>
+	</div>
+	<div role="flatdoc-content" class="content"><div class="extra_container"><div class="contributors_header">Contributors<span class="pull-right modified-date">Last modified on: <a href="https://github.com/appbaseio/reactive-manual/commit/ce4e140c5533b263c97018883179a03cc4904b24">Oct 1, 2017</a></span></div><div class="contributor-container"><a class="contributor" href="https://github.com/siddharthlatest" title="siddharthlatest" target="_blank"><img class="contributor_img img-rounded" src="https://avatars3.githubusercontent.com/u/630042?v=4" alt="siddharthlatest"></a></div><div class="contributors_header nobg"><a class="edit-btn" href="https://github.com/appbaseio/reactivebase-manual/tree/master/docs/v1/search-components/ResultList.md" target="_blank"><span><i class="fa fa-pencil"></i> Edit this page on Github </span></a></div></div><div class="clearFix"></div><h1 id="resultlist">ResultList</h1><p><img src="https://i.imgur.com/X3WPi1k.png" alt="Image to be displayed"></p><p><code style="white-space: pre;">ResultList</code> creates a result list UI component to display results in a list layout, suited for data that needs a compact display.</p><p>Example uses:</p><ul>
+<li>showing e-commerce search listings.</li>
+<li>showing filtered hotel booking results.</li>
+</ul><p><code style="white-space: pre;">Note:</code> An alternative layout to ResultList is a <a href="v1/search-components/ResultCard.html"><strong>ResultCard</strong></a>, which displays result data in a card layout.</p><h2 id="resultlist-usage">Usage</h2><h3 id="resultlist-usage-basic-usage">Basic Usage</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">ResultList</span><span class="pln">
+  react</span><span class="pun">={{</span><span class="pln">
+    </span><span class="string"><span class="str">"and"</span></span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="string"><span class="str">"PriceFilter"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"SearchFilter"</span></span><span class="pun">]</span><span class="pln">
+  </span><span class="pun">}}</span><span class="pln">
+  onData</span><span class="pun">={</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">onData</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><h3 id="resultlist-usage-pagination-usage-with-all-props">Pagination Usage With All Props</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">ResultList</span><span class="pln">
+  componentId</span><span class="pun">=</span><span class="string"><span class="str">"ResultList</span><span class="number"><span class="str">01</span></span><span class="str">"</span></span><span class="pln">
+  dataField</span><span class="pun">=</span><span class="string"><span class="str">"ratings"</span></span><span class="pln">
+  title</span><span class="pun">=</span><span class="string"><span class="str">"Result List"</span></span><span class="pln">
+  stream</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">  
+  sortBy</span><span class="pun">=</span><span class="string"><span class="str">"desc"</span></span><span class="pln">
+  from</span><span class="pun">={</span><span class="number"><span class="lit">0</span></span><span class="pun">}</span><span class="pln">
+  size</span><span class="pun">={</span><span class="number"><span class="lit">8</span></span><span class="pun">}</span><span class="pln">
+  pagination</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
+  paginationAt</span><span class="pun">=</span><span class="string"><span class="str">"bottom"</span></span><span class="pln">
+  pages</span><span class="pun">={</span><span class="number"><span class="lit">5</span></span><span class="pun">}</span><span class="pln">
+  showResultStats</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
+  placeholder</span><span class="pun">=</span><span class="string"><span class="str">"Select a rating"</span></span><span class="pln">
+  initialLoader</span><span class="pun">=</span><span class="string"><span class="str">"Loading Results.."</span></span><span class="pln">
+  noResults</span><span class="pun">=</span><span class="string"><span class="str">"No Matching Results Found!"</span></span><span class="pln">
+  react</span><span class="pun">={{</span><span class="pln">
+    and</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="string"><span class="str">"PriceFilter"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"SearchFilter"</span></span><span class="pun">]</span><span class="pln">
+  </span><span class="pun">}}</span><span class="pln">
+  onData</span><span class="pun">={</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">onData</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><h3 id="resultlist-usage-infinite-scroll-usage-with-all-props">Infinite Scroll Usage With All Props</h3><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">ResultList</span><span class="pln">
+  componentId</span><span class="pun">=</span><span class="string"><span class="str">"ResultList</span><span class="number"><span class="str">01</span></span><span class="str">"</span></span><span class="pln">
+  dataField</span><span class="pun">=</span><span class="string"><span class="str">"ratings"</span></span><span class="pln">
+  title</span><span class="pun">=</span><span class="string"><span class="str">"Result List"</span></span><span class="pln">
+  stream</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">  
+  sortBy</span><span class="pun">=</span><span class="string"><span class="str">"desc"</span></span><span class="pln">
+  from</span><span class="pun">={</span><span class="number"><span class="lit">0</span></span><span class="pun">}</span><span class="pln">
+  size</span><span class="pun">={</span><span class="number"><span class="lit">8</span></span><span class="pun">}</span><span class="pln">
+  pagination</span><span class="pun">={</span><span class="kwd">false</span><span class="pun">}</span><span class="pln">
+  scrollOnTarget</span><span class="pun">={</span><span class="pln">window</span><span class="pun">}</span><span class="pln">
+  showResultStats</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span><span class="pln">
+  placeholder</span><span class="pun">=</span><span class="string"><span class="str">"Select a rating"</span></span><span class="pln">
+  initialLoader</span><span class="pun">=</span><span class="string"><span class="str">"Loading Results.."</span></span><span class="pln">
+  noResults</span><span class="pun">=</span><span class="string"><span class="str">"No Matching Results Found!"</span></span><span class="pln">
+  react</span><span class="pun">={{</span><span class="pln">
+    and</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="string"><span class="str">"PriceFilter"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"SearchFilter"</span></span><span class="pun">]</span><span class="pln">
+  </span><span class="pun">}}</span><span class="pln">
+  onData</span><span class="pun">={</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">onData</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><h2 id="resultlist-props">Props</h2><ul>
+<li><strong class="li-title">componentId</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  unique identifier of the component, can be referenced in other components’ <code style="white-space: pre;">react</code> prop.</li>
+<li><strong class="li-title">dataField</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  data field to be mapped with <code style="white-space: pre;">ResultList</code>‘s UI view, used for providing a sorting context.</li>
+<li><strong class="li-title">title</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  title of the component, to be shown in the UI.</li>
+<li><strong class="li-title">stream</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  whether to stream new result updates in the UI. Defaults to <code style="white-space: pre;">false</code>.</li>
+<li><strong class="li-title">pagination</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  pagination &lt;&gt; infinite scroll switcher. Defaults to <code style="white-space: pre;">false</code>, i.e. an infinite scroll based view. When set to <code style="white-space: pre;">true</code>, a pagination based list view with page numbers will appear.</li>
+<li><strong class="li-title">scrollOnTarget</strong> <code class="code-with-title" style="white-space: pre;">Object</code> [optional]<br>  accepts an object to set the infinite loading reference to the passed object, for example setting it to <code style="white-space: pre;">window</code> will load new results when the <code style="white-space: pre;">window</code> is scrolled.</li>
+<li><strong class="li-title">paginationAt</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  Determines the position where to show the pagination, only applicable when <strong>pagination</strong> prop is set to <code style="white-space: pre;">true</code>. Accepts one of <code style="white-space: pre;">top</code>, <code style="white-space: pre;">bottom</code> or <code style="white-space: pre;">both</code> as valid values. Defaults to <code style="white-space: pre;">bottom</code>.</li>
+<li><strong class="li-title">pages</strong> <code class="code-with-title" style="white-space: pre;">Number</code> [optional]<br>  number of pages to show at at time, defaults to 5.</li>
+<li><strong class="li-title">sortBy</strong> <code class="code-with-title" style="white-space: pre;">String</code> [optional]<br>  sort the results by either <code style="white-space: pre;">asc</code> or <code style="white-space: pre;">desc</code> order. It is an alternative to <code style="white-space: pre;">sortOptions</code>, both can’t be used together.</li>
+<li><strong class="li-title">sortOptions</strong> <code class="code-with-title" style="white-space: pre;">Object Array</code> [optional]<br>  an alternative to the <code style="white-space: pre;">sortBy</code> prop, <code style="white-space: pre;">sortOptions</code> creates a sorting view in the ResultList component’s UI. Each array element is an object that takes three keys:<ul>
+<li><code style="white-space: pre;">label</code> - label to be displayed in the UI.</li>
+<li><code style="white-space: pre;">dataField</code> - data field to use for applying the sorting criteria on.</li>
+<li><code style="white-space: pre;">sortBy</code> - specified as either <code style="white-space: pre;">asc</code> or <code style="white-space: pre;">desc</code>.</li>
+</ul>
+</li>
+<li><strong class="li-title">from</strong> <code class="code-with-title" style="white-space: pre;">Number</code> [optional]<br>  starting point from where to fetch the results. Useful in a pagination context. Defaults to 0.</li>
+<li><strong class="li-title">size</strong> <code class="code-with-title" style="white-space: pre;">Number</code> [optional]<br>  number of results to show per view. Defaults to 20.</li>
+<li><strong class="li-title">placeholder</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  display to show the user when there is nothing selected in the sensor components, accepts <code style="white-space: pre;">String</code> or <code style="white-space: pre;">HTML</code> markup.</li>
+<li><strong class="li-title">initialLoader</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  display to show the user while the data is loading, accepts <code style="white-space: pre;">String</code> or <code style="white-space: pre;">HTML</code> markup.</li>
+<li><strong class="li-title">noResults</strong> <code class="code-with-title" style="white-space: pre;">String or HTML</code> [optional]<br>  display to show the user when no results are found, accepts <code style="white-space: pre;">String</code> or <code style="white-space: pre;">HTML</code> markup.</li>
+<li><strong class="li-title">showResultStats</strong> <code class="code-with-title" style="white-space: pre;">Boolean</code> [optional]<br>  whether to show result stats in the form of results found and time taken. Defaults to <code style="white-space: pre;">true</code>.</li>
+<li><strong class="li-title">onResultStats</strong> <code class="code-with-title" style="white-space: pre;">Function</code> [optional]<br>  show custom result stats using a function that takes two parameters for <code style="white-space: pre;">time_taken</code> and <code style="white-space: pre;">total_results</code> and returns a string.</li>
+<li><strong class="li-title">react</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  a dependency object defining how this component should react based on the state changes in the sensor components. You can read more about how to specify this prop over <a href="v1/advanced/React.html">here</a>.</li>
+<li><strong class="li-title">onData</strong> <code class="code-with-title" style="white-space: pre;">Function</code> [optional]<br>  returns a card element object to be rendered based on the <code style="white-space: pre;">res</code> data object. This callback function prop is called for each data item rendered in the <strong>ResultList</strong> component’s view.<pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pln">  onData</span><span class="pun">={</span><span class="pln">
+    </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">res</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        image</span><span class="pun">:</span><span class="pln"> res</span><span class="pun">.</span><span class="pln">image</span><span class="pun">,</span><span class="pln">
+        title</span><span class="pun">:</span><span class="pln"> res</span><span class="pun">.</span><span class="pln">name</span><span class="pun">,</span><span class="pln">
+        desc</span><span class="pun">:</span><span class="pln"> </span><span class="pun">(</span><span class="pln">
+            </span><span class="pun">&lt;</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+                </span><span class="pun">&lt;</span><span class="pln">div className</span><span class="pun">=</span><span class="string"><span class="str">"price"</span></span><span class="pun">&gt;</span><span class="pln">$</span><span class="pun">{</span><span class="pln">res</span><span class="pun">.</span><span class="pln">price</span><span class="pun">}&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+                </span><span class="pun">&lt;</span><span class="pln">p</span><span class="pun">&gt;{</span><span class="pln">res</span><span class="pun">.</span><span class="pln">room_type</span><span class="pun">}</span><span class="pln"> </span><span class="pun">·</span><span class="pln"> </span><span class="pun">{</span><span class="pln">res</span><span class="pun">.</span><span class="pln">accommodates</span><span class="pun">}</span><span class="pln"> guests</span><span class="pun">&lt;/</span><span class="pln">p</span><span class="pun">&gt;</span><span class="pln">
+            </span><span class="pun">&lt;/</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">
+        </span><span class="pun">),</span><span class="pln">
+        url</span><span class="pun">:</span><span class="pln"> res</span><span class="pun">.</span><span class="pln">listing_url
+      </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span></code></pre>
+  The return format for the callback function is an object with <code style="white-space: pre;">image</code>, <code style="white-space: pre;">image_size</code>, <code style="white-space: pre;">title</code>, <code style="white-space: pre;">desc</code> and <code style="white-space: pre;">url</code> fields.</li>
+</ul><h2 id="resultlist-syntax">Syntax</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="BdMXeG" data-default-tab="js" data-user="sids-aquarius" data-embed-version="2" data-pen-title="ResultList docs example" class="codepen">See the Pen <a href="https://codepen.io/sids-aquarius/pen/BdMXeG/">ResultList docs example</a> by Siddharth Kothari (<a href="https://codepen.io/sids-aquarius">@sids-aquarius</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><h2 id="resultlist-styles">Styles</h2><p>All reactivebase components are <code style="white-space: pre;">rbc</code> namespaced.</p><p><img src="https://i.imgur.com/ngVXOoB.png" alt="Annotated image"></p><h2 id="resultlist-extending">Extending</h2><p><code style="white-space: pre;">ResultList</code> component can be extended to</p><ol>
+<li>customize the look and feel with <code style="white-space: pre;">className</code>, <code style="white-space: pre;">style</code>,</li>
+<li>render individual result data items using <code style="white-space: pre;">onData</code>,</li>
+<li>specify how results should be filtered using <code style="white-space: pre;">react</code>.</li>
+</ol><pre><code class="lang-js prettyprint prettyprinted" style="white-space: pre;"><span class="pun">&lt;</span><span class="typ">ResultList</span><span class="pln">
+  </span><span class="pun">...</span><span class="pln">
+  className</span><span class="pun">=</span><span class="string"><span class="str">"custom-class"</span></span><span class="pln">
+  </span><span class="comment"><span class="com">// specify any number of custom styles.</span></span><span class="pln">
+  style</span><span class="pun">={{</span><span class="string"><span class="str">"paddingBottom"</span></span><span class="pun">:</span><span class="pln"> </span><span class="string"><span class="str">"</span><span class="number"><span class="str">10</span></span><span class="str">px"</span></span><span class="pun">}}</span><span class="pln">
+  </span><span class="comment"><span class="com">// register a callback function with the `onData` prop.</span></span><span class="pln">
+  onData</span><span class="pun">={</span><span class="pln">
+    </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">res</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        image</span><span class="pun">:</span><span class="pln"> res</span><span class="pun">.</span><span class="pln">image</span><span class="pun">,</span><span class="pln">
+        title</span><span class="pun">:</span><span class="pln"> res</span><span class="pun">.</span><span class="pln">name</span><span class="pun">,</span><span class="pln">
+        url</span><span class="pun">:</span><span class="pln"> res</span><span class="pun">.</span><span class="pln">listing_url
+      </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+  </span><span class="comment"><span class="com">// specify how and which results are filtered using `react` prop.</span></span><span class="pln">
+  react</span><span class="pun">={</span><span class="pln">
+    </span><span class="string"><span class="str">"and"</span></span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="string"><span class="str">"pricingFilter"</span></span><span class="pun">,</span><span class="pln"> </span><span class="string"><span class="str">"dateFilter"</span></span><span class="pun">],</span><span class="pln">
+    </span><span class="string"><span class="str">"or"</span></span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="string"><span class="str">"searchFilter"</span></span><span class="pun">]</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">/&gt;</span></code></pre><ul>
+<li><strong class="li-title">className</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  CSS class to be injected on the component container.</li>
+<li><strong class="li-title">style</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  CSS Styles to be applied to the <strong>ResultList</strong> component.</li>
+<li><strong class="li-title">onData</strong> <code class="code-with-title" style="white-space: pre;">Function</code> [optional]<br>  a callback function where user can define how to render the view based on the data changes. In <code style="white-space: pre;">ResultList</code>‘s case, the expected return format is an object with <code style="white-space: pre;">image</code>, <code style="white-space: pre;">image_size</code>, <code style="white-space: pre;">title</code>, <code style="white-space: pre;">url</code> and <code style="white-space: pre;">desc</code> keys.</li>
+<li><strong class="li-title">react</strong> <code class="code-with-title" style="white-space: pre;">Object</code><br>  specify dependent components to reactively update <strong>ResultList’s</strong> data view.<ul>
+<li><strong class="li-title">key</strong> <code class="code-with-title" style="white-space: pre;">String</code><br>  one of <code style="white-space: pre;">and</code>, <code style="white-space: pre;">or</code>, <code style="white-space: pre;">not</code> defines the combining clause.<ul>
+<li><strong class="li-title">and</strong> clause implies that the results will be filtered by matches from <strong>all</strong> of the associated component states.</li>
+<li><strong class="li-title">or</strong> clause implies that the results will be filtered by matches from <strong>at least one</strong> of the associated component states.</li>
+<li><strong class="li-title">not</strong> clause implies that the results will be filtered by an <strong>inverse</strong> match of the associated component states.</li>
+</ul>
+</li>
+<li><strong class="li-title">value</strong> <code class="code-with-title" style="white-space: pre;">String or Array or Object</code>  <ul>
+<li><code style="white-space: pre;">String</code> is used for specifying a single component by its <code style="white-space: pre;">componentId</code>.</li>
+<li><code style="white-space: pre;">Array</code> is used for specifying multiple components by their <code style="white-space: pre;">componentId</code>.</li>
+<li><code style="white-space: pre;">Object</code> is used for nesting other key clauses.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h2 id="resultlist-examples">Examples</h2><p></p><p data-height="500" data-theme-id="light" data-slug-hash="BdMXeG" data-default-tab="result" data-user="sids-aquarius" data-embed-version="2" data-pen-title="ResultList docs example" class="codepen">See the Pen <a href="https://codepen.io/sids-aquarius/pen/BdMXeG/">ResultList docs example</a> by Siddharth Kothari (<a href="https://codepen.io/sids-aquarius">@sids-aquarius</a>) on <a href="https://codepen.io">CodePen</a>.</p><p></p><script async="" src="https://production-assets.codepen.io/assets/embed/ei.js"></script><p>See more stories for ResultList on playground.</p><ol>
+<li><p><a href="../playground/?knob-title=Cars%20result&amp;knob-data=%5B%7B&quot;start&quot;%3A4%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;4%20stars%20and%20up&quot;%7D%2C%7B&quot;start&quot;%3A3%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;3%20stars%20and%20up&quot;%7D%2C%7B&quot;start&quot;%3A2%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;2%20stars%20and%20up&quot;%7D%2C%7B&quot;start&quot;%3A1%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;&gt;%201%20stars&quot;%7D%5D&amp;knob-paginationAt=bottom&amp;knob-filterLabel=Cities%20filter&amp;knob-defaultSelected%5B0%5D=Auckland&amp;knob-blacklist%5B0%5D=golf&amp;knob-blacklist%5B1%5D=unknown&amp;knob-maxCategories=10&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;knob-showResultStats=true&amp;knob-stepValue=1&amp;filterBy=ReactiveSearch&amp;knob-showHistogram=true&amp;knob-pagination=true&amp;knob-maxItems=4&amp;knob-size=5&amp;knob-showCount=true&amp;knob-placeholder=Search%20Cars&amp;knob-showSearch=true&amp;knob-multiSelect=true&amp;selectedKind=search%2FResultList&amp;selectedStory=With%20infinite%20loading&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">ResultList with infinite scroll</a></p>
+</li>
+<li><p><a href="../playground/?knob-title=Cars%20result&amp;knob-data=%5B%7B&quot;start&quot;%3A4%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;4%20stars%20and%20up&quot;%7D%2C%7B&quot;start&quot;%3A3%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;3%20stars%20and%20up&quot;%7D%2C%7B&quot;start&quot;%3A2%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;2%20stars%20and%20up&quot;%7D%2C%7B&quot;start&quot;%3A1%2C&quot;end&quot;%3A5%2C&quot;label&quot;%3A&quot;&gt;%201%20stars&quot;%7D%5D&amp;knob-paginationAt=bottom&amp;knob-filterLabel=Cities%20filter&amp;knob-defaultSelected%5B0%5D=Auckland&amp;knob-blacklist%5B0%5D=golf&amp;knob-blacklist%5B1%5D=unknown&amp;knob-maxCategories=10&amp;knob-URLParams%20%28not%20visible%20on%20storybook%29=false&amp;knob-showFilter=true&amp;knob-sortBy=count&amp;knob-showResultStats=true&amp;knob-stepValue=1&amp;filterBy=ReactiveSearch&amp;knob-showHistogram=true&amp;knob-pagination=true&amp;knob-maxItems=4&amp;knob-size=5&amp;knob-showCount=true&amp;knob-placeholder=Search%20Cars&amp;knob-showSearch=true&amp;knob-multiSelect=true&amp;selectedKind=search%2FResultList&amp;selectedStory=With%20pagination&amp;full=0&amp;down=1&amp;left=1&amp;panelRight=0&amp;downPanel=storybooks%2Fstorybook-addon-knobs">ResultList with pagination</a>.</p>
+</li>
+</ol></div>
+	<!-- ngIf: !threeColumns && navigationSidebar --><div class="rightSidebar menubar ng-scope" data-ng-if="!threeColumns &amp;&amp; navigationSidebar">
+		<!-- ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><ul class="menu section ng-scope" ng-repeat="folder in map[currentVersion]" data-ng-if="folder.name === currentFolder">
+			<li>
+				<div class="other-pages">Other pages in</div>
+			</li>
+			<li>
+				<a class="level-1 ng-binding" ng-href=./v1/search-components/index.html ng-bind="folder.name" href=./v1/search-components/index.html>search-components</a>
+			</li>
+			<!-- ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/CategorySearch.html ng-bind="file.label" href=./v1/search-components/CategorySearch.html>Category Search</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/MultiLevelMenu.html ng-bind="file.label" href=./v1/search-components/MultiLevelMenu.html>MultiLevel Menu</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/DynamicRangeSlider.html ng-bind="file.label" href=./v1/search-components/DynamicRangeSlider.html>DynamicRange Slider</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/RatingsFilter.html ng-bind="file.label" href=./v1/search-components/RatingsFilter.html>Ratings Filter</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/TagCloud.html ng-bind="file.label" href=./v1/search-components/TagCloud.html>Tag Cloud</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/NestedList.html ng-bind="file.label" href=./v1/search-components/NestedList.html>Nested List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/NestedMultiList.html ng-bind="file.label" href=./v1/search-components/NestedMultiList.html>Nested Multi List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/ResultCard.html ng-bind="file.label" href=./v1/search-components/ResultCard.html>Result Card</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding active" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/ResultList.html ng-bind="file.label" href=./v1/search-components/ResultList.html>Result List</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><li ng-repeat="file in folder.files" data-ng-if="file.name !== 'index'" class="ng-scope">
+				<a class="level-2 ng-binding" data-ng-class="{'active': file.name === currentFile}" ng-href=./v1/search-components/ViewSwitcher.html ng-bind="file.label" href=./v1/search-components/ViewSwitcher.html>View Switcher</a>
+			</li><!-- end ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files --><!-- ngIf: file.name !== 'index' --><!-- end ngRepeat: file in folder.files -->
+		</ul><!-- end ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] --><!-- ngIf: folder.name === currentFolder --><!-- end ngRepeat: folder in map[currentVersion] -->
+	</div><!-- end ngIf: !threeColumns && navigationSidebar -->
+	<div class="footer content">
+		<div class="row">
+			<div class="col-xs-12">
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left">
+					<a href=./v1/search-components/ResultCard.html class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right">
+					<a href=./v1/search-components/ViewSwitcher.html class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
+		</div>
+	</div>
 </div>
+<!-- ngIf: index -->
 </div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
